@@ -1,0 +1,55 @@
+.title {
+  font-size: 17.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 15.4rem;
+  text-transform: uppercase;
+  max-width: 47.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 0 36.4rem 24.8rem;
+}
+
+.image {
+  width: 84.9rem;
+  height: 53.6rem;
+  position: absolute;
+  top: 13.5rem;
+  left: 15.8rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 112px;
+    line-height: 112px;
+    max-width: 300px;
+  }
+
+  .wrapper {
+    position: relative;
+    margin: 0 auto 120px 24px;
+  }
+
+  .image {
+    width: calc(100% - 84px);
+    height: 305px;
+    top: 95px;
+    left: 55px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin: 0 auto 80px 24px;
+  }
+
+  .image {
+    width: 258px;
+    height: 210px;
+  }
+}
