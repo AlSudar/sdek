@@ -24,7 +24,7 @@ a {
 .element-animation {
   display: block;
   opacity: 0;
-  transform: translateY(100%);
+  transform: translateY(100px);
 }
 
 .element-animation.element-show {
