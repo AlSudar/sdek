@@ -46,7 +46,7 @@ a:hover {
 
 .mySwiper {
   height: 100%;
-  overflow: visible;
+  overflow: visible !important;
 }
 
 .swiper-wrapper {
@@ -86,6 +86,12 @@ a:hover {
 
 .swiper-pagination-bullet-active {
   display: block;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: -96px;
+  left: 24px;
 }
 
 @media screen and (max-width: 680px) {
