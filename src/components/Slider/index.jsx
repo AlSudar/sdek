@@ -25,8 +25,6 @@ const Slider = ({ imagesSrc }) => {
     },
   };
 
-  console.log(windowWidth - 48);
-
   if (windowWidth) {
     return (
       <aside className={`${styles.wrapper}`}>

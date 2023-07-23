@@ -39,13 +39,12 @@ const Preview = () => {
           height={382}
           priority
         />
-        {visibleButtonDown && (
-          <a
-            href='#leed'
-            className={styles.buttonDown}
-            onClick={() => setVisibleButtonDown(false)}
-          ></a>
-        )}
+        <a
+          style={{ opacity: visibleButtonDown ? '1' : '0' }}
+          href='#leed'
+          className={styles.buttonDown}
+          onClick={() => setVisibleButtonDown(false)}
+        ></a>
       </div>
       <p className={styles.leed} id='leed'>
         Небоскреб премиум-класса на&nbsp;Садовом кольце расширяет представление
