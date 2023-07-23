@@ -21,6 +21,17 @@ const firstSliderSrcMock = [
   '/firstSection/slider/seven.jpg',
 ];
 
+const secondSliderSrcMock = [
+  '/fourSection/slider/first.jpg',
+  '/fourSection/slider/second.jpg',
+  '/fourSection/slider/third.jpg',
+  '/fourSection/slider/five.jpg',
+  '/fourSection/slider/six.jpg',
+  '/fourSection/slider/seven.jpg',
+  '/fourSection/slider/eitght.jpg',
+  '/fourSection/slider/nine.jpg',
+];
+
 function onEntry(entry) {
   entry.forEach((change) => {
     if (change.isIntersecting) {
@@ -211,7 +222,7 @@ export default function Home() {
             text='&laquo;Дом Chkalov&raquo; получил мировое признание, победив в&nbsp;трех номинациях European Property Awards 2021&ndash;2022. Над его созданием работали ведущие специалисты: архитектурное бюро SPEECH во&nbsp;главе с&nbsp;Сергеем Чобаном и&nbsp;лондонская дизайнерская студия Мартина Халберта. <br /><br />
           Застройщик комплекса&nbsp;&mdash; IKON Development&nbsp;&mdash; награжден Золотым знаком &laquo;Надежный застройщик России 2022&raquo;.'
           />
-          {/* <Slider /> */}
+          <Slider imagesSrc={secondSliderSrcMock} />
           <Text
             horizontalMargin='right'
             text='Всего с&nbsp;6-го по&nbsp;21-й этаж комплекса расположено 396&nbsp;апартаментов. В&nbsp;зависимости от&nbsp;целей и&nbsp;эстетических предпочтений можно <a href="https://www.domchkalov.com/apartamenty/#flat" target="_blank" style="color: #B6815D">подобрать</a> подходящий вариант: пентхаус без отделки или видовые апартаменты, оформление в&nbsp;светлых тонах&nbsp;&mdash; &laquo;Рассвет&raquo;, с&nbsp;акцентами в&nbsp;темных тонах&nbsp;&mdash; &laquo;Закат&raquo;. <br /><br />
