@@ -234,6 +234,20 @@
   margin: 0 18.4rem 0 auto;
   width: 90.4rem;
   height: 47.4rem;
+
+  @media screen and (max-width: 680px) {
+    width: calc(100% - 48px);
+    margin: 0 auto;
+    height: auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 240px;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 210px;
+  }
 }
 
 .sixSupImage {
@@ -243,6 +257,10 @@
   width: 44.8rem;
   height: 30.6rem;
   z-index: 2;
+
+  @media screen and (max-width: 680px) {
+    display: none;
+  }
 }
 
 .sevenImagesContainer {

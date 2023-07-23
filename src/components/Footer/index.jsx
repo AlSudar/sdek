@@ -2,6 +2,17 @@ import Image from 'next/image';
 import styles from './index.module.scss';
 
 const Footer = () => {
+  let href = '';
+  //TODO: поменять тут шеринг
+  if (typeof window !== 'undefined') {
+    href = 'https://riverpark-kutuzovskiy.vedomosti.ru/'; // window.location.origin
+  }
+
+  const shareVK = () => {
+    const VK = 'https://telegram.me/share/url?url=';
+    window.open(VK + href, '_blank').focus();
+  };
+
   return (
     <footer className={styles.wrapper}>
       <ul className={styles.list}>
@@ -25,7 +36,7 @@ const Footer = () => {
         </li>
       </ul>
       <div className={styles.social}>
-        <button className={styles.socialButton}>
+        <button className={styles.socialButton} onClick={shareVK}>
           <Image
             className={styles.socialIcon}
             width={40}

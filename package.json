@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "fullpage.js": "^4.0.20",
@@ -14,6 +15,7 @@
     "next": "13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.64.0"
+    "sass": "^1.64.0",
+    "swiper": "^10.0.4"
   }
 }
