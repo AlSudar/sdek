@@ -10,12 +10,10 @@
     "export": "next export"
   },
   "dependencies": {
-    "fullpage.js": "^4.0.20",
-    "jquery.scrollto": "2.1.3",
     "next": "13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.64.0",
-    "swiper": "^10.0.4"
+    "sass": "1.64.0",
+    "swiper": "10.0.4"
   }
 }

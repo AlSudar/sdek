@@ -1,62 +1,63 @@
 import styles from './index.module.scss';
 import localFont from 'next/font/local';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { useState } from 'react';
 
 const empireTl = localFont({ src: './empire-tl.ttf' });
 
 const Slider = ({ imagesSrc }) => {
-  const [windowWidth, setWindowWidth] = useState(null);
+  const [current, setCurrent] = useState(0);
+  const length = imagesSrc.length;
 
-  useEffect(() => {
-    if (window && window.innerWidth) {
-      setWindowWidth(window.innerWidth);
-    }
-  }, []);
-
-  const pagination = {
-    clickable: false,
-    renderBullet: function (index, className) {
-      return `<span class='${styles.count} ${className} ${
-        empireTl.className
-      }'>${index + 1} / ${imagesSrc.length}</span>`;
-    },
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
-  if (windowWidth) {
-    return (
-      <aside className={`${styles.wrapper}`}>
-        {/* <span className={`${styles.count} ${empireTl.className}`}>
-          1 / {imagesSrc.length}
-        </span> */}
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          width={windowWidth - 48}
-          className={`mySwiper`}
-        >
-          {imagesSrc.map((imageSrc, id) => {
-            return (
-              <SwiperSlide key={id}>
-                <Image
-                  className={`${styles.image}`}
-                  width={1120}
-                  height={700}
-                  priority={false}
-                  src={imageSrc}
-                  alt=''
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </aside>
-    );
-  } else {
-    return <></>;
-  }
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  return (
+    <aside className={`${styles.wrapper}`}>
+      <span class={`${styles.count} ${empireTl.className}`}>
+        {current + 1} / {imagesSrc.length}
+      </span>
+      {imagesSrc.map((imageSrc, index) => {
+        return (
+          <div
+            key={index}
+            className={`${styles.image} ${
+              index === current ? styles.active : ''
+            } ${index > current ? styles.disableNext : ''} ${
+              index < current ? styles.disablePrev : ''
+            }`}
+          >
+            <Image
+              width={1120}
+              height={700}
+              priority={false}
+              src={imageSrc}
+              alt=''
+            />
+          </div>
+        );
+      })}
+      <div className={styles.buttons}>
+        {current !== 0 && (
+          <button
+            className={`${styles.button} ${styles.buttonPrev}`}
+            onClick={prevSlide}
+          ></button>
+        )}
+        {current < length - 1 && (
+          <button
+            className={`${styles.button} ${styles.buttonNext}`}
+            onClick={nextSlide}
+          ></button>
+        )}
+      </div>
+    </aside>
+  );
 };
 
 export { Slider };

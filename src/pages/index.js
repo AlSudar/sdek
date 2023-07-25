@@ -8,7 +8,8 @@ import { Slider } from '@/components/Slider';
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import styles from '@/styles/index.module.scss';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { CustomSwiper } from '@/components/Swiper';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -41,12 +42,20 @@ function onEntry(entry) {
 }
 
 export default function Home() {
+  const [windowWidth, setWindowWidth] = useState(null);
+
   useEffect(() => {
     let options = { threshold: [0.1] };
     let observer = new IntersectionObserver(onEntry, options);
     let elements = document.querySelectorAll('.element-animation');
     for (let elm of elements) {
       observer.observe(elm);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (window && window.innerWidth) {
+      setWindowWidth(window.innerWidth);
     }
   }, []);
 
@@ -89,7 +98,11 @@ export default function Home() {
             text='В эпицентре бизнеса'
           />
           <Text text='Одно из&nbsp;главных преимуществ жизни здесь&nbsp;&mdash; расположение. Две видовые башни находятся на&nbsp;перекрестке деловых маршрутов не&nbsp;только столицы, но&nbsp;и&nbsp;всей страны. Рядом с&nbsp;домом несколько бизнес-центров, а&nbsp;из&nbsp;окон открывается вид на&nbsp;центры принятия решений&nbsp;&mdash; Кремль и&nbsp;небоскребы Москва-Сити.' />
-          <Slider imagesSrc={firstSliderSrcMock} />
+          {windowWidth && windowWidth > 680 ? (
+            <Slider imagesSrc={firstSliderSrcMock} />
+          ) : (
+            <CustomSwiper imagesSrc={firstSliderSrcMock} />
+          )}
           <Text
             horizontalMargin='right'
             text='Садовое кольцо и&nbsp;набережные Москвы-реки и&nbsp;Яузы, Третье транспортное и&nbsp;главные железнодорожные узлы делают доступными многие популярные направления. В&nbsp;доме есть подземный четырехэтажный паркинг с&nbsp;возможностью зарядить электромобиль.<br /><br />
@@ -222,7 +235,11 @@ export default function Home() {
             text='&laquo;Дом Chkalov&raquo; получил мировое признание, победив в&nbsp;трех номинациях European Property Awards 2021&ndash;2022. Над его созданием работали ведущие специалисты: архитектурное бюро SPEECH во&nbsp;главе с&nbsp;Сергеем Чобаном и&nbsp;лондонская дизайнерская студия Мартина Халберта. <br /><br />
           Застройщик комплекса&nbsp;&mdash; IKON Development&nbsp;&mdash; награжден Золотым знаком &laquo;Надежный застройщик России 2022&raquo;.'
           />
-          <Slider imagesSrc={secondSliderSrcMock} />
+          {windowWidth && windowWidth > 680 ? (
+            <Slider imagesSrc={secondSliderSrcMock} />
+          ) : (
+            <CustomSwiper imagesSrc={secondSliderSrcMock} />
+          )}
           <Text
             horizontalMargin='right'
             text='Всего с&nbsp;6-го по&nbsp;21-й этаж комплекса расположено 396&nbsp;апартаментов. В&nbsp;зависимости от&nbsp;целей и&nbsp;эстетических предпочтений можно <a href="https://www.domchkalov.com/apartamenty/#flat" target="_blank" style="color: #B6815D">подобрать</a> подходящий вариант: пентхаус без отделки или видовые апартаменты, оформление в&nbsp;светлых тонах&nbsp;&mdash; &laquo;Рассвет&raquo;, с&nbsp;акцентами в&nbsp;темных тонах&nbsp;&mdash; &laquo;Закат&raquo;. <br /><br />
