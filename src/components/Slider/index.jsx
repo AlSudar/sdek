@@ -35,7 +35,7 @@ const Slider = ({ imagesSrc }) => {
             <Image
               width={1120}
               height={700}
-              priority={false}
+              priority={index < 3 ? true : false}
               src={imageSrc}
               alt=''
             />
