@@ -47,13 +47,45 @@ const Slider = ({ imagesSrc }) => {
           <button
             className={`${styles.button} ${styles.buttonPrev}`}
             onClick={prevSlide}
-          ></button>
+          >
+            <svg
+              width='28'
+              height='14'
+              viewBox='0 0 28 14'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M26 2L14 12L2 2'
+                stroke='white'
+                strokeWidth='3'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+            </svg>
+          </button>
         )}
         {current < length - 1 && (
           <button
             className={`${styles.button} ${styles.buttonNext}`}
             onClick={nextSlide}
-          ></button>
+          >
+            <svg
+              width='28'
+              height='14'
+              viewBox='0 0 28 14'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M26 2L14 12L2 2'
+                stroke='white'
+                strokeWidth='3'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+              />
+            </svg>
+          </button>
         )}
       </div>
     </aside>

@@ -24,14 +24,26 @@ const Preview = () => {
   return (
     <section className={styles.previewWrapper}>
       <div className={styles.preview}>
-        <Image
-          className={styles.logo}
-          src='/preview/logo-header.svg'
-          alt='Логотип компании Дом Chkalov'
-          width={112}
-          height={38}
-          priority
-        />
+        <div className={styles.logos}>
+          <Image
+            className={styles.logoChkalov}
+            src='/preview/logo-header.svg'
+            alt='Логотип компании Дом Chkalov'
+            width={112}
+            height={38}
+            priority
+          />
+          <a href='https://www.vedomosti.ru/' target='_blank'>
+            <Image
+              className={styles.logoVedomosty}
+              src='/preview/logo-vedomosti.svg'
+              alt='Логотип Ведомостей'
+              width={112}
+              height={38}
+              priority
+            />
+          </a>
+        </div>
         <Image
           className={styles.previewSlogan}
           src='/preview/preview-slogan.svg'
