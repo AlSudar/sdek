@@ -19,7 +19,7 @@ const Slider = ({ imagesSrc }) => {
 
   return (
     <aside className={`${styles.wrapper}`}>
-      <span class={`${styles.count} ${empireTl.className}`}>
+      <span className={`${styles.count} ${empireTl.className}`}>
         {current + 1} / {imagesSrc.length}
       </span>
       {imagesSrc.map((imageSrc, index) => {

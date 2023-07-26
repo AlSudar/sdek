@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './index.module.scss';
 import { useEffect, useState } from 'react';
+// import LocomotiveScroll from 'locomotive-scroll';
 
 const Preview = () => {
   const [visibleButtonDown, setVisibleButtonDown] = useState(true);
@@ -18,7 +19,7 @@ const Preview = () => {
 
   useEffect(() => {
     document.addEventListener('scroll', startScroll);
-  });
+  }, []);
 
   return (
     <section className={styles.previewWrapper}>
