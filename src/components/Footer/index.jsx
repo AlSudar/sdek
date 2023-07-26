@@ -9,7 +9,7 @@ const Footer = () => {
   }
 
   const shareVK = () => {
-    const VK = 'https://telegram.me/share/url?url=';
+    const VK = 'https://vk.com/share.php?url=';
     window.open(VK + href, '_blank').focus();
   };
 

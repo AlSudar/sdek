@@ -25,14 +25,16 @@ const Preview = () => {
     <section className={styles.previewWrapper}>
       <div className={styles.preview}>
         <div className={styles.logos}>
-          <Image
-            className={styles.logoChkalov}
-            src='/preview/logo-header.svg'
-            alt='Логотип компании Дом Chkalov'
-            width={112}
-            height={38}
-            priority
-          />
+          <a href='https://www.domchkalov.com/' target='_blank'>
+            <Image
+              className={styles.logoChkalov}
+              src='/preview/logo-header.svg'
+              alt='Логотип компании Дом Chkalov'
+              width={112}
+              height={38}
+              priority
+            />
+          </a>
           <a href='https://www.vedomosti.ru/' target='_blank'>
             <Image
               className={styles.logoVedomosty}
@@ -45,7 +47,7 @@ const Preview = () => {
           </a>
         </div>
         <Image
-          className={styles.previewSlogan}
+          className={`${styles.previewSlogan} element-animation`}
           src='/preview/preview-slogan.svg'
           alt='Слоган компании Дом Chkalov'
           width={400}
@@ -68,14 +70,14 @@ const Preview = () => {
             <path
               d='M26 2L14 12L2 2'
               stroke='white'
-              stroke-width='3'
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeWidth='3'
+              strokeLinecap='round'
+              strokeLinejoin='round'
             />
           </svg>
         </a>
       </div>
-      <p className={styles.leed} id='leed'>
+      <p className={`${styles.leed} element-animation`} id='leed'>
         Небоскреб премиум-класса на&nbsp;Садовом кольце расширяет представление
         о&nbsp;жизни в&nbsp;городе. Он&nbsp;создан для людей, которым важно быть
         в&nbsp;центре событий и&nbsp;управлять своим временем, оставаясь

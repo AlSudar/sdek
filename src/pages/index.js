@@ -61,31 +61,22 @@ export default function Home() {
 
   return (
     <>
-      {/* TODO: дописать нормальный мета и sh */}
       <Head>
-        <title>Идеальный дом</title>
+        <title>Думать о высоком</title>
         <meta
           key='description'
           name='description'
-          content='Отвечаем на основе научных исследований, статистики и опросов'
+          content='Новый небоскреб на Садовом кольце расширяет представление о жизни в городе'
         />
         <meta
           key='og:description'
           property='og:description'
-          content='Отвечаем на основе научных исследований, статистики и опросов'
+          content='Новый небоскреб на Садовом кольце расширяет представление о жизни в городе'
         />
-        <meta
-          key='title'
-          name='title'
-          content='Каким должен быть идеальный дом'
-        />
-        <meta
-          key='og:title'
-          property='og:title'
-          content='Каким должен быть идеальный дом'
-        />
+        <meta key='title' name='title' content='Думать о высоком' />
+        <meta key='og:title' property='og:title' content='Думать о высоком' />
         <meta property='og:site_name' content='riverpark-kutuzovskiy' />
-        <meta property='og:image' content='/og-twitter.png' />
+        <meta property='og:image' content='/og-image.png' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
         <link rel='icon' href='/favicon.ico' />
