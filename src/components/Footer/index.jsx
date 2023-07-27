@@ -5,7 +5,7 @@ const Footer = () => {
   let href = '';
   //TODO: поменять тут шеринг
   if (typeof window !== 'undefined') {
-    href = 'https://riverpark-kutuzovskiy.vedomosti.ru/'; // window.location.origin
+    href = 'https://riverpark-kutuzovskiy.vedomosti.ru/';
   }
 
   const shareVK = () => {

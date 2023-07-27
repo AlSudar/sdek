@@ -180,7 +180,7 @@ export default function Home() {
               width={377}
               height={566}
               priority={false}
-              src='/thirdSection/imagesBlock/first.png'
+              src='/thirdSection/imagesBlock/first.png?v=1'
               alt=''
             />
             <Image
@@ -188,7 +188,7 @@ export default function Home() {
               width={890}
               height={835}
               priority={false}
-              src='/thirdSection/imagesBlock/firstSup.png'
+              src='/thirdSection/imagesBlock/firstSup.png?v=1'
               alt=''
             />
           </div>
