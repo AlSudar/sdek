@@ -177,16 +177,16 @@ export default function Home() {
           <div className={styles.fourImagesContainer}>
             <Image
               className={`${styles.image} element-animation`}
-              width={377}
-              height={566}
+              width={890}
+              height={835}
               priority={false}
-              src='/thirdSection/imagesBlock/first.png?v=1'
+              src='/thirdSection/imagesBlock/first.png?v=2'
               alt=''
             />
             <Image
               className={`${styles.fourSupImage} element-animation`}
-              width={890}
-              height={835}
+              width={377}
+              height={566}
               priority={false}
               src='/thirdSection/imagesBlock/firstSup.png?v=1'
               alt=''
