@@ -76,7 +76,7 @@ export default function Home() {
         <meta key='title' name='title' content='Думать о высоком' />
         <meta key='og:title' property='og:title' content='Думать о высоком' />
         <meta property='og:site_name' content='domchkalov' />
-        <meta property='og:image' content='/og-image.png' />
+        <meta property='og:image' content='/og-image.jpg' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
         <link rel='icon' href='/favicon.ico' />
