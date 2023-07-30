@@ -5,7 +5,7 @@ const Footer = () => {
   let href = '';
   //TODO: поменять тут шеринг
   if (typeof window !== 'undefined') {
-    href = 'https://riverpark-kutuzovskiy.vedomosti.ru/';
+    href = 'https://domchkalov.vedomosti.ru/';
   }
 
   const shareVK = () => {
@@ -25,7 +25,7 @@ const Footer = () => {
           <span className={styles.colored}>Анна&nbsp;Андреева</span>
         </li>
         <li>
-          Руководитель направления по работе с&nbsp;рекламными агентствами:{' '}
+          Руководитель отдела продаж рекламы{' '}
           <span className={styles.colored}>Юлия&nbsp;Чижикова</span>
         </li>
         <li>
@@ -46,7 +46,7 @@ const Footer = () => {
             priority={false}
           />
         </button>
-        <p>Реклама, ООО «Эссет менеджмент», Erid: LdtCKERNb</p>
+        <p>Реклама, ООО «Эссет менеджмент», Erid: LdtCKRAdi</p>
       </div>
     </footer>
   );

@@ -75,7 +75,7 @@ export default function Home() {
         />
         <meta key='title' name='title' content='Думать о высоком' />
         <meta key='og:title' property='og:title' content='Думать о высоком' />
-        <meta property='og:site_name' content='riverpark-kutuzovskiy' />
+        <meta property='og:site_name' content='domchkalov' />
         <meta property='og:image' content='/og-image.png' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
@@ -258,7 +258,7 @@ export default function Home() {
             horizontalMargin='left'
             text='Такая недвижимость, как &laquo;Дом Chkalov&raquo;,&nbsp;&mdash; это прежде всего инвестиция в&nbsp;собственную жизнь, чувство контроля над ней, комфорт и&nbsp;красоту. Вместе с&nbsp;тем это и&nbsp;надежный ликвидный актив, который не&nbsp;теряет актуальность и&nbsp;будет работать на&nbsp;вас в&nbsp;будущем.<br /><br />
           <a href="https://www.domchkalov.com/#flat" target="_blank" style="color: #B6815D">Оставьте заявку на&nbsp;нашем сайте</a> &nbsp;&mdash; специалисты ответят на&nbsp;вопросы и&nbsp;помогут подобрать оптимальный вариант с&nbsp;учетом ваших целей.<br /><br />
-          <span class="tooltip">Реклама, ООО &laquo;Эссет менеджмент&raquo;, застройщик&nbsp;&mdash; Ikon Development, проектная декларация на&nbsp;сайте <a href="https://xn--80az8a.xn--d1aqf.xn--p1ai/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA/%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82/7910?id=7910&objectIds=44218%2C44151%2C51567" target="_blank">наш.дом.рф</a></span>'
+          <span class="tooltip">Застройщик&nbsp;&mdash; Ikon Development, проектная декларация на&nbsp;сайте <a href="https://xn--80az8a.xn--d1aqf.xn--p1ai/%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B/%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3-%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA/%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82/7910?id=7910&objectIds=44218%2C44151%2C51567" target="_blank">наш.дом.рф</a></span>'
           />
           <div className={styles.sevenImagesContainer}>
             <Image
