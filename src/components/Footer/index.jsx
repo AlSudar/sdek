@@ -5,7 +5,7 @@ const Footer = () => {
   let href = '';
   //TODO: поменять тут шеринг
   if (typeof window !== 'undefined') {
-    href = 'https://domchkalov.vedomosti.ru/';
+    href = 'http://domchkalov.vedomosti.ru/';
   }
 
   const shareVK = () => {

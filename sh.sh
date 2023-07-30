@@ -1,4 +1,4 @@
-A1="riverpark-kutuzovskiy"
+A1="domchkalov"
 
 cd out &&
 
