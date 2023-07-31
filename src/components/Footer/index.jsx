@@ -9,8 +9,18 @@ const Footer = () => {
   }
 
   const shareVK = () => {
-    const VK = 'https://vk.com/share.php?url=';
-    window.open(VK + href, '_blank').focus();
+    if (window) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('event', 'click_vk', {
+        social_button_footer: 'vk',
+      });
+
+      const VK = 'https://vk.com/share.php?url=';
+      window.open(VK + href, '_blank').focus();
+    }
   };
 
   return (
@@ -25,7 +35,7 @@ const Footer = () => {
           <span className={styles.colored}>Анна&nbsp;Андреева</span>
         </li>
         <li>
-          Руководитель отдела продаж рекламы{' '}
+          Руководитель отдела продаж рекламы:{' '}
           <span className={styles.colored}>Юлия&nbsp;Чижикова</span>
         </li>
         <li>
