@@ -1,1 +1,2 @@
-https://hard-work-red.vercel.app/
+Анимации:
+Всплытие, свайпер, слайдер
