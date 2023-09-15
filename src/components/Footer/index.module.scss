@@ -41,6 +41,14 @@
   height: 4rem;
 }
 
+.archive {
+  background: #b6815d;
+  width: fit-content;
+  padding: 0.4rem 1rem;
+  margin: 0.4rem 0 0;
+  color: black;
+}
+
 @media screen and (max-width: 680px) {
   .wrapper {
     padding: 48px 24px;
@@ -49,6 +57,11 @@
     gap: 48px;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .archive {
+    padding: 4px 10px;
+    margin: 0;
   }
 
   .socialIcon {

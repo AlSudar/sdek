@@ -3,7 +3,6 @@ import styles from './index.module.scss';
 
 const Footer = () => {
   let href = '';
-  //TODO: поменять тут шеринг
   if (typeof window !== 'undefined') {
     href = 'http://domchkalov.vedomosti.ru/';
   }
@@ -57,6 +56,7 @@ const Footer = () => {
           />
         </button>
         <p>Реклама, ООО «Эссет менеджмент», Erid: LdtCKRAdi</p>
+        <p className={styles.archive}>Архив</p>
       </div>
     </footer>
   );
