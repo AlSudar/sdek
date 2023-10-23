@@ -32,7 +32,7 @@ export default function Document() {
         />
       </Head>
       <body>
-        <div style={{ display: 'none' }}>Разработка: AlSudar</div>
+        <div style={{ display: 'none' }}>Разработка: @AllSudar</div>
         <Main />
         <NextScript />
         <noscript>

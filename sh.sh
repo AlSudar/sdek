@@ -1,4 +1,4 @@
-A1="domchkalov"
+A1="workWithoutWork"
 
 cd out &&
 
