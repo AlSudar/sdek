@@ -27,6 +27,12 @@
   top: -6.6rem;
 }
 
+.linesAnimationShow::after {
+  animation: bottomLineHeight 1.5s ease-in-out;
+  height: 11rem;
+  bottom: -13.8rem;
+}
+
 .titleAnimationShow::before {
   animation: beforeTitleOpacity 1.5s ease-in-out;
 }
