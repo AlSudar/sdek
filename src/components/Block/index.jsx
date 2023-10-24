@@ -12,6 +12,7 @@ const Block = ({
   id,
   titleClassName,
   linesBlockClassName,
+  blockClassName,
 }) => {
   const { width } = useWindowDimensions();
   function onEntry(entry) {
@@ -51,7 +52,7 @@ const Block = ({
   }, []);
 
   return (
-    <section className={cn(styles.section)} id={id}>
+    <section className={cn(styles.section, blockClassName)} id={id}>
       <h2
         className={cn(styles.title, titleClassName, 'titleAnimation')}
         dangerouslySetInnerHTML={{ __html: blockTitle }}

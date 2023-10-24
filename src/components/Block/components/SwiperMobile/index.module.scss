@@ -12,15 +12,35 @@
   gap: 30px;
   position: relative;
 
+  &::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 10px;
+    top: 0;
+    right: 18px;
+    background: url('/Slider/svg/arrowSwiperIcon.svg') no-repeat center;
+    z-index: 1;
+  }
+
   &::before {
     content: '';
     position: absolute;
     width: 28px;
     height: 27px;
-    top: 0;
-    right: 18px;
-    background: url('/Slider/svg/swiperIcon.svg') no-repeat center;
+    top: 3px;
+    right: 23px;
+    background: url('/Slider/svg/handleSwiperIcon.svg') no-repeat center;
     animation: 3s ease-in-out infinite moveIcon;
+    z-index: 2;
+  }
+}
+
+.itemWrapper:last-of-type {
+  &::before,
+  &::after {
+    opacity: 0.5;
+    animation: 3s ease-in-out infinite notFound;
   }
 }
 
@@ -29,7 +49,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(10px);
+    transform: translateX(17px);
   }
   100% {
     transform: translateX(0);

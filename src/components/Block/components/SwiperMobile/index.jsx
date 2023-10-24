@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import cn from 'classnames';
 
 const SwiperMobile = ({ content }) => {
   const pagination = {

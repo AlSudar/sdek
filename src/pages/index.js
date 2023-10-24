@@ -59,6 +59,7 @@ export default function Home() {
             title={'работа без ошибок'}
           />
           <Block
+            blockClassName='firstBlock'
             id='at-the-start'
             image={
               <div

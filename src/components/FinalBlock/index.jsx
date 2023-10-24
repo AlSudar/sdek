@@ -32,20 +32,24 @@ const FinalBlock = () => {
         {!textVisible && <br />}
       </h2>
       <div className={`${styles.contentWrapper} finalBlockTextAnimation`}>
-        {textVisible && (
-          <TypeIt options={{ speed: 40 }} className={styles.contentItem}>
+        <div className={styles.content}>
+          <p className={styles.contentItem}>
             Попробовать можно в&nbsp;интерактивном квесте &laquo;Карты, деньги
             и&nbsp;три «О». Игру разработали специалисты &laquo;Центра
             по&nbsp;работе с&nbsp;проблемными активами&raquo;&nbsp;&mdash; одной
             из&nbsp;ведущих российских консалтинговых компаний. Сюжет
             сопровождают видеокомментарии опытных экспертов в&nbsp;области
-            предпринимательства и&nbsp;права. <br /> <br />
-            Квест интересно проходить несколько раз, используя новые знания
-            и&nbsp;подбирая варианты действий, которые помогут компании
-            не&nbsp;просто остаться на&nbsp;плаву, но&nbsp;и&nbsp;достичь
-            настоящего успеха.
-          </TypeIt>
-        )}
+            предпринимательства и&nbsp;права.
+          </p>
+          {textVisible && (
+            <TypeIt options={{ speed: 40 }} className={styles.contentItem}>
+              Квест интересно проходить несколько раз, используя новые знания
+              и&nbsp;подбирая варианты действий, которые помогут компании
+              не&nbsp;просто остаться на&nbsp;плаву, но&nbsp;и&nbsp;достичь
+              настоящего успеха.
+            </TypeIt>
+          )}
+        </div>
         <div className={styles.images}>
           <Image
             alt=''

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './index.module.scss';
+import cn from 'classnames';
 
 const Slider = ({ content }) => {
   const [activeSlider, setActiveSlider] = useState(0);
@@ -40,12 +41,12 @@ const Slider = ({ content }) => {
   };
 
   return (
-    <div className={`${styles.content}`}>
+    <div className={`${styles.content} swiperItemAnimation`}>
       {content.map((slidersItem, slidersId) => {
         return slidersItem.map((item, id) => {
           return (
             <div
-              className={`swiperItemAnimation swiperItemVisible_${++id} ${
+              className={`swiperItem swiperItemVisible_${++id} ${
                 slidersId === activeSlider ? 'sliderActive' : ''
               }`}
               key={id}
@@ -64,8 +65,16 @@ const Slider = ({ content }) => {
       })}
       <div className={styles.paginationWrapper}>
         <button
-          onClick={() => prevState()}
-          className={`${styles.button} ${styles.buttonPrev}`}
+          onClick={() => {
+            if (activeSlider !== 0) {
+              prevState();
+            }
+          }}
+          className={cn(
+            styles.button,
+            styles.buttonPrev,
+            activeSlider === 0 && styles.buttonDisable
+          )}
           area-label='Предыдущий слайд'
         />
         <ul className={styles.pagination}>
@@ -82,8 +91,16 @@ const Slider = ({ content }) => {
           ))}
         </ul>
         <button
-          onClick={() => nextState()}
-          className={`${styles.button} ${styles.buttonNext}`}
+          onClick={() => {
+            if (activeSlider !== content.length - 1) {
+              nextState();
+            }
+          }}
+          className={cn(
+            styles.button,
+            styles.buttonNext,
+            activeSlider === content.length - 1 && styles.buttonDisable
+          )}
           area-label='Следующий слайд слайд'
         />
       </div>
