@@ -3,11 +3,11 @@
 }
 
 .firstBlock .titleAnimationShow {
-  animation: firstTitleTransform 5s ease-in-out;
+  animation: firstTitleTransform 7s ease-in-out;
 }
 
 .firstBlock .titleAnimationShow::before {
-  animation: beforeTitleOpacity 5.5s ease-in-out;
+  animation: beforeTitleOpacity 7.5s ease-in-out;
 }
 
 .linesAnimation {
@@ -47,7 +47,7 @@
     .titleAnimationShow
     ~ .linesAnimationWrapper
     .linesAnimation::before {
-    animation: firstLineHeight 6s ease-in-out;
+    animation: firstLineHeight 9s ease-in-out;
   }
 }
 
@@ -82,15 +82,15 @@
   }
 
   .firstBlock .titleAnimationShow {
-    animation: firstTitleTransform 1.5s ease-in-out;
+    animation: firstTitleTransform 7s ease-in-out;
   }
 
   .firstBlock .titleAnimationShow::before {
-    animation: beforeTitleOpacity 2s ease-in-out;
+    animation: beforeTitleOpacity 7.5s ease-in-out;
   }
 
   .firstBlock .titleAnimationShow:after {
-    animation: firstLineHeightMobile 2.5s ease-in-out;
+    animation: firstLineHeightMobile 9s ease-in-out;
   }
 }
 
