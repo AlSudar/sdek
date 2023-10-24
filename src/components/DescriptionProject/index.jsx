@@ -30,11 +30,16 @@ const DescriptionProject = ({ title, description }) => {
       <h1 className={cn(styles.title, 'descriptionProjectTitleAnimation')}>
         {titleVisible && <span>{title}</span>}
       </h1>
-      {descriptionVisible && (
-        <TypeIt options={{ speed: 40 }} className={`${styles.description}`}>
+      <div className={styles.descriptionTextWrapper}>
+        {descriptionVisible && (
+          <TypeIt options={{ speed: 40 }} className={`${styles.description}`}>
+            {description}
+          </TypeIt>
+        )}
+        <p className={cn(styles.descriptionText, styles.description)}>
           {description}
-        </TypeIt>
-      )}
+        </p>
+      </div>
       <div className={styles.descriptionLines} />
     </div>
   );
