@@ -43,9 +43,9 @@ $size-radius: 0;
 }
 
 .link {
-  padding: 1.7rem 9.85rem;
+  padding: 1.4rem 9.2rem;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
@@ -68,10 +68,10 @@ $size-radius: 0;
   }
 
   @media screen and (max-width: 520px) {
-    padding: 18px 98px;
+    padding: 14px 98px;
     color: #fff;
-    font-size: 14px;
-    bottom: -30px;
+    font-size: 18px;
+    bottom: -28px;
     border-radius: 5px;
   }
 }

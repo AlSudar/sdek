@@ -28,7 +28,7 @@ const jetBrainsMono = JetBrains_Mono({
 
 export default function Home() {
   const { width } = useWindowDimensions();
-  //TODO: заменить seo-теги
+  //TODO: заменить seo-картинки
   return (
     <>
       <Head>
