@@ -32,20 +32,28 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Думать о высоком</title>
+        <title>12 ошибок бизнеса и как из избежать</title>
         <meta
           key='description'
           name='description'
-          content='Новый небоскреб на Садовом кольце расширяет представление о жизни в городе'
+          content='Что нужно учесть новому поколению предпринимателей'
         />
         <meta
           key='og:description'
           property='og:description'
-          content='Новый небоскреб на Садовом кольце расширяет представление о жизни в городе'
+          content='Что нужно учесть новому поколению предпринимателей'
         />
-        <meta key='title' name='title' content='Думать о высоком' />
-        <meta key='og:title' property='og:title' content='Думать о высоком' />
-        <meta property='og:site_name' content='domchkalov.vedomosti' />
+        <meta
+          key='title'
+          name='title'
+          content='12 ошибок бизнеса и как из избежать'
+        />
+        <meta
+          key='og:title'
+          property='og:title'
+          content='12 ошибок бизнеса и как из избежать'
+        />
+        <meta property='og:site_name' content='crpa.vedomosti' />
         <meta property='og:image' content='/og-image.jpg' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />

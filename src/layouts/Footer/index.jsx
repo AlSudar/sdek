@@ -18,14 +18,14 @@ const Footer = () => {
           <p className={styles.infoTitle}>Над проектом работали:</p>
         </div>
         <div className={styles.logos}>
-          <a href='#'>
+          <a href='https://vk.com/crpa_ru' target='_blank'>
             <img
               src='/Footer/logos/vkIcon.svg'
               loading='lazy'
               className={styles.logosVk}
             />
           </a>
-          <a href='#'>
+          <a href='https://www.youtube.com/@crpa_ru/videos' target='_blank'>
             <img
               src='/Footer/logos/youtubeIcon.svg'
               loading='lazy'
