@@ -57,6 +57,7 @@ export default function Home() {
         <meta name='twitter:image' content='/og-image-tw.jpg' />
         <meta property='twitter:image:width' content='1012' />
         <meta property='twitter:image:height' content='506' />
+        <meta name='twitter:card' content='/og-image-tg.jpg' />
         <meta property='vk:image' content='/og-image-vk.jpg' />
         <meta property='vk:image:width' content='510' />
         <meta property='vk:image:height' content='228' />
