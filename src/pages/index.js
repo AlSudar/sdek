@@ -62,6 +62,7 @@ export default function Home() {
         <meta property='vk:image:height' content='228' />
         <meta property='og:image' content='/og-image-tg.jpg' />
         <meta property='og:image:width' content='800' />
+        <meta property='og:image:type' content='image/jpeg' />
         <meta property='og:image:height' content='800' />
         <link rel='icon' href='/favicon16.svg' sizes='16x16' type='image/png' />
         <link
