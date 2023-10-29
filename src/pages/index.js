@@ -54,7 +54,7 @@ export default function Home() {
           content='12 ошибок бизнеса и как из избежать'
         />
         <meta property='og:site_name' content='crpa.vedomosti' />
-        <meta name='twitter:image' content='/og-image-tw.jpg' />
+        <meta name='twitter:image' content='/og-image-tg.jpg' />
         <meta property='twitter:image:width' content='1012' />
         <meta property='twitter:image:height' content='506' />
         <meta name='twitter:card' content='summary_large_image' />
