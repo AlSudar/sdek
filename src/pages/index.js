@@ -54,10 +54,28 @@ export default function Home() {
           content='12 ошибок бизнеса и как из избежать'
         />
         <meta property='og:site_name' content='crpa.vedomosti' />
-        <meta property='og:image' content='/og-image.jpg' />
-        <meta property='og:image:width' content='1200' />
-        <meta property='og:image:height' content='630' />
-        <link rel='icon' href='/favicon.ico' />
+        <meta name='twitter:image' content='/og-image-tw.jpg' />
+        <meta property='twitter:image:width' content='1012' />
+        <meta property='twitter:image:height' content='506' />
+        <meta property='vk:image' content='/og-image-vk.jpg' />
+        <meta property='vk:image:width' content='510' />
+        <meta property='vk:image:height' content='228' />
+        <meta property='og:image' content='/og-image-tg.jpg' />
+        <meta property='og:image:width' content='800' />
+        <meta property='og:image:height' content='800' />
+        <link rel='icon' href='/favicon16.svg' sizes='16x16' type='image/png' />
+        <link
+          rel='icon'
+          href='/favicon32.svg'
+          sizes='16x16 32x32'
+          type='image/vnd.microsoft.icon'
+        />
+        <link
+          rel='icon'
+          href='/favicon64.svg'
+          sizes='any'
+          type='image/svg+xml'
+        />
       </Head>
       <div className={jetBrainsMono.className}>
         <Header />

@@ -1,10 +1,14 @@
 .footer {
-  padding: 10rem 6rem 6rem;
+  padding: 6rem 6rem 6rem;
   background: #1a1d2e;
   margin: 12rem 0 0;
 
+  @media screen and (max-width: 768px) {
+    padding: 6rem 3rem 6rem;
+  }
+
   @media screen and (max-width: 520px) {
-    padding: 44px 16px;
+    padding: 36px 16px 50px;
     margin: 80px 0 0;
   }
 }
@@ -13,17 +17,17 @@
   margin: 0 auto;
   display: grid;
   align-items: flex-end;
-  width: 132rem;
+  width: 121rem;
   grid-template-columns: 56rem 10rem 44rem;
   justify-content: space-between;
 
   @media screen and (max-width: 1024px) {
-    width: 120rem;
+    width: 111rem;
     grid-template-columns: 40rem 10rem 44rem;
   }
 
   @media screen and (max-width: 768px) {
-    width: 104rem;
+    width: 110rem;
     grid-template-columns: 30rem 10rem 44rem;
   }
 
@@ -72,7 +76,7 @@
     color: rgba(118, 119, 129, 0.67);
     text-align: center;
     font-size: 12px;
-    margin: 0 0 24px;
+    margin: 0 0 16px;
     font-weight: 400;
     line-height: 24px;
   }
@@ -92,8 +96,8 @@
   line-height: 2rem;
   position: absolute;
   border: 0.1rem solid #767781;
-  top: -14rem;
-  left: 1.6rem;
+  top: -12rem;
+  left: 1rem;
 }
 
 .iconInfo:hover ~ .infoContent {
@@ -136,7 +140,14 @@
   }
 }
 
+.develop p {
+  margin: 0;
+}
+
 .develop {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   color: #767781;
   max-width: 44rem;
   text-align: right;
@@ -146,6 +157,8 @@
   margin: 0;
 
   @media screen and (max-width: 520px) {
+    flex-direction: column-reverse;
+    gap: 20px;
     color: rgba(118, 119, 129, 0.67);
     text-align: center;
     line-height: normal;

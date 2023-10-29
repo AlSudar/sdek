@@ -12,8 +12,7 @@ const Footer = () => {
           <p className={styles.infoContent}>
             Директор по спецпроектам: Наталия Ставрогина, <br />
             менеджер по спецпроектам: Анна Андреева, <br />
-            руководитель направления по работе с рекламными <br />
-            агентствами: Юлия Чижикова
+            руководитель отдела продаж рекламы: Юлия Чижикова
           </p>
           <p className={styles.infoTitle}>Над проектом работали:</p>
         </div>
@@ -33,11 +32,14 @@ const Footer = () => {
             />
           </a>
         </div>
-        <p className={styles.develop}>
-          Реклама, Акционерное общество «Центр по&nbsp;работе с&nbsp;проблемными
-          активами».
-          <br /> Erid:&nbsp;LdtCKFTJbe
-        </p>
+        <div className={styles.develop}>
+          <p>Игра «Карты, деньги и три "о"» разработана экспертами ЦРПА</p>
+          <p>
+            Реклама, Акционерное общество «Центр по&nbsp;работе
+            с&nbsp;проблемными активами».
+            <br /> Erid:&nbsp;LdtCKFTJbe
+          </p>
+        </div>
         {width <= 520 && (
           <div className={styles.developGroup}>
             <p className={styles.developGroupItem}>
@@ -51,10 +53,7 @@ const Footer = () => {
               Анна Андреева
             </p>
             <p className={styles.developGroupItem}>
-              <span>
-                Руководитель направления по&nbsp;работе с&nbsp;рекламными
-                агентствами
-              </span>
+              <span>Руководитель отдела продаж рекламы</span>
               <br />
               Юлия Чижикова
             </p>

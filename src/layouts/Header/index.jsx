@@ -56,7 +56,7 @@ const Header = () => {
                 />
               </a>
               <p className={styles.specialProject}>
-                Специальный проект{' '}
+                Специальный проект
                 <span className={styles.specialProjectAge}>18+</span>
               </p>
             </div>

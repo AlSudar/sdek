@@ -1,5 +1,29 @@
+.tooltip {
+  margin: 8.1rem auto 0 16.8rem;
+  display: inline-block;
+  color: #cbcbce;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+
+  @media screen and (max-width: 1024px) {
+    margin: 8.1rem auto 0 11.2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 8.1rem auto 0 8.4rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    font-size: 9px;
+    margin: 28px auto 0 16px;
+    line-height: 20px;
+  }
+}
+
 .title {
-  margin: 8.1rem auto;
+  margin: 0 auto 8.1rem;
   color: #fff;
   font-size: 11rem;
   font-style: normal;
@@ -36,7 +60,7 @@
 
   @media screen and (max-width: 520px) {
     width: fit-content;
-    margin: 50px 0 32px 16px;
+    margin: 0 0 32px 16px;
     font-size: 30px;
     font-weight: 400;
     line-height: normal;
