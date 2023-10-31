@@ -46,12 +46,12 @@ export default function Home() {
         <meta
           key='title'
           name='title'
-          content='12 ошибок бизнеса и как из избежать'
+          content='12 ошибок бизнеса и как их избежать'
         />
         <meta
           key='og:title'
           property='og:title'
-          content='12 ошибок бизнеса и как из избежать'
+          content='12 ошибок бизнеса и как их избежать'
         />
         <meta property='og:site_name' content='crpa.vedomosti' />
         <meta name='twitter:image' content='/og-image-tg.jpg' />
