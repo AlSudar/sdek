@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
         <div className={styles.develop}>
-          <p>Игра «Карты, деньги и три "о"» разработана экспертами ЦРПА</p>
+          <p>Игра «Карты, деньги и три "О"» разработана экспертами ЦРПА</p>
         </div>
         {width <= 520 && (
           <div className={styles.developGroup}>
