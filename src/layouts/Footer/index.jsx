@@ -34,11 +34,6 @@ const Footer = () => {
         </div>
         <div className={styles.develop}>
           <p>Игра «Карты, деньги и три "о"» разработана экспертами ЦРПА</p>
-          <p>
-            Реклама, Акционерное общество «Центр по&nbsp;работе
-            с&nbsp;проблемными активами».
-            <br /> Erid:&nbsp;LdtCKFTJbe
-          </p>
         </div>
         {width <= 520 && (
           <div className={styles.developGroup}>
