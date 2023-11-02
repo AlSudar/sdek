@@ -27,7 +27,9 @@ const DescriptionProject = ({ title, description }) => {
 
   return (
     <div className={styles.descriptionWrapper}>
-      <span className={styles.tooltip}>Реклама / АО «ЦРПА» / Erid: XXXXXX</span>
+      <span className={styles.tooltip}>
+        Реклама / АО «ЦРПА» / Erid: LdtCKMhpc
+      </span>
       <h1 className={cn(styles.title, 'descriptionProjectTitleAnimation')}>
         {!titleVisible && <span>&nbsp;</span>}
         {titleVisible && <span>{title}</span>}
