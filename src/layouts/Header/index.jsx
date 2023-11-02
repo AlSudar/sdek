@@ -90,7 +90,11 @@ const Header = () => {
               );
             })}
           </ul>
-          <a target='_blank' href={gameLink} className={styles.button}>
+          <a
+            target='_blank'
+            href='https://crpa.ru/game?utm_source=vedomosti&utm_medium=landing&utm_campaign=menu '
+            className={styles.button}
+          >
             Играть
           </a>
         </div>

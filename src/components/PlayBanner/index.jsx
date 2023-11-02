@@ -37,7 +37,10 @@ const PlayBanner = () => {
       <p className={styles.desc}>
         Сможете избежать ошибок в&nbsp;своем бизнесе? Попробуйте в&nbsp;игре
       </p>
-      <a className={styles.link} href={gameLink}>
+      <a
+        className={styles.link}
+        href='https://crpa.ru/game?utm_source=vedomosti&utm_medium=landing&utm_campaign=page '
+      >
         Играть
       </a>
     </div>

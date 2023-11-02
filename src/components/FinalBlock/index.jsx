@@ -67,7 +67,10 @@ const FinalBlock = () => {
           />
         </div>
       </div>
-      <a className={styles.link} href={gameLink}>
+      <a
+        className={styles.link}
+        href='https://crpa.ru/game?utm_source=vedomosti&utm_medium=landing&utm_campaign=footer'
+      >
         Играть
       </a>
     </section>
