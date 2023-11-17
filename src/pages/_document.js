@@ -33,19 +33,19 @@ export default function Document() {
         <div style={{ display: 'none' }}>Разработка: @AllSudar</div>
         <Main />
         <NextScript />
-        <noscript>
+        {/* <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-PRRZNVKH'
             height='0'
             width='0'
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
-        </noscript>
-        <script
+        </noscript> */}
+        {/* <script
           type='text/javascript'
           dangerouslySetInnerHTML={{ __html: ym }}
-        />
-        <noscript>
+        /> */}
+        {/* <noscript>
           <div>
             <img
               src='https://mc.yandex.ru/watch/94470349'
@@ -53,7 +53,7 @@ export default function Document() {
               alt=''
             />
           </div>
-        </noscript>
+        </noscript> */}
       </body>
     </Html>
   );
