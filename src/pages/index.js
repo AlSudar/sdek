@@ -3,6 +3,7 @@ import style from './style.module.scss';
 import cn from 'classnames';
 import Image from 'next/image';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 const myFont = localFont({
   src: [
@@ -39,9 +40,9 @@ export default function Home() {
 
   return (
     <>
-      {/* <Head>
-        <title>12 ошибок бизнеса и как из избежать</title>
-        <meta
+      <Head>
+        <title>В поиске контакта</title>
+        {/*   <meta
           key='description'
           name='description'
           content='Что нужно учесть новому поколению предпринимателей'
@@ -85,73 +86,86 @@ export default function Home() {
           href='/favicon64.svg'
           sizes='any'
           type='image/svg+xml'
+        />*/}
+      </Head>
+      <div className={style.mainWrapper}>
+        <Image
+          width={100}
+          height={100}
+          alt='1'
+          src='/background.png'
+          className={style.background}
+          priority
+          objectFit='cover'
         />
-      </Head> */}
-      <div className={cn(myFont.className, style.wrapper)}>
-        <header className={style.header}>
-          <a target='_blank' href=''>
-            <Image
-              width={247}
-              height={23}
-              alt='Логотип Xota и Модус'
-              src='/header/modus.svg'
-              className={style.headerModus}
-              priority
-            />
-          </a>
-          <a target='_blank' href=''>
-            <Image
-              width={20}
-              height={20}
-              src='/header/closeIcon.svg'
-              className={style.headerCloseIcon}
-            />
-          </a>
-          <a target='_blank' href=''>
-            <Image
-              width={110}
-              height={20}
-              alt='Логотип Ведомости'
-              src='/header/vedomosty.svg'
-              className={style.headerVedomosty}
-              priority
-            />
-          </a>
-        </header>
-        <main className={style.main}>
-          <h1 className={style.title}>В&nbsp;поиске контакта</h1>
-          <div className={style.content}>
-            <p className={cn(style.contentLeft, 'animation')}>
-              Как лидеры российского бизнеса адаптируются к изменениям в
-              потребительском поведении и экономике
+        <div className={cn(myFont.className, style.wrapper)}>
+          <header className={style.header}>
+            <a target='_blank' href=''>
+              <Image
+                width={247}
+                height={23}
+                alt='Логотип Xota и Модус'
+                src='/header/modus.svg'
+                className={style.headerModus}
+                priority
+              />
+            </a>
+            <a target='_blank' href=''>
+              <Image
+                width={20}
+                height={20}
+                src='/header/closeIcon.svg'
+                className={style.headerCloseIcon}
+              />
+            </a>
+            <a target='_blank' href=''>
+              <Image
+                width={110}
+                height={20}
+                alt='Логотип Ведомости'
+                src='/header/vedomosty.svg'
+                className={style.headerVedomosty}
+                priority
+              />
+            </a>
+          </header>
+          <main className={style.main}>
+            <h1 className={style.title}>В&nbsp;поиске контакта</h1>
+            <div className={style.content}>
+              <p className={cn(style.contentLeft, 'animation')}>
+                Как лидеры российского бизнеса адаптируются к&nbsp;изменениям
+                в&nbsp;потребительском поведении и&nbsp;экономике
+              </p>
+              <p className={cn(style.contentRight, 'animation')}>
+                Скорость трансформационных процессов стремительно
+                растет&nbsp;&mdash; сегодня&nbsp;компаниям приходится внедрять
+                инновации и&nbsp;адаптировать стратегии в&nbsp;считанные недели.
+                Чтобы понять, какие факторы больше всего повлияли
+                на&nbsp;потребление в&nbsp;ключевых отраслях российского бизнеса
+                и&nbsp;как&nbsp;бизнес приспосабливался к&nbsp;этим переменам,
+                CRM-платформа НОТА МОДУС (холдинг&nbsp;Т1) провела масштабное
+                исследование. В&nbsp;нем приняли участие более 150 директоров
+                по&nbsp;маркетингу и&nbsp;клиентскому сервису
+                в&nbsp;11&nbsp;отраслях экономики.
+              </p>
+            </div>
+            <p className={cn(style.description, 'animation')}>
+              Внутри:&nbsp;ключевые тренды и&nbsp;вызовы последних двух лет,
+              решения, которые принимали компании, с&nbsp;детализацией
+              по&nbsp;отраслям и&nbsp;сегментам&nbsp;B2B/B2C.
             </p>
-            <p className={cn(style.contentRight, 'animation')}>
-              Скорость трансформационных процессов стремительно растет — сегодня
-              компаниям приходится внедрять инновации и адаптировать стратегии в
-              считанные недели. Чтобы понять, какие факторы больше всего
-              повлияли на потребление в ключевых отраслях российского бизнеса и
-              как бизнес приспосабливался к этим переменам, CRM-платформа НОТА
-              МОДУС (холдинг Т1) провела масштабное исследование. В нем приняли
-              участие более 150 директоров по маркетингу и клиентскому сервису в
-              11 отраслях экономики.
-            </p>
-          </div>
-          <p className={cn(style.description, 'animation')}>
-            Внутри: ключевые тренды и вызовы последних двух лет, решения,
-            которые принимали компании, с детализацией по отраслям и сегментам
-            B2B/B2C.
-          </p>
-        </main>
-        <footer className={style.footer}>
-          <a
-            download
-            target='_blank'
-            href='/pdf/НОТА_МОДУС_Взаимодействие_с_клиентами1.pdf'
-            className={style.footerButton}
-          >
-            Скачать исследование
-          </a>
-        </footer>
+          </main>
+          <footer className={style.footer}>
+            <a
+              download
+              target='_blank'
+              href='/pdf/НОТА_МОДУС_Взаимодействие_с_клиентами1.pdf'
+              className={style.footerButton}
+            >
+              Скачать исследование
+            </a>
+          </footer>
+        </div>
       </div>
     </>
   );

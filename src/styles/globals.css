@@ -16,13 +16,6 @@ html {
   font-size: 0.6945vw;
 }
 
-body {
-  height: 100vh;
-  min-width: 100vw;
-  background: url('/background.png'), no-repeat center;
-  background-size: cover;
-}
-
 a {
   font-size: inherit;
   font-family: inherit;
@@ -41,7 +34,7 @@ a {
   transform: translate(0);
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 720px) {
   html {
     font-size: 14px;
   }
