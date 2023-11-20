@@ -5,6 +5,16 @@
   z-index: -1;
 }
 
+.subtitle {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%; /* 15.2px */
+  margin: 0 0 1rem;
+  display: block;
+}
+
 .mainWrapper {
   position: relative;
   min-height: 100vh;
@@ -25,7 +35,37 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 0 0 16rem;
+}
+
+.headerWrapper {
+  margin: 0 0 9.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.headerAgeWrapper {
+  margin: -0.5rem -3.4rem 0 0;
+  color: #f4f4f4;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.headerAge {
+  padding: 0.65rem 0.6rem;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 3.6rem;
+  border: 0.0735rem solid #f4f4f4;
 }
 
 .headerModus {
@@ -44,13 +84,13 @@
 }
 
 .main {
-  margin: 0 auto 4.8rem;
+  margin: 0 auto 0.6rem;
 }
 
 .title {
   color: #fff;
   font-size: 9rem;
-  margin: 0 0 6rem;
+  margin: 0 0 4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 102%; /* 91.8px */
@@ -61,7 +101,7 @@
   display: grid;
   grid-template-columns: 49rem 60rem;
   gap: 4.8rem;
-  margin: 0 auto 4rem;
+  margin: 0 auto 1.6rem;
 }
 
 .contentLeft {
@@ -136,16 +176,8 @@
 }
 
 @media screen and (min-width: 1920px) and (min-height: 1080px) {
-  .header {
-    margin: 0 0 10rem;
-  }
-
   .main {
     margin: 0 0 3.6rem;
-  }
-
-  .title {
-    margin: 0 0 4rem;
   }
 
   .content {
@@ -154,16 +186,8 @@
 }
 
 @media screen and (min-width: 1441px) and (min-height: 850px) {
-  .header {
-    margin: 0 0 10rem;
-  }
-
   .main {
     margin: 0 0 3.6rem;
-  }
-
-  .title {
-    margin: 0 0 4rem;
   }
 
   .content {
@@ -172,16 +196,8 @@
 }
 
 @media screen and (max-width: 1440px) and (max-height: 850px) {
-  .header {
-    margin: 0 0 10rem;
-  }
-
   .main {
     margin: 0 0 3.6rem;
-  }
-
-  .title {
-    margin: 0 0 4rem;
   }
 
   .content {
@@ -190,7 +206,7 @@
 }
 
 @media screen and (max-width: 1400px) and (max-height: 1036px) {
-  .header {
+  .headerWrapper {
     margin: 0 0 8rem;
   }
 
@@ -199,7 +215,6 @@
   }
 
   .title {
-    margin: 0 0 3rem;
     font-size: 8rem;
   }
 
@@ -230,12 +245,12 @@
 
   .description {
     width: 100%;
-    padding: 24px 20px;
-    font-size: 20px;
+    padding: 28px 24px;
+    font-size: 14px;
 
     &:before,
     &:after {
-      width: 40px;
+      width: 50px;
       border: 3.5px solid #fff;
     }
 
@@ -255,47 +270,68 @@
   }
 
   .contentLeft {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .content {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 38px;
     margin: 0 auto 20px;
   }
 
   .wrapper {
-    max-width: 96%;
+    max-width: 94%;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 14px 0 100px;
+  }
+
+  .headerWrapper {
+    margin: 0 0 40px;
+    align-items: flex-start;
+  }
+
+  .subtitle {
+    font-size: 10px;
+    margin: 0 0 10px;
+  }
+
+  .headerAgeWrapper {
+    margin: 4px 0 0;
+    font-size: 9px;
+    gap: 3px;
+  }
+
+  .headerAge {
+    padding: 5px 4.5px;
+    font-size: 9px;
   }
 
   .header {
-    margin: 0 0 40px;
     gap: 5px;
   }
 
   .headerModus {
-    width: 172px;
-    height: 24px;
+    width: 132px;
+    height: 12px;
   }
 
   .headerCloseIcon {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
   }
 
   .headerVedomosty {
-    width: 92px;
-    height: 20px;
+    width: 59px;
+    height: 11px;
   }
 
   .main {
-    margin: 0 auto 24px;
+    margin: 0 auto 42px;
   }
 
   .title {
-    font-size: 45px;
+    font-size: 48px;
+    line-height: 102%;
     margin: 0 0 30px;
   }
 }

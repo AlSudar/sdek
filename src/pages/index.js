@@ -42,7 +42,7 @@ export default function Home() {
     <>
       <Head>
         <title>В поиске контакта</title>
-        {/*   <meta
+        {/* <meta
           key='description'
           name='description'
           content='Что нужно учесть новому поколению предпринимателей'
@@ -61,8 +61,8 @@ export default function Home() {
           key='og:title'
           property='og:title'
           content='12 ошибок бизнеса и как их избежать'
-        />
-        <meta property='og:site_name' content='crpa.vedomosti' />
+        /> */}
+        <meta property='og:site_name' content='test.domen' />
         <meta name='twitter:image' content='/og-image-tg.jpg' />
         <meta property='twitter:image:width' content='1012' />
         <meta property='twitter:image:height' content='506' />
@@ -86,7 +86,7 @@ export default function Home() {
           href='/favicon64.svg'
           sizes='any'
           type='image/svg+xml'
-        />*/}
+        />
       </Head>
       <div className={style.mainWrapper}>
         <Image
@@ -99,37 +99,47 @@ export default function Home() {
           objectFit='cover'
         />
         <div className={cn(myFont.className, style.wrapper)}>
-          <header className={style.header}>
-            <a target='_blank' href=''>
-              <Image
-                width={247}
-                height={23}
-                alt='Логотип Xota и Модус'
-                src='/header/modus.svg'
-                className={style.headerModus}
-                priority
-              />
-            </a>
-            <a target='_blank' href=''>
-              <Image
-                width={20}
-                height={20}
-                src='/header/closeIcon.svg'
-                className={style.headerCloseIcon}
-              />
-            </a>
-            <a target='_blank' href=''>
-              <Image
-                width={110}
-                height={20}
-                alt='Логотип Ведомости'
-                src='/header/vedomosty.svg'
-                className={style.headerVedomosty}
-                priority
-              />
-            </a>
+          <header className={style.headerWrapper}>
+            <div className={style.header}>
+              <a target='_blank' href=''>
+                <Image
+                  width={247}
+                  height={23}
+                  alt='Логотип Xota и Модус'
+                  src='/header/modus.svg'
+                  className={style.headerModus}
+                  priority
+                />
+              </a>
+              <a target='_blank' href=''>
+                <Image
+                  width={20}
+                  height={20}
+                  alt=''
+                  src='/header/closeIcon.svg'
+                  className={style.headerCloseIcon}
+                />
+              </a>
+              <a target='_blank' href=''>
+                <Image
+                  width={110}
+                  height={20}
+                  alt='Логотип Ведомости'
+                  src='/header/vedomosty.svg'
+                  className={style.headerVedomosty}
+                  priority
+                />
+              </a>
+            </div>
+            <p className={style.headerAgeWrapper}>
+              Cпециальный проект
+              <span className={style.headerAge}>16+</span>
+            </p>
           </header>
           <main className={style.main}>
+            <span className={style.subtitle}>
+              Реклама / ООО «Т1 Инновации» / Erid: XXXXXXXXX
+            </span>
             <h1 className={style.title}>В&nbsp;поиске контакта</h1>
             <div className={style.content}>
               <p className={cn(style.contentLeft, 'animation')}>
@@ -159,7 +169,7 @@ export default function Home() {
             <a
               download
               target='_blank'
-              href='/pdf/НОТА_МОДУС_Взаимодействие_с_клиентами1.pdf'
+              href='/pdf/HOTA_MODUS_interaction_with_clients.pdf'
               className={style.footerButton}
             >
               Скачать исследование
