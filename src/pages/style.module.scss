@@ -173,6 +173,8 @@
   padding: 1.6rem 6.6rem;
   border-radius: 2.4rem;
   letter-spacing: 0.028rem;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1920px) and (min-height: 1080px) {
@@ -334,4 +336,23 @@
     line-height: 102%;
     margin: 0 0 30px;
   }
+}
+
+.modalWrapper {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #00000027;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalWrapperClick {
+  position: absolute;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
 }

@@ -28,6 +28,7 @@ export default function Document() {
           type='text/javascript'
           dangerouslySetInnerHTML={{ __html: gtm }}
         />
+        <script src='https://yastatic.net/s3/frontend/forms/_/embed.js'></script>
       </Head>
       <body>
         <div style={{ display: 'none' }}>Разработка: @AllSudar</div>

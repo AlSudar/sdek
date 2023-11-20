@@ -2,7 +2,7 @@ import localFont from 'next/font/local';
 import style from './style.module.scss';
 import cn from 'classnames';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 
 const myFont = localFont({
@@ -21,6 +21,7 @@ const myFont = localFont({
 });
 
 export default function Home() {
+  const [modalVisible, setModalVisible] = useState(false);
   function onEntry(entry) {
     entry.forEach((change) => {
       if (change.isIntersecting) {
@@ -166,16 +167,31 @@ export default function Home() {
             </p>
           </main>
           <footer className={style.footer}>
-            <a
+            <button
               download
               target='_blank'
-              href='/pdf/HOTA_MODUS_interaction_with_clients.pdf'
+              onClick={() => setModalVisible(true)}
               className={style.footerButton}
             >
               Скачать исследование
-            </a>
+            </button>
           </footer>
         </div>
+        {modalVisible && (
+          <div className={style.modalWrapper}>
+            <iframe
+              src='https://forms.yandex.ru/cloud/655b6b3b73cee713557ea13e/?iframe=1'
+              frameBorder='0'
+              name='ya-form-655b6b3b73cee713557ea13e'
+              width='100%'
+              style={{ maxWidth: '600px', position: 'relative', zIndex: '2' }}
+            ></iframe>
+            <div
+              className={style.modalWrapperClick}
+              onClick={() => setModalVisible(false)}
+            ></div>
+          </div>
+        )}
       </div>
     </>
   );
