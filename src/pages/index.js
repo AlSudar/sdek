@@ -167,31 +167,31 @@ export default function Home() {
             </p>
           </main>
           <footer className={style.footer}>
-            <button
-              download
+            <a
+              href='/form'
               target='_blank'
               onClick={() => setModalVisible(true)}
               className={style.footerButton}
             >
               Скачать исследование
-            </button>
+            </a>
           </footer>
         </div>
-        {modalVisible && (
+        {/* {modalVisible && (
           <div className={style.modalWrapper}>
             <iframe
               src='https://forms.yandex.ru/cloud/655b6b3b73cee713557ea13e/?iframe=1'
               frameBorder='0'
               name='ya-form-655b6b3b73cee713557ea13e'
               width='100%'
-              style={{ maxWidth: '600px', position: 'relative', zIndex: '2' }}
+              style={{ maxWidth: '1000px', position: 'relative', zIndex: '2' }}
             ></iframe>
             <div
               className={style.modalWrapperClick}
               onClick={() => setModalVisible(false)}
             ></div>
           </div>
-        )}
+        )} */}
       </div>
     </>
   );
