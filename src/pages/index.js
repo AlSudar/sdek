@@ -95,7 +95,10 @@ export default function Home() {
         <div className={cn(myFont.className, style.wrapper)}>
           <header className={style.headerWrapper}>
             <div className={style.header}>
-              <a target='_blank' href=''>
+              <a
+                target='_blank'
+                href='https://modus.nota.tech/?utm_source=vedomosti&utm_medium=project'
+              >
                 <Image
                   width={247}
                   height={23}
@@ -114,7 +117,7 @@ export default function Home() {
                   className={style.headerCloseIcon}
                 />
               </a>
-              <a target='_blank' href=''>
+              <a target='_blank' href='https://www.vedomosti.ru/'>
                 <Image
                   width={110}
                   height={20}
