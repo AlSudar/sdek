@@ -42,26 +42,20 @@ export default function Home() {
     <>
       <Head>
         <title>В поиске контакта</title>
-        {/* <meta
+        <meta
           key='description'
           name='description'
-          content='Что нужно учесть новому поколению предпринимателей'
+          content='Как лидеры российского бизнеса адаптируются к изменениям
+          в потребительском поведении и экономике'
         />
         <meta
           key='og:description'
           property='og:description'
-          content='Что нужно учесть новому поколению предпринимателей'
+          content='Как лидеры российского бизнеса адаптируются к изменениям
+          в потребительском поведении и экономике'
         />
-        <meta
-          key='title'
-          name='title'
-          content='12 ошибок бизнеса и как их избежать'
-        />
-        <meta
-          key='og:title'
-          property='og:title'
-          content='12 ошибок бизнеса и как их избежать'
-        /> */}
+        <meta key='title' name='title' content='В поиске контакта' />
+        <meta key='og:title' property='og:title' content='В поиске контакта' />
         <meta property='og:site_name' content='nota-modus.vedomosti.ru' />
         <meta name='twitter:image' content='/og-image-tg.jpg' />
         <meta property='twitter:image:width' content='1012' />
