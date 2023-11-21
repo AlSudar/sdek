@@ -21,7 +21,6 @@ const myFont = localFont({
 });
 
 export default function Home() {
-  const [modalVisible, setModalVisible] = useState(false);
   function onEntry(entry) {
     entry.forEach((change) => {
       if (change.isIntersecting) {
@@ -63,7 +62,7 @@ export default function Home() {
           property='og:title'
           content='12 ошибок бизнеса и как их избежать'
         /> */}
-        <meta property='og:site_name' content='test.domen' />
+        <meta property='og:site_name' content='nota-modus.vedomosti.ru' />
         <meta name='twitter:image' content='/og-image-tg.jpg' />
         <meta property='twitter:image:width' content='1012' />
         <meta property='twitter:image:height' content='506' />
@@ -168,30 +167,14 @@ export default function Home() {
           </main>
           <footer className={style.footer}>
             <a
-              href='/form'
+              href='https://forms.yandex.ru/u/655b7b4c02848f163d41a83a/'
               target='_blank'
-              onClick={() => setModalVisible(true)}
               className={style.footerButton}
             >
               Скачать исследование
             </a>
           </footer>
         </div>
-        {/* {modalVisible && (
-          <div className={style.modalWrapper}>
-            <iframe
-              src='https://forms.yandex.ru/cloud/655b6b3b73cee713557ea13e/?iframe=1'
-              frameBorder='0'
-              name='ya-form-655b6b3b73cee713557ea13e'
-              width='100%'
-              style={{ maxWidth: '1000px', position: 'relative', zIndex: '2' }}
-            ></iframe>
-            <div
-              className={style.modalWrapperClick}
-              onClick={() => setModalVisible(false)}
-            ></div>
-          </div>
-        )} */}
       </div>
     </>
   );

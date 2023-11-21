@@ -1,4 +1,4 @@
-A1="workWithoutWork"
+A1="nota-modus.vedomosti.ru"
 
 cd out &&
 
