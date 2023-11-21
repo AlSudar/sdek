@@ -147,10 +147,10 @@ export default function Home() {
                 Чтобы понять, какие факторы больше всего повлияли
                 на&nbsp;потребление в&nbsp;ключевых отраслях российского бизнеса
                 и&nbsp;как&nbsp;бизнес приспосабливался к&nbsp;этим переменам,
-                CRM-платформа НОТА МОДУС (холдинг&nbsp;Т1) провела масштабное
-                исследование. В&nbsp;нем приняли участие более 150 директоров
-                по&nbsp;маркетингу и&nbsp;клиентскому сервису
-                в&nbsp;11&nbsp;отраслях экономики.
+                CRM-платформа НОТА&nbsp;МОДУС&nbsp;(16+)&nbsp;(холдинг&nbsp;Т1)
+                провела масштабное исследование. В&nbsp;нем приняли участие
+                более 150 директоров по&nbsp;маркетингу и&nbsp;клиентскому
+                сервису в&nbsp;11&nbsp;отраслях экономики.
               </p>
             </div>
             <p className={cn(style.description, 'animation')}>
@@ -161,7 +161,7 @@ export default function Home() {
           </main>
           <footer className={style.footer}>
             <a
-              href='https://forms.yandex.ru/u/655b7b4c02848f163d41a83a/'
+              href='https://forms.yandex.ru/cloud/655c5bd7d046882b4d589ad4/'
               target='_blank'
               className={style.footerButton}
             >
