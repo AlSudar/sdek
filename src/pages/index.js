@@ -117,16 +117,14 @@ export default function Home() {
                   className={style.headerCloseIcon}
                 />
               </a>
-              <a target='_blank' href='https://www.vedomosti.ru/'>
-                <Image
-                  width={110}
-                  height={20}
-                  alt='Логотип Ведомости'
-                  src='/header/vedomosty.svg'
-                  className={style.headerVedomosty}
-                  priority
-                />
-              </a>
+              <Image
+                width={110}
+                height={20}
+                alt='Логотип Ведомости'
+                src='/header/vedomosty.svg'
+                className={style.headerVedomosty}
+                priority
+              />
             </div>
             <p className={style.headerAgeWrapper}>
               Cпециальный проект
