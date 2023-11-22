@@ -168,6 +168,13 @@ export default function Home() {
             >
               Скачать исследование
             </a>
+            <a
+              href='/pdf/politica_pdn_2.pdf'
+              target='_blank'
+              className={style.footerLink}
+            >
+              Политика конфиденциальности
+            </a>
           </footer>
         </div>
       </div>

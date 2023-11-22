@@ -5,6 +5,18 @@
   z-index: -1;
 }
 
+.footerLink {
+  display: block;
+  text-decoration: none;
+  margin: 1.8rem auto 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+}
+
 .subtitle {
   color: #fff;
   font-size: 1rem;
@@ -336,23 +348,9 @@
     line-height: 102%;
     margin: 0 0 30px;
   }
-}
 
-.modalWrapper {
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: #00000027;
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modalWrapperClick {
-  position: absolute;
-  z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
+  .footerLink {
+    font-size: 10px;
+    margin: 20px auto 0;
+  }
 }
