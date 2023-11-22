@@ -162,7 +162,7 @@ export default function Home() {
           </main>
           <footer className={style.footer}>
             <a
-              href='https://forms.yandex.ru/cloud/655c5bd7d046882b4d589ad4/'
+              href='https://forms.yandex.ru/cloud/655e0aa984227c13ba57f481/'
               target='_blank'
               className={style.footerButton}
             >
