@@ -133,7 +133,7 @@ export default function Home() {
           </header>
           <main className={style.main}>
             <span className={style.subtitle}>
-              Реклама / ООО «Т1 Инновации» / Erid: XXXXXXXXX
+              Реклама / ООО «Т1 Инновации» / Erid: LdtCKWrhT
             </span>
             <h1 className={style.title}>В&nbsp;поиске контакта</h1>
             <div className={style.content}>
