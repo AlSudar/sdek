@@ -1,0 +1,179 @@
+.wrapper {
+  padding: 8rem 0;
+
+  @media screen and (max-width: 720px) {
+    padding: 30px 0;
+  }
+}
+
+.cols {
+  display: grid;
+  gap: 3.8rem;
+  grid-template-columns: 54rem 1fr;
+  margin: 0 0 5rem;
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0 0 20px;
+  }
+}
+
+.buttons {
+  margin: 0 auto;
+  width: 38.8rem;
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+.linkPrimary {
+  display: block;
+  text-decoration: none;
+  padding: 1.6rem 5.15rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.028rem;
+  border-radius: 2.4rem;
+  background: #6c49d6;
+  cursor: pointer;
+  transition: 0.3s ease-in-out background;
+  text-align: center;
+
+  &:hover {
+    background: #0d0d0d;
+  }
+
+  @media screen and (max-width: 720px) {
+    border-radius: 24px;
+    font-size: 10px;
+    padding: 18.5px 0;
+    width: 100%;
+  }
+}
+
+.linkOutline {
+  display: block;
+  margin: 1rem;
+  color: #0d0d0d;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+  text-align: center;
+
+  @media screen and (max-width: 720px) {
+    font-size: 10px;
+  }
+}
+
+.diagramsWrapper {
+  display: flex;
+  gap: 5rem;
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.diagramsDescriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (max-width: 720px) {
+    gap: 16px;
+  }
+}
+
+.diagramsDescriptionsItem {
+  margin: 0;
+  color: #0d0d0d;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 9px;
+  }
+}
+
+.diagrams {
+  display: flex;
+  align-items: flex-end;
+
+  @media screen and (max-width: 720px) {
+    margin: 0 auto;
+  }
+}
+
+.diagram {
+  color: #0d0d0d;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (max-width: 720px) {
+    font-size: 12px;
+  }
+}
+
+.first {
+  border: 0.2rem solid #6c49d6;
+  background: #fff;
+  width: 8.8rem;
+  height: 8.8rem;
+  z-index: 3;
+
+  @media screen and (max-width: 720px) {
+    border: 2px solid #6c49d6;
+    width: 88px;
+    height: 88px;
+  }
+}
+
+.second {
+  color: #fff;
+  background: #6c49d6;
+  width: 9.8rem;
+  height: 9.8rem;
+  z-index: 2;
+  margin-left: -3.4rem;
+
+  @media screen and (max-width: 720px) {
+    width: 98px;
+    height: 98px;
+    margin-left: -34px;
+  }
+}
+
+.third {
+  width: 16rem;
+  height: 16rem;
+  margin-left: -6.4rem;
+  color: #fff;
+  background: #0d0d0d;
+  z-index: 1;
+
+  @media screen and (max-width: 720px) {
+    width: 160px;
+    height: 160px;
+    margin-left: -64px;
+  }
+}

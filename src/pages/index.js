@@ -2,8 +2,20 @@ import localFont from 'next/font/local';
 import style from './style.module.scss';
 import cn from 'classnames';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Head from 'next/head';
+import { Hero } from '@/components/Hero';
+import { Header } from '@/layouts/Header';
+import { Banner } from '@/components/Banner';
+import { SalesCommunications } from '@/components/SalesCommunications';
+import { AverageBill } from '@/components/AverageBill';
+import { CJM } from '@/components/CJM';
+import { Hyperautomation } from '@/components/Hyperautomation';
+import { Personalizacia } from '@/components/Personalizacia';
+import { B2BSector } from '@/components/b2bSector';
+import { KeyToSustainability } from '@/components/KeyToSustainability';
+import { Footer } from '@/layouts/Footer';
+import useWindowDimensions from '@/utils';
 
 const myFont = localFont({
   src: [
@@ -21,10 +33,11 @@ const myFont = localFont({
 });
 
 export default function Home() {
+  const { width } = useWindowDimensions();
   function onEntry(entry) {
     entry.forEach((change) => {
       if (change.isIntersecting) {
-        change.target.classList.add('element-show');
+        change.target.classList.add('animation-first-show');
       }
     });
   }
@@ -32,11 +45,32 @@ export default function Home() {
   useEffect(() => {
     let options = { threshold: [0.1] };
     let observer = new IntersectionObserver(onEntry, options);
-    let elements = document.querySelectorAll('.animation');
+    let elements = document.querySelectorAll('.animation-first');
+    let elementsFirst = document.querySelectorAll(
+      '.animation-without-transform-first'
+    );
+    let elementsSecond = document.querySelectorAll(
+      '.animation-without-transform-second'
+    );
+    let elementsThird = document.querySelectorAll(
+      '.animation-without-transform-third'
+    );
+    for (let elm of elementsFirst) {
+      observer.observe(elm);
+    }
+
+    for (let elm of elementsSecond) {
+      observer.observe(elm);
+    }
+
+    for (let elm of elementsThird) {
+      observer.observe(elm);
+    }
+
     for (let elm of elements) {
       observer.observe(elm);
     }
-  }, []);
+  }, [width]);
 
   return (
     <>
@@ -82,101 +116,51 @@ export default function Home() {
           type='image/svg+xml'
         />
       </Head>
-      <div className={style.mainWrapper}>
-        <Image
-          width={100}
-          height={100}
-          alt='1'
-          src='/background.png'
-          className={style.background}
-          priority
-          objectFit='cover'
-        />
-        <div className={cn(myFont.className, style.wrapper)}>
-          <header className={style.headerWrapper}>
-            <div className={style.header}>
-              <a
-                target='_blank'
-                href='https://modus.nota.tech/?utm_source=vedomosti&utm_medium=project'
-              >
-                <Image
-                  width={247}
-                  height={23}
-                  alt='Логотип Xota и Модус'
-                  src='/header/modus.svg'
-                  className={style.headerModus}
-                  priority
-                />
-              </a>
-              <a target='_blank' href=''>
-                <Image
-                  width={20}
-                  height={20}
-                  alt=''
-                  src='/header/closeIcon.svg'
-                  className={style.headerCloseIcon}
-                />
-              </a>
-              <Image
-                width={110}
-                height={20}
-                alt='Логотип Ведомости'
-                src='/header/vedomosty.svg'
-                className={style.headerVedomosty}
-                priority
-              />
-            </div>
-            <p className={style.headerAgeWrapper}>
-              Cпециальный проект
-              <span className={style.headerAge}>16+</span>
-            </p>
-          </header>
-          <main className={style.main}>
-            <span className={style.subtitle}>
-              Реклама / ООО «Т1 Инновации» / Erid: LdtCKWrhT
-            </span>
-            <h1 className={style.title}>В&nbsp;поиске контакта</h1>
-            <div className={style.content}>
-              <p className={cn(style.contentLeft, 'animation')}>
-                Как лидеры российского бизнеса адаптируются к&nbsp;изменениям
-                в&nbsp;потребительском поведении и&nbsp;экономике
-              </p>
-              <p className={cn(style.contentRight, 'animation')}>
-                Скорость трансформационных процессов стремительно
-                растет&nbsp;&mdash; сегодня&nbsp;компаниям приходится внедрять
-                инновации и&nbsp;адаптировать стратегии в&nbsp;считанные недели.
-                Чтобы понять, какие факторы больше всего повлияли
-                на&nbsp;потребление в&nbsp;ключевых отраслях российского бизнеса
-                и&nbsp;как&nbsp;бизнес приспосабливался к&nbsp;этим переменам,
-                CRM-платформа НОТА&nbsp;МОДУС&nbsp;(16+)&nbsp;(холдинг&nbsp;Т1)
-                провела масштабное исследование. В&nbsp;нем приняли участие
-                более 150 директоров по&nbsp;маркетингу и&nbsp;клиентскому
-                сервису в&nbsp;11&nbsp;отраслях экономики.
-              </p>
-            </div>
-            <p className={cn(style.description, 'animation')}>
-              Внутри:&nbsp;ключевые тренды и&nbsp;вызовы последних двух лет,
-              решения, которые принимали компании, с&nbsp;детализацией
-              по&nbsp;отраслям и&nbsp;сегментам&nbsp;B2B/B2C.
-            </p>
-          </main>
-          <footer className={style.footer}>
-            <a
-              href='https://forms.yandex.ru/cloud/655e0aa984227c13ba57f481/'
-              target='_blank'
-              className={style.footerButton}
-            >
-              Скачать исследование
-            </a>
-            <a
-              href='/pdf/politica_pdn_2.pdf'
-              target='_blank'
-              className={style.footerLink}
-            >
-              Политика конфиденциальности
-            </a>
-          </footer>
+      <div className={cn(myFont.className)}>
+        <div className={cn(style.wrapper)}>
+          <Image
+            width={100}
+            height={100}
+            alt='1'
+            src='/background.png'
+            className={style.background}
+            priority
+            objectFit='cover'
+          />
+          <Header />
+          <Hero />
         </div>
+        <div className={cn(style.bannerBulgakov)}>
+          <Banner
+            withoutMargin={true}
+            bannerBg='#928CFF'
+            desc='&laquo;Мир меняется, а&nbsp;вместе с&nbsp;ним меняются и&nbsp;предпочтения клиентов. Чтобы быть конкурентоспособным и&nbsp;прибыльным, в&nbsp;наше время важно понимать тренды и&nbsp;изменения, происходящие на&nbsp;рынке и&nbsp;в&nbsp;различных его сегментах, а&nbsp;также обладать знаниями о&nbsp;передовых инструментах, которые позволяют воплощать все задумки и&nbsp;быстро подстраиваться под изменяющиеся внешние условия. Уверен, что наше исследование будет источником вдохновения и&nbsp;полезным инструментом для каждого, кто стремится к&nbsp;развитию своего бизнеса и&nbsp;улучшению качества конверсии воронки продаж&raquo;.'
+            author='Кирилл Булгаков, заместитель <br />генерального директора по&nbsp;программным продуктам и&nbsp;сервисам Холдинга&nbsp;Т1,<br /> управляющий директор российского вендора НОТА (16+) Холдинга&nbsp;Т1'
+            imgAuthorSrc='/banners/bulgakov.png'
+          />
+        </div>
+        <SalesCommunications />
+        <AverageBill />
+        <div className={style.bannerMinaev}>
+          <Banner
+            bannerBg='#6C49D6'
+            desc='&laquo;Рынок онлайн-продаж растет высокими темпами, более&nbsp;30% за&nbsp;2022&nbsp;год, при этом основной вклад в&nbsp;этот рост делают именно крупнейшие маркетплейсы. Их&nbsp;преимущество&nbsp;&mdash; доступность товара для покупателей по&nbsp;всей России, внутренняя и&nbsp;внешняя логистика для продавцов&raquo;.'
+            author='Алексей Минаев, заместитель <br /> управляющего директора компании Ozon'
+          />
+        </div>
+        <CJM />
+        <Hyperautomation />
+        <div className={style.bannerSerova}>
+          <Banner
+            bannerBg='#6C49D6'
+            desc='&laquo;Email рассылки, чат-боты, социальные сети, маркетинг, рекламные компании&nbsp;&mdash; это настолько устоялось, что&nbsp;должны быть уже роботизированные системы&raquo;.'
+            author='Екатерина Серова, директор по&nbsp;маркетингу <br />  компании Major Express'
+          />
+        </div>
+        <Personalizacia />
+        <B2BSector />
+        <KeyToSustainability />
+        <Footer />
       </div>
     </>
   );

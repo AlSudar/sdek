@@ -1,0 +1,23 @@
+.icon {
+  cursor: pointer;
+}
+
+.iconVk {
+  width: 2.4rem;
+  height: 1.3rem;
+
+  @media screen and (max-width: 720px) {
+    width: 24px;
+    height: 13px;
+  }
+}
+
+.iconTg {
+  width: 2.1rem;
+  height: 1.7rem;
+
+  @media screen and (max-width: 720px) {
+    width: 21px;
+    height: 17px;
+  }
+}

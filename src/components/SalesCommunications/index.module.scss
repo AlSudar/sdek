@@ -1,0 +1,376 @@
+.wrapper {
+  padding: 8rem 0 9.6rem;
+
+  @media screen and (max-width: 720px) {
+    padding: 30px 0 40px;
+  }
+}
+
+.circleDiagramsWrapper {
+  margin: 4rem 0;
+  display: flex;
+  gap: 1rem;
+
+  @media screen and (max-width: 720px) {
+    margin: 10px 0 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.circleDiagramsDecs {
+  color: #635bf6;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+  margin: 0;
+
+  @media screen and (max-width: 720px) {
+    font-size: 13px;
+  }
+}
+
+.circleDiagrams {
+  display: flex;
+  gap: 0.9rem;
+
+  @media screen and (max-width: 720px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+
+  @media screen and (max-width: 620px) {
+    margin: 0 auto;
+    grid-template-columns: 140px 140px;
+  }
+}
+
+.diagram {
+  width: 20.5rem;
+  height: 20.5rem;
+  border: 0.2rem solid #6c49d6;
+  position: relative;
+  border-radius: 50%;
+
+  @media screen and (max-width: 720px) {
+    width: 140px;
+    height: 140px;
+    border: 2px solid #6c49d6;
+  }
+}
+
+.diagramTitle {
+  margin: 4rem 0 0;
+  color: #0d0d0d;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 130%;
+
+  @media screen and (max-width: 720px) {
+    margin: 26px 0 0;
+    font-size: 9px;
+  }
+}
+
+.first {
+  width: 9.4rem;
+  height: 9.4rem;
+
+  @media screen and (max-width: 720px) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.second {
+  width: 7.2rem;
+  height: 7.2rem;
+
+  @media screen and (max-width: 720px) {
+    width: 49px;
+    height: 49px;
+  }
+}
+
+.third {
+  width: 3.6rem;
+  height: 3.6rem;
+
+  @media screen and (max-width: 720px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.four {
+  width: 12.8rem;
+  height: 12.8rem;
+
+  @media screen and (max-width: 720px) {
+    width: 88px;
+    height: 88px;
+  }
+}
+
+.first,
+.second,
+.third,
+.four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: -0.2rem;
+  background: #6c49d6;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 152%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 10px;
+  }
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 56rem 59rem;
+  gap: 4.2rem;
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.wrapperDescr {
+  max-width: 59rem;
+
+  @media screen and (max-width: 720px) {
+    max-width: 100%;
+  }
+}
+
+.colsRightSub {
+  margin: 0 0 2.4rem;
+  color: #0d0d0d;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 9px;
+    margin: 0 0 10px;
+  }
+}
+
+.colsRightSubBlue {
+  margin: 0;
+  color: #635bf6;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 13px;
+  }
+}
+
+.statisticWrapper {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+
+  @media screen and (max-width: 720px) {
+    gap: 10px;
+  }
+}
+
+.statistic {
+  position: relative;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.7rem;
+
+  @media screen and (max-width: 720px) {
+    height: 40px;
+    padding-left: 7px;
+  }
+}
+
+.statisticDesc {
+  color: #0d0d0d;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 9px;
+  }
+}
+
+.procent {
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 12px;
+  }
+}
+
+.firstWidth {
+  background: #0d0d0d;
+  width: 41.1rem;
+
+  @media screen and (max-width: 720px) {
+    width: 99%;
+  }
+}
+
+.secondWidth {
+  width: 40.2rem;
+  background: #181638;
+
+  @media screen and (max-width: 720px) {
+    width: 97%;
+  }
+}
+
+.thirdWidth {
+  width: 32.9rem;
+  background: #222058;
+
+  @media screen and (max-width: 720px) {
+    width: 94%;
+  }
+}
+
+.fourWidth {
+  width: 24.6rem;
+  background: #332f7a;
+
+  @media screen and (max-width: 720px) {
+    width: 86%;
+  }
+}
+
+.fiveWidth {
+  width: 21.1rem;
+  background: #4c46c2;
+
+  @media screen and (max-width: 720px) {
+    width: 73%;
+  }
+}
+
+.sixWidth {
+  width: 16.2rem;
+  background: #635bf6;
+
+  @media screen and (max-width: 720px) {
+    width: 56%;
+  }
+}
+
+.sevenWidth {
+  width: 10.1rem;
+  background: #928cff;
+
+  @media screen and (max-width: 720px) {
+    width: 27%;
+  }
+}
+
+.eightWidth {
+  width: 4.3rem;
+  background: #c8c6ff;
+
+  @media screen and (max-width: 720px) {
+    width: 15%;
+  }
+}
+
+.nineWidth {
+  width: 2.9rem;
+  background: transparent;
+  border: 0.2rem solid #635bf6;
+
+  @media screen and (max-width: 720px) {
+    padding-left: 4px;
+    width: 10%;
+    border: 2px solid #635bf6;
+  }
+}
+
+.eightWidth .procent,
+.nineWidth .procent {
+  color: #0d0d0d;
+}
+
+@media screen and (max-width: 720px) {
+  .firstWidth ~ .statisticDesc {
+    color: #fff;
+    position: absolute;
+    right: calc(10px);
+  }
+
+  .secondWidth ~ .statisticDesc {
+    color: #fff;
+    position: absolute;
+    right: calc(10px + 3%);
+  }
+
+  .thirdWidth ~ .statisticDesc {
+    color: #fff;
+    position: absolute;
+    right: calc(10px + 6%);
+  }
+
+  .fourWidth ~ .statisticDesc {
+    color: #fff;
+    position: absolute;
+    right: calc(10px + 14%);
+    max-width: 158px;
+  }
+
+  .fiveWidth ~ .statisticDesc {
+    color: #fff;
+    position: absolute;
+    right: calc(10px + 27%);
+    max-width: 126px;
+  }
+
+  .sixWidth ~ .statisticDesc {
+    color: #fff;
+    position: absolute;
+    right: calc(10px + 44%);
+    max-width: 101px;
+    text-align: right;
+  }
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+
+  @media screen and (max-width: 720px) {
+    margin: 0 0 10px;
+    gap: 4px;
+  }
+}

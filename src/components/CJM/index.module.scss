@@ -1,0 +1,134 @@
+.wrapper {
+  padding: 8.5rem 0 8rem;
+
+  @media screen and (max-width: 720px) {
+    padding: 40px 0 30px;
+  }
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 58rem 53.2rem;
+  gap: 1.8rem;
+  margin: 0 0 4rem;
+
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin: 0 0 20px;
+  }
+}
+
+.statistics {
+  display: flex;
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.first {
+  width: 26.4rem;
+
+  @media screen and (max-width: 720px) {
+    width: 92%;
+  }
+}
+
+.second {
+  width: 24.9rem;
+
+  @media screen and (max-width: 720px) {
+    width: 81%;
+  }
+}
+
+.third {
+  width: 8.5rem;
+
+  @media screen and (max-width: 720px) {
+    width: 30%;
+  }
+}
+
+.first .statistic {
+  background: #0d0d0d;
+}
+
+.second .statistic {
+  background: #6c49d6;
+}
+
+.third .statistic {
+  background: transparent;
+  border: 0.3rem solid #6c49d6;
+
+  @media screen and (max-width: 720px) {
+    border: 3px solid #6c49d6;
+  }
+}
+
+.third .procent {
+  color: #0d0d0d;
+}
+
+.first .statisticDesc,
+.second .statisticDesc {
+  max-width: 23.4rem;
+
+  @media screen and (max-width: 720px) {
+    max-width: 100%;
+  }
+}
+
+.third .statisticDesc {
+  display: block;
+  width: 25rem;
+
+  @media screen and (max-width: 720px) {
+    width: 20rem;
+  }
+}
+
+.statistic {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  height: 4rem;
+
+  @media screen and (max-width: 720px) {
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.procent {
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+
+  @media screen and (max-width: 720px) {
+    font-size: 12px;
+  }
+}
+
+.statisticDesc {
+  display: block;
+  color: #0d0d0d;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  max-width: 23.4rem;
+
+  @media screen and (max-width: 720px) {
+    font-size: 9px;
+    line-height: 11px;
+  }
+}

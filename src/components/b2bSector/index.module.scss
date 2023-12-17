@@ -1,0 +1,18 @@
+.wrapper {
+  padding: 8rem 0;
+  background: #f7f6f6;
+
+  @media screen and (max-width: 720px) {
+    padding: 30px 0;
+  }
+}
+
+.cols {
+  display: flex;
+  gap: 10rem;
+
+  @media screen and (max-width: 720px) {
+    gap: 24px;
+    flex-direction: column;
+  }
+}
