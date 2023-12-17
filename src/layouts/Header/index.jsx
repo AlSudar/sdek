@@ -20,7 +20,7 @@ const Header = () => {
               priority
             />
           </a>
-          <a target='_blank' href=''>
+          <div>
             <Image
               width={20}
               height={20}
@@ -28,7 +28,7 @@ const Header = () => {
               src='/header/closeIcon.svg'
               className={style.headerCloseIcon}
             />
-          </a>
+          </div>
           <Image
             width={110}
             height={20}
