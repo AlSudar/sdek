@@ -5,6 +5,7 @@ import { Description } from '../Description';
 import { BannerWithFigures } from '../BannerWithFigures';
 import cn from 'classnames';
 import { useEffect, useRef } from 'react';
+import useWindowDimensions from '@/utils';
 
 const diagrams = [
   {
@@ -139,6 +140,7 @@ const Diagram = ({ item }) => {
 };
 
 const SalesCommunications = () => {
+  const { width } = useWindowDimensions();
   return (
     <section className={styles.wrapper}>
       <WrapperBlock>
@@ -163,12 +165,13 @@ const SalesCommunications = () => {
           <div className={styles.colsRight}>
             <div className={styles.statistics}>
               {statistic.map((item, id) => {
+                const currentTimeCount = width && width > 720 ? 100 : 50;
                 const currentTime = (id += 1);
                 return (
                   <StatisticItem
                     item={item}
                     key={id}
-                    times={100 * currentTime}
+                    times={currentTimeCount * currentTime}
                   />
                 );
               })}

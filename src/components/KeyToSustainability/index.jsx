@@ -14,7 +14,7 @@ const KeyToSustainability = () => {
   return (
     <section className={styles.wrapper}>
       <WrapperBlock>
-        <Title text='Гибкость — ключ к&nbsp;устойчивости' />
+        <Title title='Гибкость — ключ к&nbsp;устойчивости' />
         <div className={styles.cols}>
           <Description text='Исследование показало, что&nbsp;для&nbsp;многих компаний решения, которые дают возможность быть&nbsp;гибкими в&nbsp;текущих условиях, лежат в&nbsp;области внедрения технологий. Но&nbsp;это&nbsp;только&nbsp;первая половина успеха для&nbsp;бизнеса, вторая&nbsp;&mdash; способность обрабатывать и&nbsp;реагировать на&nbsp;обратную связь от&nbsp;рынка, клиента и&nbsp;окружающей среды, а&nbsp;также решительность для&nbsp;быстрого принятия новых правил игры. Все&nbsp;это&nbsp;вместе&nbsp;становится главным конкурентным преимуществом на&nbsp;современном быстром и&nbsp;клиентоцентричном рынке.' />
           <div className={styles.diagramsWrapper}>

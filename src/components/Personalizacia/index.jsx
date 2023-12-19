@@ -100,8 +100,9 @@ const Personalizacia = () => {
         <div className={styles.statisticsWrapper}>
           <div className={styles.statistics}>
             {statistics.map((item, id) => {
+              const currentTimeCount = width && width > 720 ? 100 : 50;
               const currentCount = (id += 1);
-              const currentTime = 100 * currentCount;
+              const currentTime = currentTimeCount * currentCount;
               return <StatisticItem time={currentTime} item={item} key={id} />;
             })}
           </div>

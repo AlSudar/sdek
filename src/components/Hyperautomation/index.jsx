@@ -153,8 +153,9 @@ const Hyperautomation = () => {
                 if (width && width > 720) {
                   return <StaticItemDesktop item={item} key={id} />;
                 }
+                const currentTimeCount = width && width > 720 ? 100 : 50;
                 const currentId = (id += 1);
-                const currentTime = 100 * currentId;
+                const currentTime = currentTimeCount * currentId;
                 return (
                   <StaticItemMobile key={id} item={item} time={currentTime} />
                 );
