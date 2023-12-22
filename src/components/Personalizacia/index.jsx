@@ -77,7 +77,7 @@ const Personalizacia = () => {
             <div className={styles.diagramsDescriptions}>
               <p className={styles.diagramsDescriptionsItem}>
                 33% респондентов считают важным персонализировать
-                взаимоотношения с&nbsp;клиентом и&nbsp;в&nbsp;секторе&nbsp;B2C
+                взаимоотношения с&nbsp;клиентом и&nbsp;в&nbsp;секторе&nbsp;B2C,
                 и&nbsp;в&nbsp;B2B.
               </p>
               <p className={styles.diagramsDescriptionsItem}>

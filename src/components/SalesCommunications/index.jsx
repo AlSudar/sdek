@@ -14,7 +14,7 @@ const diagrams = [
     size: 'first',
   },
   {
-    title: 'Изменился основной <br /> канал взаимодействия',
+    title: 'Изменился основной канал сбыта',
     procent: '15',
     size: 'second',
   },
