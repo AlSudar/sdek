@@ -7,7 +7,7 @@ const Hero = () => {
     <WrapperBlock>
       <div className={style.main}>
         <span className={style.subtitle}>
-          Реклама / ООО «Т1 Инновации» / Erid: LdtCKWrhT
+          Реклама / ООО «Т1 Инновации» / Erid: LdtCK2KzH
         </span>
         <h1 className={style.title}>В&nbsp;поиске контакта</h1>
         <div className={style.content}>
