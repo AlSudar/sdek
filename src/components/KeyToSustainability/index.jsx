@@ -58,7 +58,11 @@ const KeyToSustainability = () => {
           </div>
         </div>
         <div className={styles.buttons}>
-          <a href='' className={styles.linkPrimary}>
+          <a
+            target='_blank'
+            href='https://forms.yandex.ru/cloud/655e0aa984227c13ba57f481/'
+            className={styles.linkPrimary}
+          >
             Скачать полную версию исследования
           </a>
           <a href='/pdf/politica_pdn_2.pdf' className={styles.linkOutline}>
