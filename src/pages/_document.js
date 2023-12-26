@@ -5,7 +5,7 @@ export default function Document() {
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PRRZNVKH');`;
+  })(window,document,'script','dataLayer','GTM-NZKZC88B');`;
 
   const ym = `
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -14,7 +14,7 @@ export default function Document() {
   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  ym(95375325, "init", {
+  ym(95993937, "init", {
        clickmap:true,
        trackLinks:true,
        accurateTrackBounce:true,
@@ -33,27 +33,27 @@ export default function Document() {
         <div style={{ display: 'none' }}>Разработка: @AllSudar</div>
         <Main />
         <NextScript />
-        {/* <noscript>
+        <noscript>
           <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-PRRZNVKH'
+            src='https://www.googletagmanager.com/ns.html?id=GTM-NZKZC88B'
             height='0'
             width='0'
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
-        </noscript> */}
-        {/* <script
+        </noscript>
+        <script
           type='text/javascript'
           dangerouslySetInnerHTML={{ __html: ym }}
-        /> */}
-        {/* <noscript>
+        />
+        <noscript>
           <div>
             <img
-              src='https://mc.yandex.ru/watch/94470349'
+              src='https://mc.yandex.ru/watch/95993937'
               style={{ position: 'absolute', left: '-9999px' }}
               alt=''
             />
           </div>
-        </noscript> */}
+        </noscript>
       </body>
     </Html>
   );
