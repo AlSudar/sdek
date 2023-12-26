@@ -6,9 +6,7 @@ const Hero = () => {
   return (
     <WrapperBlock>
       <div className={style.main}>
-        <span className={style.subtitle}>
-          Реклама / ООО «Т1 Инновации» / Erid: LdtCK2KzH
-        </span>
+        <span className={style.subtitle}>Реклама / ООО «Т1 Инновации»</span>
         <h1 className={style.title}>В&nbsp;поиске контакта</h1>
         <div className={style.content}>
           <p className={cn(style.contentLeft, 'animation-first')}>
