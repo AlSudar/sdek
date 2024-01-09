@@ -59,7 +59,7 @@ const Footer = () => {
               коммерция; <br className={styles.br} /> CRM — cистема управления
               взаимоотношениями с клиентами.
             </p>
-            <p> Реклама / ООО «Т1 Инновации» </p>
+            <p> Реклама / ООО «Т1 Инновации» / Erid: LdtCK2KzH </p>
           </div>
         </div>
       </WrapperBlock>
