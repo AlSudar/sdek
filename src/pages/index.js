@@ -11,6 +11,7 @@ import { Banner } from '../mainComponent/Banner';
 import { Cards } from '../mainComponent/Cards';
 import { Video } from '../mainComponent/Video';
 import { Footer } from '../layouts/Footer';
+import { Form } from '../layouts/Form';
 
 const myFont = localFont({
 	src: [
@@ -99,6 +100,9 @@ export default function Home() {
 				</section>
 				<section className={cn(styles.wrapper)}>
 					<Video />
+				</section>
+				<section className={cn(styles.wrapper)}>
+					<Form />
 				</section>
 				<Footer />
 			</div>

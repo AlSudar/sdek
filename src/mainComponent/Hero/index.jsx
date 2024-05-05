@@ -15,6 +15,7 @@ const Hero = () => {
         </h1>
       </ContentWrapper>
       <Image
+        priority={true}
         width={670}
         height={574}
         className={styles.hand}
