@@ -1,0 +1,91 @@
+.hero {
+padding: 29rem 0 28.2rem;
+background: linear-gradient(208.66deg, #84B8F6 13.97%, #6D9FF3 78.62%);
+position: relative;
+overflow: hidden;
+
+@media screen and (max-width: 1024px) {
+	padding: 29rem 0 31.2rem;
+}
+
+@media screen and (max-width: 768px) {
+padding: 136px 0 0;
+display: flex;
+flex-direction: column;
+gap: 44px;
+}
+
+@media screen and (max-width: 480px) {
+	padding: 118px 0 24px;
+	gap: 40px;
+		}
+}
+
+.title {
+	font-size: 7rem;
+	line-height: 7.1rem;
+	max-width: 67.3rem;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	text-align: left;
+	color: #fff;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 6rem;
+		font-weight: 400;
+		line-height: 6.12rem;
+		max-width: 57.7rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+font-size: 60px;
+font-weight: 400;
+line-height: 61.2px;
+letter-spacing: 0.01em;
+text-align: left;
+
+	}
+
+	@media screen and (max-width: 620px) {
+font-size: 48px;
+line-height: 48px;
+
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 32px;
+		line-height: 32px;
+
+			}
+}
+
+.colored {
+	color: #095FF0;
+}
+
+.hand {
+	position: absolute;
+	width: 67rem;
+	height: 57.4rem;
+	top: 14.2rem;
+	right: 0;
+
+	@media screen and (max-width: 1024px) {
+		right: -14.1rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin: 0 0 0 auto;
+		position: relative;
+		right: 0;
+		width: calc(100% - 120px);
+		height: auto;
+		top: 0;
+		}
+
+		@media screen and (max-width: 480px) {
+			width: 100%;
+				}
+}

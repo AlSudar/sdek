@@ -1,8 +1,8 @@
-A1="nota-modus.vedomosti.ru"
+A1="nota-union"
 
 cd out &&
 
-mkdir $A1 && 
+mkdir $A1 &&
 
 cp $A1.html $A1/index.html &&
 
