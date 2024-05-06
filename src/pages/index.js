@@ -33,26 +33,26 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>nota проект</title>
+				<title>Новые способы повысить эффективность рекрутмента</title>
 				<meta
 					key='description'
 					name='description'
-					content='nota проект'
+					content='Как рынок HR-tech реагирует на запросы бизнеса'
 				/>
 				<meta
 					key='og:description'
 					property='og:description'
-					content='nota проект'
+					content='Как рынок HR-tech реагирует на запросы бизнеса'
 				/>
 				<meta
 					key='title'
 					name='title'
-					content='nota проект'
+					content='Новые способы повысить эффективность рекрутмента'
 				/>
 				<meta
 					key='og:title'
 					property='og:title'
-					content='nota проект'
+					content='Новые способы повысить эффективность рекрутмента'
 				/>
 				<meta property='og:site_name' content='nota.vedomosti.ru' />
 				<meta property='twitter:image:width' content='1012' />
