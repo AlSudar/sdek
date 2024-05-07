@@ -124,7 +124,7 @@ const Form = () => {
               <input
                 className={cn(styles.input)}
                 name="info"
-                placeholder="Имя Фамилия *"
+                placeholder="Как к вам обращаться? *"
               />
               <span style={{ display: "none" }} className={styles.inputError}>
                 Обязательное поле

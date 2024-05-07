@@ -14,6 +14,12 @@ import { Description } from "../../statyaComponents/Description";
 import { PersonnelShortage } from "../../statyaComponents/PersonnelShortage";
 import { TrainingAdaptation } from "../../statyaComponents/TrainingAdaptation";
 import { AnimationSubtitle } from "../../statyaComponents/AnimationSubtitle";
+import { ContinuedSubstitution } from "../../statyaComponents/ContinuedSubstitution";
+import { HrTech } from "../../statyaComponents/HrTech";
+import { FormationEcosystems } from "../../statyaComponents/FormationEcosystems";
+import { OnPremise } from "../../statyaComponents/OnPremise";
+import { Competitiveness } from "../../statyaComponents/Competitiveness";
+import { useEffect } from "react";
 
 const myFont = localFont({
   src: [
@@ -31,6 +37,24 @@ const myFont = localFont({
 });
 
 const Statya = () => {
+  function onEntry(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        change.target.classList.add("animation-transformY-show");
+      }
+    });
+  }
+
+  useEffect(() => {
+    let options = { threshold: [0.1] };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll(".animation-transformY");
+
+    for (let elm of elements) {
+      observer.observe(elm);
+    }
+  }, []);
+
   return (
     <>
       <Head>
@@ -83,7 +107,7 @@ const Statya = () => {
       </Head>
       <ParallaxProvider>
         <div className={cn(myFont.className)}>
-          <Header />
+          <Header activeLink="/statya" />
           <Hero />
           <section className={styles.wrapperFirst}>
             <ContentWrapper className={styles.firstContent}>
@@ -94,7 +118,7 @@ const Statya = () => {
                 desc="Вырос российский рынок HR-tech в&nbsp;первом полугодии 23&nbsp;года."
               />
               <Description
-                className={styles.firstDesc}
+                className={cn(styles.firstDesc)}
                 text="Российский рынок HR-tech растет на&nbsp;протяжении десяти лет. При этом в&nbsp;2021 рынок вырос <a target='_blank' href='https://smartranking.ru/ru/analytics/hrtech/bum-rossijskogo-hr-tech-k-koncu-2023-goda-itogi-2022-go-na-rynke-hr-reshenij/'>почти вдвое</a> после пандемии COVID, в&nbsp;2022&nbsp;&mdash; на&nbsp;<a href='https://www.forbes.ru/tekhnologii/487673-umnicy-hantinga-kak-izmenilsa-rossijskij-rynok-hr-tech-v-2022-godu' target='_blank'>21%</a>, в&nbsp;первом полугодии 2023&nbsp;&mdash; на&nbsp;<a href='https://smartranking.ru/ru/analytics/hrtech/rost-vyruchki-na-35-chto-proizoshlo-s-rossijskim-hr-tech-v-pervom-polugodii-2023/' target='_blank'>35%</a> к&nbsp;аналогичному периоду 2022-го, а&nbsp;в&nbsp;следующем квартале тренд <a href='https://smartranking.ru/ru/analytics/hrtech/rynok-hr-tech-v-iii-kvartale-2023-vyros-na-39-a-s-uchetom-vyruchki-headhunter-na-52/' target='_blank'>продолжился</a>."
               />
             </ContentWrapper>
@@ -103,6 +127,29 @@ const Statya = () => {
           <section className={styles.whiteWrapper}>
             <AnimationSubtitle text="Обучение и адаптация сотрудников с применением AR- и VR-технологий" />
             <TrainingAdaptation />
+          </section>
+          <section className={cn(stylesWrapper.wrapper, styles.blueWrapper)}>
+            <ContentWrapper>
+              <ContinuedSubstitution />
+            </ContentWrapper>
+          </section>
+          <section className={cn(stylesWrapper.wrapper)}>
+            <ContentWrapper>
+              <HrTech />
+            </ContentWrapper>
+          </section>
+          <section className={cn(stylesWrapper.wrapper, styles.blueWrapper)}>
+            <FormationEcosystems />
+          </section>
+          <section className={cn(stylesWrapper.wrapper)}>
+            <ContentWrapper>
+              <OnPremise />
+            </ContentWrapper>
+          </section>
+          <section className={cn(stylesWrapper.wrapper, styles.blueWrapper)}>
+            <ContentWrapper>
+              <Competitiveness />
+            </ContentWrapper>
           </section>
           <section className={cn(stylesWrapper.wrapper)}>
             <Form />

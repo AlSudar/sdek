@@ -12,6 +12,7 @@ import { Cards } from '../mainComponent/Cards';
 import { Video } from '../mainComponent/Video';
 import { Footer } from '../layouts/Footer';
 import { Form } from '../layouts/Form';
+import { useEffect } from 'react';
 
 const myFont = localFont({
 	src: [
@@ -29,6 +30,23 @@ const myFont = localFont({
 });
 
 export default function Home() {
+	function onEntry(entry) {
+		entry.forEach((change) => {
+			if (change.isIntersecting) {
+				change.target.classList.add('animation-transformY-show');
+			}
+		});
+	}
+
+	useEffect(() => {
+		let options = { threshold: [0.1] };
+		let observer = new IntersectionObserver(onEntry, options);
+		let elements = document.querySelectorAll('.animation-transformY');
+
+		for (let elm of elements) {
+			observer.observe(elm);
+		}
+	}, []);
 
 	return (
 		<>
@@ -62,7 +80,7 @@ export default function Home() {
 				<meta property='vk:image:height' content='228' />
 				<meta property='vk:image' content='/og-image.jpg' />
 				<meta name='twitter:image' content='/og-image.jpg' />
-				<meta property='og:image' content='/og-image.jpg' />
+				<meta property='og:image' content='/og-image.зтп' />
 				<meta property='og:image:width' content='800' />
 				<meta property='og:image:type' content='image/jpeg' />
 				<meta property='og:image:height' content='800' />

@@ -54,3 +54,13 @@ overflow: hidden;
 	margin: 50px 0;
 }
 }
+
+.blueWrapper {
+	background: #F1F4FF;
+	padding: 10rem 0;
+	overflow: hidden;
+
+	@media screen and (max-width: 768px) {
+		padding: 50px 0;
+	}
+}

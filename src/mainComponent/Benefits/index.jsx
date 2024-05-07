@@ -2,6 +2,7 @@ import { Subtitle } from "../../components/Subtitle/index";
 import { ContentWrapper } from "../../layouts/ContentWrapper/index";
 import styles from "./index.module.scss";
 import Image from "next/image";
+import cn from "classnames";
 
 const Benefits = () => {
   return (
@@ -11,7 +12,7 @@ const Benefits = () => {
         title="Как HR-tech помогает бизнесу?"
       />
       <div className={styles.cards}>
-        <div className={styles.card}>
+        <div className={cn(styles.card, "animation-transformY")}>
           <div className={styles.header}>
             <div className={styles.dots} />
             <p className={styles.cardTitle}>
@@ -36,7 +37,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-        <div className={styles.card}>
+        <div className={cn(styles.card, "animation-transformY")}>
           <div className={styles.header}>
             <div className={styles.dots} />
             <p className={styles.cardTitle}>

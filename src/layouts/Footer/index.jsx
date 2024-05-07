@@ -54,7 +54,7 @@ const Footer = () => {
       //     social_button_footer: "tg",
       //   });
 
-      const TG = "https://t.me/share/url?=";
+      const TG = "https://telegram.me/share/url?url=";
       window.open(TG + href, "_blank").focus();
     }
   };

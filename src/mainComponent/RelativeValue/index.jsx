@@ -1,6 +1,7 @@
 import { Subtitle } from "../../components/Subtitle/index";
 import { ContentWrapper } from "../../layouts/ContentWrapper/index";
 import styles from "./index.module.scss";
+import cn from "classnames";
 
 const RelativeValue = () => {
   return (
@@ -9,7 +10,7 @@ const RelativeValue = () => {
         className={styles.title}
         title="НОТА ЮНИОН&nbsp;‒ гибкое решение для&nbsp;автоматизации подбора персонала"
       />
-      <ul className={styles.list}>
+      <ul className={cn(styles.list, "animation-transformY")}>
         <li className={styles.listItem}>
           <p className={styles.listItemTitle}>
             на <span>30%</span> ниже

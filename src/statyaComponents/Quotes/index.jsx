@@ -1,9 +1,24 @@
 import Image from "next/image";
 import styles from "./index.module.scss";
+import cn from "classnames";
 
-const Quotes = ({ text, author, authoDesc, imageSrc }) => {
+const Quotes = ({
+  text,
+  author,
+  authoDesc,
+  imageSrc,
+  type = "white",
+  className = "",
+}) => {
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={cn(
+        styles.wrapper,
+        type === "blue" ? styles.wrapperBlue : "",
+        className,
+        "animation-transformY"
+      )}
+    >
       <div className={styles.quote} />
       <div className={styles.content}>
         <p className={styles.text} dangerouslySetInnerHTML={{ __html: text }} />

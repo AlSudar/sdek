@@ -1,11 +1,20 @@
 .wrapper {
 padding: 21rem 0 15.4rem;
 background-image: url('/statya/hero-background.png');
-background-color: linear-gradient(270deg, rgba(22, 89, 193, 0) 0%, rgba(22, 89, 193, 0.27) 76.95%);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 position: relative;
+
+&::after {
+	content: '';
+	background-color: linear-gradient(270deg, rgba(22, 89, 193, 0) 0%, rgba(22, 89, 193, 0.27) 76.95%);
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	left: 0;
+	top: 0;
+}
 
 @media screen and (max-width: 1024px) {
 	padding: 21rem 0 13rem;

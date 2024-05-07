@@ -1,0 +1,46 @@
+.subtitle {
+	max-width: 57rem;
+	margin: 0 0 5rem;
+
+	@media screen and (max-width: 768px) {
+		max-width: 570px;
+		margin: 0 0 50px;
+	}
+
+	@media screen and (max-width: 480px) {
+		margin: 0 0 30px;
+	}
+	}
+
+.banner {
+	margin: 0;
+}
+
+.content {
+	display: grid;
+	gap: 3rem;
+
+	@media screen and (max-width: 768px) {
+		gap: 30px;
+	}
+}
+
+.contentWrapper {
+	display: grid;
+	grid-template-columns: 1fr 40rem;
+gap: 20rem;
+align-items: center;
+margin: 0 0 10rem;
+
+@media screen and (max-width: 1024px) {
+	grid-template-columns: 1fr 40rem;
+	gap: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+	grid-template-columns: 1fr;
+	gap: 50px;
+	align-items: flex-start;
+	margin: 0 0 50px;
+}
+}

@@ -115,3 +115,14 @@ line-height: 32px;
 line-height: 20px;
 	}
 }
+
+.wrapper.wrapperBlue {
+	background: linear-gradient(208.78deg, #90BAFF 3.64%, #5C8EE0 84.35%);
+	color: #FFFFFF;
+
+
+	.quote  {
+		background: url('/statya/dots-blue.svg') no-repeat center;
+		background-size: contain;
+	}
+}

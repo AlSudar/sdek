@@ -4,6 +4,7 @@ import { Button } from "../../components/Button/index";
 import styles from "./index.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import cn from "classnames";
 
 const Landshaft = () => {
   return (
@@ -15,12 +16,12 @@ const Landshaft = () => {
         className={styles.image}
         alt=""
       />
-      <div className={styles.content}>
+      <div className={cn(styles.content, "animation-transformY")}>
         <Subtitle
           className={styles.subtitle}
           title="Как меняется HR-ландшафт: новые тренды рекрутмент"
         />
-        <p className={styles.text}>
+        <p className={cn(styles.text, "animation-transformY")}>
           В&nbsp;условиях кадрового голода и&nbsp;конкуренции за&nbsp;кандидатов
           работодатели ищут новые источники рабочей силы и&nbsp;способы повысить
           эффективность рекрутмента. Рассказываем, как новые тренды меняют

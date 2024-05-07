@@ -45,7 +45,7 @@ const CARDS_MOCK = [
 
 const Card = ({ item, state, onMouseEnter, onMouseLeave }) => {
   return (
-    <li className={styles.card}>
+    <li className={cn(styles.card, "animation-transformY")}>
       <div
         className={styles.cardVisibleContent}
         onMouseEnter={onMouseEnter}
@@ -89,7 +89,9 @@ const Cards = () => {
         className={styles.title}
         title="Одно окно для&nbsp;рекрутера: система от&nbsp;российского вендора"
       />
-      <p className={styles.subtitle}>Главное о НОТА ЮНИОН</p>
+      <p className={cn(styles.subtitle, "animation-transformY")}>
+        Главное о НОТА ЮНИОН
+      </p>
       <ul className={styles.list}>
         {CARDS_MOCK.map((item, id) => {
           return (

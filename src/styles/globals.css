@@ -7,8 +7,6 @@
 html,
 body {
   max-width: 100vw;
-  /* overflow-x: hidden; */
-  scroll-behavior: smooth !important;
   min-width: 375px;
 }
 
@@ -22,6 +20,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.animation-transformY {
+	opacity: 0;
+	transform: translateY(100px);
+	transition: 0.5s ease-in-out transform, 0.3s ease-in-out opacity;
+}
+
+.animation-transformY-show {
+	opacity: 1;
+	transform: translateY(0);
+  }
 
 @media screen and (max-width: 1024px) {
 	html {
