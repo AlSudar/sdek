@@ -13,7 +13,7 @@ const Banner = () => {
         решения доступнее и&nbsp;помогает заказчику сократить издержки.
         Объясняем, как&nbsp;меняется российский рынок цифровых HR-систем.
       </p>
-      <Link href="/">
+      <Link href="/statya">
         <Button text="Читать статью" className={styles.button} />
       </Link>
     </ContentWrapper>

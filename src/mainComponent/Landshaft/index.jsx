@@ -27,7 +27,7 @@ const Landshaft = () => {
           эффективность рекрутмента. Рассказываем, как новые тренды меняют
           HR-ландшафт и&nbsp;к&nbsp;чему готовиться бизнесу
         </p>
-        <Link href="/">
+        <Link href="/statya">
           <Button text="Читать статью" className={styles.button} />
         </Link>
       </div>
