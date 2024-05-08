@@ -21,6 +21,7 @@ const ContinuedSubstitution = () => {
       <div className={cn(styles.subtitle, "animation-transformY")}>
         <span>Уникальность российских</span>
         <Image
+          className={styles.subtitleImage}
           width={246}
           height={226}
           alt=""
