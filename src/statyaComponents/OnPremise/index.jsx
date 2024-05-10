@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 import { Subtitle } from "../../components/Subtitle/index";
-import { Description } from "../Description";
+import { Description } from "../../components/Description";
 import Image from "next/image";
 import { useWindowDimensions } from "../../utils/index";
 

@@ -89,7 +89,7 @@ const Form = () => {
           .replaceAll(")", "")
           .replaceAll("-", "")
           .replaceAll(" ", "");
-        console.log(currentPhoneValue);
+
         if (currentPhoneValue.length !== 11) {
           formIsValid = false;
           if (item.nextSibling) {

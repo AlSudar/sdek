@@ -1,8 +1,8 @@
 import { Subtitle } from "../../components/Subtitle";
-import { Quotes } from "../Quotes/index";
+import { Quotes } from "../../components/Quotes/index";
 import { ContentWrapper } from "../../layouts/ContentWrapper";
 import styles from "./index.module.scss";
-import { Description } from "../Description";
+import { Description } from "../../components/Description";
 
 const PersonnelShortage = () => {
   return (

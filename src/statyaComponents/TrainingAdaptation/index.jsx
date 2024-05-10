@@ -1,6 +1,6 @@
 import { ContentWrapper } from "../../layouts/ContentWrapper";
-import { Description } from "../Description";
-import { Quotes } from "../Quotes";
+import { Description } from "../../components/Description";
+import { Quotes } from "../../components/Quotes";
 import styles from "./index.module.scss";
 
 const TrainingAdaptation = () => {

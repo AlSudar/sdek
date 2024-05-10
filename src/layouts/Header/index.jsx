@@ -17,7 +17,7 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
       {[
         { link: "/", text: "Главная" },
         { link: "/statya", text: "Статья" },
-        { link: "/trandy", text: "Тренды" },
+        { link: "/trendy", text: "Тренды" },
       ].map((item, id) => {
         return (
           <Link

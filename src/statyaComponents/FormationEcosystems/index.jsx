@@ -1,8 +1,8 @@
 import styles from "./index.module.scss";
 import { Subtitle } from "../../components/Subtitle/index";
-import { Description } from "../Description/index";
-import { AnimationSubtitle } from "../AnimationSubtitle";
-import { Quotes } from "../Quotes";
+import { Description } from "../../components/Description/index";
+import { AnimationSubtitle } from "../../components/AnimationSubtitle";
+import { Quotes } from "../../components/Quotes";
 import { ContentWrapper } from "../../layouts/ContentWrapper";
 
 const FormationEcosystems = () => {

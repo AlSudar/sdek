@@ -1,7 +1,7 @@
 import { Subtitle } from "../../components/Subtitle/index";
-import { Quotes } from "../Quotes";
+import { Quotes } from "../../components/Quotes";
 import { Procent } from "../Procent";
-import { Description } from "../../statyaComponents/Description/index";
+import { Description } from "../../components/Description/index";
 import styles from "./index.module.scss";
 
 const Competitiveness = () => {

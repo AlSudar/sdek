@@ -2,21 +2,22 @@ import styles from "./index.module.scss";
 import { ContentWrapper } from "../../layouts/ContentWrapper/index";
 import Image from "next/image";
 import { Parallax } from "react-scroll-parallax";
+import cn from "classnames";
 
 const Hero = () => {
   return (
     <section className={styles.wrapper}>
       <ContentWrapper className={styles.contentWrapper}>
         <div className={styles.content}>
-          <h1 className={styles.title}>
+          <h1 className={cn(styles.title, "animation-transformY")}>
             Как меняется
             <br /> российский рынок <span>цифровых HR-систем</span>
           </h1>
-          <p className={styles.text}>
+          <p className={cn(styles.text, "animation-transformY")}>
             Решение проблемы кадрового голода, импортозамещение и&nbsp;повышение
             доступности цифровых HR-систем для российских заказчиков.
           </p>
-          <p className={styles.text}>
+          <p className={cn(styles.text, "animation-transformY")}>
             За&nbsp;последние два года бизнес в&nbsp;России столкнулся
             с&nbsp;серьезными вызовами в&nbsp;области управления человеческим
             капиталом: растущий недостаток специалистов, недоступность привычных
