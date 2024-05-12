@@ -120,29 +120,31 @@ const Form = () => {
       <div className={styles.formWrapper}>
         <form ref={formRef} onSubmit={submitForm}>
           <div className={styles.form}>
-            <label className={styles.inputWrapper}>
+            <div className={styles.inputWrapper}>
               <input
                 className={cn(styles.input)}
                 name="info"
                 placeholder="Как к вам обращаться? *"
               />
-              <span className={styles.inputError}>Обязательное поле</span>
-            </label>
-            <label className={styles.inputWrapper}>
+              <span style={{ display: "none" }} className={styles.inputError}>
+                Обязательное поле
+              </span>
+            </div>
+            <div className={styles.inputWrapper}>
               <input
                 className={styles.input}
                 name="company"
                 placeholder="Компания"
               />
-            </label>
-            <label className={styles.inputWrapper}>
+            </div>
+            <div className={styles.inputWrapper}>
               <input
                 className={styles.input}
                 name="position"
                 placeholder="Должность"
               />
-            </label>
-            <label className={styles.inputWrapper}>
+            </div>
+            <div className={styles.inputWrapper}>
               <input
                 className={styles.input}
                 name="mail"
@@ -151,8 +153,8 @@ const Form = () => {
               <span style={{ display: "none" }} className={styles.inputError}>
                 Обязательное поле
               </span>
-            </label>
-            <label className={styles.inputWrapper}>
+            </div>
+            <div className={styles.inputWrapper}>
               <InputMask
                 id="phone"
                 className={styles.input}
@@ -163,7 +165,7 @@ const Form = () => {
               <span style={{ display: "none" }} className={styles.inputError}>
                 Обязательное поле
               </span>
-            </label>
+            </div>
             <div className={styles.checkBoxWrapper}>
               <input
                 className={styles.checkBox}
