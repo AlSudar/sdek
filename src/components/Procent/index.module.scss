@@ -79,3 +79,23 @@ font-size: 22px;
 line-height: 34px;
 }
 }
+
+
+.subDesc {
+margin: 2rem 0 0;
+font-size: 1.6rem;
+line-height: 2.8rem;
+font-weight: 400;
+text-align: left;
+
+@media screen and (max-width: 768px) {
+	margin: 20px 0 0;
+font-size: 16px;
+line-height: 28px;
+}
+
+a {
+	color: #095FF0;
+	text-decoration: underline;
+}
+}

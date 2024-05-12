@@ -9,7 +9,7 @@ import { Form } from "../../layouts/Form";
 import { Hero } from "../../statyaComponents/Hero";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { ContentWrapper } from "../../layouts/ContentWrapper";
-import { Procent } from "../../statyaComponents/Procent";
+import { Procent } from "../../components/Procent/index";
 import { Description } from "../../components/Description/index";
 import { PersonnelShortage } from "../../statyaComponents/PersonnelShortage";
 import { TrainingAdaptation } from "../../statyaComponents/TrainingAdaptation";

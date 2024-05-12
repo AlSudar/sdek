@@ -1,0 +1,153 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+gap: 3rem;
+
+@media screen and (max-width: 768px) {
+	grid-template-columns: 1fr;
+gap: 30px;
+}
+}
+
+.contentSecondContent {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+
+	@media screen and (max-width: 768px) {
+	gap: 30px;
+	}
+}
+
+.titleWrapper {
+margin: 10rem auto;
+display: flex;
+align-items: center;
+
+@media screen and (max-width: 768px) {
+	margin: 50px auto;
+	justify-content: space-between;
+	}
+
+	@media screen and (max-width: 680px) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.titleLeft {
+	width: 31.2rem;
+
+	@media screen and (max-width: 1024px) {
+		width: 25.6rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: fit-content;
+		margin: 0 0 24px;
+		}
+
+		@media screen and (max-width: 680px) {
+			margin: 0 0 18px;
+		}
+}
+
+.titleLeftBig {
+	font-weight: 600;
+	font-size: 13rem;
+	line-height: 16.8rem;
+	text-align: left;
+	color: #095FF0;
+	display: block;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 10.8rem;
+	line-height: 13.8rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 108px;
+	line-height: 138px;
+	}
+}
+
+.titleLeftSmall {
+	display: block;
+	color: #000000B2;
+	font-size: 2.2rem;
+	line-height: 3.8rem;
+	font-weight: 400;
+	text-align: left;
+	margin: -4rem 0 0;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 1.8rem;
+		line-height: 3rem;
+	margin: -3rem 0 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 18px;
+		line-height: 30px;
+	margin: -30px 0 0;
+	}
+}
+
+.titleImage {
+width: 26.8rem;
+height: 23.6rem;
+margin: 0 4.2rem 0 6.2rem;
+
+@media screen and (max-width: 1024px) {
+	width: 22rem;
+height: 19.2rem;
+margin: 0 3.4rem 0 5.2rem;
+}
+
+@media screen and (max-width: 768px) {
+	width: 220px;
+height: 192px;
+margin: 0;
+	}
+
+	@media screen and (max-width: 680px) {
+		margin: 0 0 20px;
+	}
+}
+
+.titleRight {
+	text-transform: uppercase;
+	color: #095FF0;
+	font-size: 4.2rem;
+	line-height: 5.4rem;
+	width: 48.8rem;
+	font-weight: 400;
+	text-align: left;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 3.6rem;
+		line-height: 4.5rem;
+		width: 40.2rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+font-size: 36px;
+line-height: 44px;
+		max-width: 400px;
+		}
+
+		@media screen and (max-width: 680px) {
+			font-size: 30px;
+line-height: 38px;
+		}
+
+		@media screen and (max-width: 350px) {
+			font-size: 26px;
+line-height: 34px;
+		}
+}
+
+.titleContent {
+	max-width: 380px;
+}

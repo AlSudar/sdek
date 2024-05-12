@@ -36,6 +36,11 @@
 		height: 15px;
 	}
 
+	@media screen and (max-width: 350px) {
+		width: 140px;
+		height: 15px;
+	}
+
 	img {
 		width: 100%;
 		height: auto;
@@ -93,6 +98,12 @@ background: url('/header/close.svg') no-repeat center;
 
 	@media screen and (max-width: 480px) {
 		width: 88px;
+height: 18px;
+	}
+
+
+	@media screen and (max-width: 350px) {
+		width: 68px;
 height: 18px;
 	}
 

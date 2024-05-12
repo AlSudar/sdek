@@ -8,6 +8,16 @@ import { Footer } from "../../layouts/Footer";
 import { Form } from "../../layouts/Form";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { useEffect } from "react";
+import { ContentWrapper } from "../../layouts/ContentWrapper";
+import { Description } from "../../components/Description/index";
+import { Hero } from "../../trendyComponents/Hero/index";
+import { Recrutmient } from "../../trendyComponents/Recrutmient/index";
+import { WorkForce } from "../../trendyComponents/WorkForce/index";
+import { StruggleTalents } from "../../trendyComponents/StruggleTalents/index";
+import { GeneralPractice } from "../../trendyComponents/GeneralPractice/index";
+import { DigitalizationHR } from "../../trendyComponents/DigitalizationHR/index";
+import { ODO } from "../../trendyComponents/ODO/index";
+import { MinimumApplicants } from "../../trendyComponents/MinimumApplicants/index";
 
 const myFont = localFont({
   src: [
@@ -33,14 +43,53 @@ const Trendy = () => {
     });
   }
 
+  function onEntryOpacity(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        change.target.classList.add("animation-opacity-show");
+      }
+    });
+  }
+
   useEffect(() => {
     let options = { threshold: [0.1] };
     let observer = new IntersectionObserver(onEntry, options);
+    let observerOpacity = new IntersectionObserver(onEntryOpacity, {
+      threshold: [0.5],
+    });
     let elements = document.querySelectorAll(".animation-transformY");
+    let elementsOpacity = document.querySelectorAll(".animation-opacity");
+    let elementsOpacitySecond = document.querySelectorAll(
+      ".animation-opacitySecond"
+    );
+    let elementsOpacityThird = document.querySelectorAll(
+      ".animation-opacityThird"
+    );
 
     for (let elm of elements) {
       observer.observe(elm);
     }
+
+    for (let elm of elementsOpacity) {
+      observerOpacity.observe(elm);
+    }
+
+    for (let elm of elementsOpacitySecond) {
+      observerOpacity.observe(elm);
+    }
+
+    for (let elm of elementsOpacityThird) {
+      observerOpacity.observe(elm);
+    }
+
+    setTimeout(() => {
+      let elementsAnimationBeforeWidth = document.querySelectorAll(
+        ".animation-transformY-delay"
+      );
+      for (let elm of elementsAnimationBeforeWidth) {
+        observer.observe(elm);
+      }
+    }, 1000);
   }, []);
 
   return (
@@ -96,7 +145,32 @@ const Trendy = () => {
       <ParallaxProvider>
         <div className={cn(myFont.className)}>
           <Header activeLink="/trendy" />
-
+          <Hero />
+          <ContentWrapper className={styles.about}>
+            <Description text="Главным вызовом в&nbsp;области&nbsp;HR для российских компаний в&nbsp;последние годы стал кадровый голод. Основная причина ‒ демографическая яма из-за падения рождаемости в&nbsp;1990-х и&nbsp;начале 2000-х гг.: малочисленное поколение выходит на&nbsp;рынок, заменяя более многочисленное поколение рожденных в&nbsp;1980х. Также среди причин ‒ эмиграция и&nbsp;другие факторы." />
+            <Description text="Применительно к&nbsp;рекрутингу это означает, что конкуренция за&nbsp;рабочую силу уже очень велика и&nbsp;будет только расти. Поиск специалистов потребует больше ресурсов, а&nbsp;найденные соискатели будут более строго оценивать потенциального работодателя. Эта ситуация определяет главные тренды рекрутмента." />
+          </ContentWrapper>
+          <section className={cn(stylesWrapper.wrapper, styles.blueWrapper)}>
+            <MinimumApplicants />
+          </section>
+          <section className={cn(stylesWrapper.wrapper)}>
+            <Recrutmient />
+          </section>
+          <section className={cn(stylesWrapper.wrapper, styles.blueWrapper)}>
+            <WorkForce />
+          </section>
+          <section className={cn(stylesWrapper.wrapper)}>
+            <StruggleTalents />
+          </section>
+          <section className={cn(stylesWrapper.wrapper, styles.blueWrapper)}>
+            <ODO />
+          </section>
+          <section className={cn(stylesWrapper.wrapper)}>
+            <GeneralPractice />
+          </section>
+          <section className={cn(stylesWrapper.wrapper, styles.blueWrapper)}>
+            <DigitalizationHR />
+          </section>
           <section className={cn(stylesWrapper.wrapper)}>
             <Form />
           </section>

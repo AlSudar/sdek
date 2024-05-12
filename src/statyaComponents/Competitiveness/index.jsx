@@ -1,6 +1,6 @@
 import { Subtitle } from "../../components/Subtitle/index";
 import { Quotes } from "../../components/Quotes";
-import { Procent } from "../Procent";
+import { Procent } from "../../components/Procent/index";
 import { Description } from "../../components/Description/index";
 import styles from "./index.module.scss";
 
