@@ -1,9 +1,12 @@
 .wrapper {
-	max-width: 117rem;
+	max-width: 128rem;
+	border-left: 0.1rem solid #0000002B;
+	border-right: 0.1rem solid #0000002B;
 	margin: 0 auto;
 
 	@media screen and (max-width: 1024px) {
-		max-width: 96.4rem;
+		max-width: 80.4rem;
+		padding: 0 3rem;
 	}
 
 	@media screen and (max-width: 768px) {

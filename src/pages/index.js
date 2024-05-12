@@ -3,16 +3,7 @@ import styles from './style.module.scss';
 import cn from 'classnames';
 import Head from 'next/head';
 import { Header } from '../layouts/Header/index';
-import { Hero } from '../mainComponent/Hero';
-import { Landshaft } from '../mainComponent/Landshaft';
-import { RelativeValue } from '../mainComponent/RelativeValue';
-import { Benefits } from '../mainComponent/Benefits';
-import { Banner } from '../mainComponent/Banner';
-import { Cards } from '../mainComponent/Cards';
-import { Video } from '../mainComponent/Video';
 import { Footer } from '../layouts/Footer';
-import { Form } from '../layouts/Form';
-import { useEffect } from 'react';
 
 const myFont = localFont({
 	src: [
@@ -30,23 +21,6 @@ const myFont = localFont({
 });
 
 export default function Home() {
-	function onEntry(entry) {
-		entry.forEach((change) => {
-			if (change.isIntersecting) {
-				change.target.classList.add('animation-transformY-show');
-			}
-		});
-	}
-
-	useEffect(() => {
-		let options = { threshold: [0.1] };
-		let observer = new IntersectionObserver(onEntry, options);
-		let elements = document.querySelectorAll('.animation-transformY');
-
-		for (let elm of elements) {
-			observer.observe(elm);
-		}
-	}, []);
 
 	return (
 		<>
@@ -101,27 +75,6 @@ export default function Home() {
 			<div className={cn(myFont.className)}>
 				<Header />
 				<Hero />
-				<section className={cn(styles.wrapper, styles.firstWrapper)}>
-					<Landshaft />
-				</section>
-				<section className={cn(styles.wrapper)}>
-					<RelativeValue />
-				</section>
-				<section className={cn(styles.wrapper)}>
-					<Benefits />
-				</section>
-				<section className={cn(styles.wrapper)}>
-					<Banner />
-				</section>
-				<section className={cn(styles.wrapper)}>
-					<Cards />
-				</section>
-				<section className={cn(styles.wrapper)}>
-					<Video />
-				</section>
-				<section className={cn(styles.wrapper)}>
-					<Form />
-				</section>
 				<Footer />
 			</div>
 		</>
