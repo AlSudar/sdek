@@ -16,7 +16,7 @@ const Recrutmient = () => {
       />
       <div className={styles.content}>
         <Image
-          className={styles.contentImage}
+          className={cn(styles.contentImage, "animation-transformY")}
           alt=""
           src="/trendy/recrutmient/figure.jpg"
           width={434}

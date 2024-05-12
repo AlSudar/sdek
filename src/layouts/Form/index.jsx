@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Subtitle } from "../../components/Subtitle/index";
 import { ContentWrapper } from "../ContentWrapper/index";
 import styles from "./index.module.scss";

@@ -5,6 +5,7 @@ import { ContentWrapper } from "../../layouts/ContentWrapper";
 import { Description } from "../../components/Description/index";
 import { Quotes } from "../../components/Quotes";
 import Image from "next/image";
+import cn from "classnames";
 
 const StruggleTalents = () => {
   return (
@@ -19,7 +20,7 @@ const StruggleTalents = () => {
             width={434}
             height={334}
             src="/trendy/struggleTalents/figure.png"
-            className={styles.contentImage}
+            className={cn(styles.contentImage, "animation-transformY")}
             alt=""
           />
           <div className={styles.contentDescs}>

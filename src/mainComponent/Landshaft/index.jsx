@@ -13,7 +13,7 @@ const Landshaft = () => {
         src="/main/landshaft/man.png"
         width={570}
         height={552}
-        className={styles.image}
+        className={cn(styles.image, "animation-transformY")}
         alt=""
       />
       <div className={cn(styles.content, "animation-transformY")}>

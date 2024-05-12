@@ -14,17 +14,17 @@ const WorkForce = () => {
       <div className={styles.content}>
         <Description
           text="В&nbsp;прошлые десятилетия в&nbsp;поисках кадров работодатели уже открывали для себя новые сегменты рынка труда, в&nbsp;частности, стали работать с&nbsp;молодежью со&nbsp;студенческой и&nbsp;даже школьной скамьи. Сейчас пора найти новый резерв ‒ &laquo;скрытую рабочую силу&raquo;, ту&nbsp;часть трудоспособного взрослого населения, которую работодатели до&nbsp;сих пор фактически игнорировали. Это, например:<br /><br />
-		  &#183; люди пенсионного и&nbsp;предпенсионного возраста <br />
-		  &#183; с&nbsp;хроническими заболеваниями или инвалидностью <br />
-		  &#183; без образования <br />
-		  &#183;с&nbsp;особенностями коммуникации, обучения, внимания"
+		  &nbsp;&#183;&nbsp;&nbsp;люди пенсионного и&nbsp;предпенсионного возраста <br />
+		  &nbsp;&#183;&nbsp;&nbsp;с&nbsp;хроническими заболеваниями или инвалидностью <br />
+		  &nbsp;&#183;&nbsp;&nbsp;без образования <br />
+		  &nbsp;&#183;&nbsp;с&nbsp;особенностями коммуникации, обучения, внимания"
         />
         <Image
           src="/trendy/workForce/figure.jpg"
           alt=""
           width={434}
           height={396}
-          className={styles.image}
+          className={cn(styles.image, "animation-transformY")}
         />
       </div>
       <h3 className={cn(styles.subtitle, "animation-transformY")}>
@@ -33,7 +33,10 @@ const WorkForce = () => {
       <ul className={styles.list}>
         {DATA_MOCK.map((item, id) => {
           return (
-            <li key={id} className={styles.listItem}>
+            <li
+              key={id}
+              className={cn(styles.listItem, "animation-transformY")}
+            >
               <div>
                 <span className={styles.listItemTitle}>{item.procent}%</span>
                 <span className={styles.listItemSubtitle}>компаний</span>

@@ -2,17 +2,21 @@ import { Subtitle } from "../../components/Subtitle/index";
 import { Description } from "../../components/Description/index";
 import Image from "next/image";
 import styles from "./index.module.scss";
-import { useWindowDimensions } from "../../utils/index";
 import { Quotes } from "../../components/Quotes";
 import cn from "classnames";
 
 const ContinuedSubstitution = () => {
-  const { width } = useWindowDimensions();
   return (
     <>
       <Subtitle className={styles.title} title="Продолжение импортозамещения" />
       <div className={styles.subContentWrapper}>
-        <div className={styles.subContentWrapperImage} />
+        <Image
+          className={cn(styles.image, "animation-transformY")}
+          alt=""
+          width={434}
+          height={334}
+          src="/statya/continuedSubstitution/background.png"
+        />
         <div className={styles.subContent}>
           <Description text="Дальше всего по&nbsp;пути импортозамещения прошли госсектор и&nbsp;госкорпорации. Они одними из&nbsp;первых перешли на&nbsp;отечественные решения в&nbsp;силу требований безопасности." />
           <Description text="&laquo;Почти для всех решений, ранее представленных западными вендорами, уже можно найти российский аналог&raquo;, ‒ считает Корниенко. Однако в&nbsp;некоторых сегментах процесс замещения проходит особенно сложно. В&nbsp;частности, это касается решений на&nbsp;основе предиктивной аналитики: российским разработчикам доступно значительно меньше обученных моделей и&nbsp;массивов информации, чем их&nbsp;западным коллегам." />

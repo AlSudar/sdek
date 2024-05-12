@@ -25,7 +25,7 @@ const Quotes = ({
         <div className={styles.footer}>
           <Image
             src={imageSrc}
-            className={styles.image}
+            className={cn(styles.image)}
             width={86}
             height={86}
             alt={author}

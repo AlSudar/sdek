@@ -3,6 +3,7 @@ import { Subtitle } from "../../components/Subtitle/index";
 import { Description } from "../../components/Description/index";
 import Image from "next/image";
 import { useWindowDimensions } from "../../utils/index";
+import cn from "classnames";
 
 const HrTech = () => {
   const { width } = useWindowDimensions();
@@ -14,7 +15,7 @@ const HrTech = () => {
         height={366}
         width={1170}
         alt=""
-        className={styles.background}
+        className={cn(styles.background, "animation-transformY")}
         src={
           width && width < 480
             ? "/statya/hrTech/background-xs.png"

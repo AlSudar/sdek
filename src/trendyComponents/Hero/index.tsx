@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className={cn(styles.title, "animation-transformY")}>
             Новые тренды <span>рекрутмента</span>
           </h1>
-          <p className={styles.desc}>
+          <p className={cn(styles.desc, "animation-transformY")}>
             Трансформация российской экономики определяет новые требования
             к&nbsp;управлению человеческим капиталом компании. Разбираемся,
             какие тренды влияют на&nbsp;развитие цифрового рекрутмента
