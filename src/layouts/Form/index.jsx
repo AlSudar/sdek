@@ -126,9 +126,7 @@ const Form = () => {
                 name="info"
                 placeholder="Как к вам обращаться? *"
               />
-              <span style={{ display: "none" }} className={styles.inputError}>
-                Обязательное поле
-              </span>
+              <span className={styles.inputError}>Обязательное поле</span>
             </label>
             <label className={styles.inputWrapper}>
               <input
