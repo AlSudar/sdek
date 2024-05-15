@@ -15,9 +15,11 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
         />
       )}
       {[
-        { link: "/", text: "Главная" },
-        { link: "/statya", text: "Статья" },
-        { link: "/trendy", text: "Тренды" },
+        { link: "/", text: "Статья_1" },
+        { link: "/case_1", text: "Кейс_1" },
+        { link: "/case_2", text: "Кейс_2" },
+        { link: "/case_3", text: "Кейс_3" },
+        { link: "/case_4", text: "Кейс_4" },
       ].map((item, id) => {
         return (
           <Link
@@ -59,34 +61,39 @@ const Header = ({ activeLink = "/" }) => {
   return (
     <>
       <header className={styles.header}>
-        <ContentWrapper className={styles.wrapper}>
-          <div className={styles.logoWrapper}>
-            <div className={styles.logo}>
-              <a href="#" target="_blank" className={styles.nota}>
+        <div className={styles.logoWrapper}>
+          <div className={styles.logo}>
+            <a href="#" target="_blank" className={styles.comitas}>
+              <img
+                width={144}
+                height={27}
+                src="/header/comitas-logo.svg"
+                alt="Logo Comitas company"
+              />
+            </a>
+            <div className={styles.closeIcon} />
+            <div className={styles.vedomostyWrapper}>
+              <a href="#" target="_blank" className={styles.vedomosty}>
                 <img
-                  src="/header/nota-logo.svg"
-                  alt="Logo nota and union company"
+                  width={93}
+                  height={18}
+                  src="/header/vedomosti-logo.svg"
+                  alt="Logo vedomosti"
                 />
               </a>
-              <div className={styles.closeIcon} />
-              <div className={styles.vedomostyWrapper}>
-                <a href="#" target="_blank" className={styles.vedomosty}>
-                  <img src="/header/vedomosti-logo.svg" alt="Logo vedomosti" />
-                </a>
-              </div>
+              <span className={styles.ageWrapper}>
+                Специальный проект <span className={styles.age} />
+              </span>
             </div>
-            <span className={styles.ageWrapper}>
-              Специальный проект <span className={styles.age} />
-            </span>
           </div>
-        </ContentWrapper>
+        </div>
       </header>
       {width && width > 768 ? (
         <LinksBlock width={width} activeLink={activeLink} />
       ) : (
         <>
           <button
-            style={{ display: width > 480 ? "block" : "none" }}
+            style={{ display: width > 480 ? "block" : "block" }}
             ref={burgerButtonRef}
             className={styles.burger}
             onClick={() => seVisibleMenu(!visibleMenu)}

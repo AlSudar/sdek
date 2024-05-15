@@ -1,0 +1,150 @@
+.wrapper {
+	background: #000;
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+top: 2.2rem;
+background: url('/main/hero/linesGroup.svg') no-repeat center;
+background-size: contain;
+height: 66.8rem;
+top: 22rem;
+width: 26rem;
+
+@media screen and (max-width: 1024px) {
+	height: 62.2rem;
+	left: -2rem;
+}
+
+@media screen and (max-width: 768px) {
+	display: none;
+}
+	}
+}
+
+.content {
+padding: 15rem 0 36.4rem;
+margin-left: 14rem;
+color: #fff;
+position: relative;
+z-index: 1;
+
+@media screen and (max-width: 1024px) {
+	padding: 15rem 0 26.4rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	margin: 0 30px;
+	padding: 130px 0 605px;
+}
+
+@media screen and (max-width: 480px) {
+	padding: 92px 0 420px;
+}
+
+}
+
+.title {
+	font-size: 12.8rem;
+	line-height: 15.6rem;
+	margin: 0 0 5rem;
+	max-width: 95rem;
+	font-weight: 700;
+	text-align: left;
+	position: relative;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 10rem;
+	line-height: 12.2rem;
+	margin: 0 0 5rem;
+	max-width: 80rem;
+}
+
+@media screen and (max-width: 768px) {
+	font-size: 50px;
+	line-height: 62px;
+	margin: 0 0 30px;
+	max-width: 100%;
+}
+
+&:before {
+	content: '';
+	position: absolute;
+	top: 30px;
+	right: -30px;
+width: 216px;
+height: 176px;
+background: url('/header/header-line.svg') no-repeat center;
+background-size: contain;
+display: none;
+
+@media screen and (max-width: 768px) {
+	display: block;
+}
+
+@media screen and (max-width: 720px) {
+	width: 196px;
+}
+
+@media screen and (max-width: 700px) {
+	width: 176px;
+	top: 15px;
+}
+
+@media screen and (max-width: 660px) {
+	display: none;
+}
+}
+}
+
+.desc {
+	font-size: 1.8rem;
+	line-height: 3rem;
+	max-width: 40rem;
+	font-weight: 400;
+	text-align: left;
+	margin: 0;
+
+	@media screen and (max-width: 768px) {
+		font-size: 18px;
+		line-height: 30px;
+		max-width: 420px;
+	}
+}
+
+
+.background {
+	position: absolute;
+	height: 100%;
+	width: 74.4rem;
+	right: 0;
+	top: 0;
+	background: url('/main/hero/background.jpg') no-repeat center;
+	background-size: contain;
+
+
+		@media screen and (max-width: 1024px) {
+			width: 42rem;
+			right: -1.1rem;
+			background: url('/main/hero/background-lg.jpg') no-repeat center;
+			background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+	width: 100%;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	background: url('/main/hero/background-md.jpg') no-repeat center;
+	background-size: cover;
+	height: 520px;
+}
+
+@media screen and (max-width: 480px) {
+	height: 370px;
+}
+}

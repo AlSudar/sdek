@@ -1,52 +1,49 @@
-import localFont from 'next/font/local';
-import styles from './style.module.scss';
 import cn from 'classnames';
 import Head from 'next/head';
 import { Header } from '../layouts/Header/index';
 import { Footer } from '../layouts/Footer';
+import { Roboto } from 'next/font/google'
+import { Hero } from '../pagesComponents/Main/Hero';
+import { ContentWrapper } from '../layouts/ContentWrapper';
+import styles from './style.module.scss'
+import { ModernEconomy } from '../pagesComponents/Main/ModernEconomy';
+import { WarehouseSpace } from '../pagesComponents/Main/WarehouseSpace';
+import { CausesDeficiency } from '../pagesComponents/Main/CausesDeficiency';
+import { OperatingWarehouses } from '../pagesComponents/Main/OperatingWarehouses';
+import { ActionList } from '../pagesComponents/Main/ActionList';
+import { Cases } from '../pagesComponents/Main/Cases';
+import { AutomatesRussia } from '../pagesComponents/Main/AutomatesRussia';
+import { SectionImage } from '../components/SectionImage/index'
 
-const myFont = localFont({
-	src: [
-		{
-			path: './fonts/TTFirsNeueMedium.woff2',
-			weight: '600',
-			style: 'normal',
-		},
-		{
-			path: './fonts/TTFirsNeueRegular.woff2',
-			weight: '400',
-			style: 'normal',
-		},
-	],
-});
+const myFont = Roboto({ subsets: ["latin"], weight: ['300', '400', '500', '900'] });
 
 export default function Home() {
 
 	return (
 		<>
 			<Head>
-				<title>Новые способы повысить эффективность рекрутмента</title>
+				<title>заголовок</title>
 				<meta
 					key='description'
 					name='description'
-					content='Как рынок HR-tech реагирует на запросы бизнеса'
+					content='описание'
 				/>
 				<meta
 					key='og:description'
 					property='og:description'
-					content='Как рынок HR-tech реагирует на запросы бизнеса'
+					content='описание'
 				/>
 				<meta
 					key='title'
 					name='title'
-					content='Новые способы повысить эффективность рекрутмента'
+					content='заголовок'
 				/>
 				<meta
 					key='og:title'
 					property='og:title'
-					content='Новые способы повысить эффективность рекрутмента'
+					content='заголовок'
 				/>
-				<meta property='og:site_name' content='nota.vedomosti.ru' />
+				<meta property='og:site_name' content='comitas.vedomosti.ru' />
 				<meta property='twitter:image:width' content='1012' />
 				<meta property='twitter:image:height' content='506' />
 				<meta name='twitter:card' content='summary_large_image' />
@@ -54,7 +51,7 @@ export default function Home() {
 				<meta property='vk:image:height' content='228' />
 				<meta property='vk:image' content='/og-image.jpg' />
 				<meta name='twitter:image' content='/og-image.jpg' />
-				<meta property='og:image' content='/og-image.зтп' />
+				<meta property='og:image' content='/og-image.jpg' />
 				<meta property='og:image:width' content='800' />
 				<meta property='og:image:type' content='image/jpeg' />
 				<meta property='og:image:height' content='800' />
@@ -75,6 +72,30 @@ export default function Home() {
 			<div className={cn(myFont.className)}>
 				<Header />
 				<Hero />
+				<div className={styles.content}>
+					<ContentWrapper className={cn(styles.firstBlock, styles.wrapper)}>
+						<ModernEconomy />
+					</ContentWrapper>
+					<ContentWrapper className={cn(styles.secondBlock, styles.wrapper)}>
+						<WarehouseSpace />
+					</ContentWrapper>
+					<ContentWrapper className={cn(styles.thirdBlock, styles.wrapper)}>
+						<CausesDeficiency />
+					</ContentWrapper>
+					<ContentWrapper className={cn(styles.thirdBlock, styles.wrapper)}>
+						<OperatingWarehouses />
+					</ContentWrapper>
+					<ContentWrapper className={cn(styles.fourBlock, styles.wrapper)}>
+						<ActionList />
+					</ContentWrapper>
+					<ContentWrapper className={cn(styles.sixBlock, styles.wrapper)}>
+						<Cases />
+					</ContentWrapper>
+					<ContentWrapper className={cn(styles.sevenBlock, styles.wrapper)}>
+						<AutomatesRussia />
+					</ContentWrapper>
+					<SectionImage imageSrc='/main/automatesRussia/image.jpg' />
+				</div>
 				<Footer />
 			</div>
 		</>

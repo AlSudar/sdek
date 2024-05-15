@@ -11,6 +11,20 @@ padding: 60px 0 16px;
 }
 }
 
+.footerWrapper {
+	max-width: 117rem;
+	margin: 0 auto;
+
+	@media screen and (max-width: 1024px) {
+		max-width: 96.4rem;
+		}
+
+		@media screen and (max-width: 768px) {
+			max-width: 100%;
+			padding: 0 30px
+			}
+}
+
 
 .socialWrapper {
 margin: 0 auto 4.8rem;

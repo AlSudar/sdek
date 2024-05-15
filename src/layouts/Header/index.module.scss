@@ -1,17 +1,18 @@
 .header {
 	position: absolute;
-	top: 3.4rem;
-	left: 50%;
-	transform: translateX(-50%);
+	top: 5.4rem;
+	left: 7.2rem;
 	z-index: 100;
-	width: 100%;
+	width: 133.4rem;
 
 	@media screen and (max-width: 1024px) {
-		top: 3.8;
+		width: 91.8rem;
 	}
 
 	@media screen and (max-width: 768px) {
 		top: 38px;
+		width: auto;
+		left: 30px;
 	}
 }
 
@@ -20,25 +21,33 @@
 	justify-content: space-between;
 }
 
-.nota {
+.comitas {
 	cursor: pointer;
 	display: block;
-	width: 21rem;
-	height: 1.9rem;
+	width: 14.4rem;
+	height: 2.7rem;
 
 	@media screen and (max-width: 768px) {
-		width: 210px;
-		height: 19px;
+		width: 144px;
+		height: 27px;
 	}
 
-	@media screen and (max-width: 480px) {
-		width: 166px;
-		height: 15px;
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
 	}
+}
 
-	@media screen and (max-width: 350px) {
-		width: 140px;
-		height: 15px;
+.vedomosty {
+	display: block;
+	cursor: pointer;
+	width: 9.4rem;
+	height: 1.8rem;
+
+	@media screen and (max-width: 768px) {
+		width: 93px;
+		height: 18px;
 	}
 
 	img {
@@ -49,16 +58,11 @@
 }
 
 .logo {
-gap: 1.6rem;
+gap: 1.2rem;
 display: flex;
-align-items: center;
 justify-content: flex-start;
 
 @media screen and (max-width: 768px) {
-	gap: 16px;
-}
-
-@media screen and (max-width: 480px) {
 	gap: 12px;
 }
 }
@@ -85,73 +89,33 @@ background: url('/header/close.svg') no-repeat center;
 }
 }
 
-.vedomosty {
-	display: block;
-	cursor: pointer;
-	width: 11.1rem;
-	height: 2.2rem;
-
-	@media screen and (max-width: 768px) {
-		width: 111px;
-		height: 22px;
-	}
-
-	@media screen and (max-width: 480px) {
-		width: 88px;
-height: 18px;
-	}
-
-
-	@media screen and (max-width: 350px) {
-		width: 68px;
-height: 18px;
-	}
-
-	img {
-		width: 100%;
-		height: auto;
-		display: block;
-	}
-}
-
 .ageWrapper {
 display: flex;
 align-items: center;
 font-weight: 400;
-gap: 0.8rem;
-font-size: 1.1rem;
-line-height: 1.1rem;
+gap: 1rem;
+font-size: 0.8rem;
+line-height: 0.85rem;
 letter-spacing: 0.01em;
-margin: -0.5rem -3.7rem 0 auto;
+margin: 0 -3.7rem 0 auto;
 color: #fff;
 
 @media screen and (max-width: 768px) {
 	gap: 8px;
-	font-size: 11px;
-	line-height: 11px;
-	letter-spacing: 0.01em;
-	margin: -5px -37px 0 auto;
-}
-
-@media screen and (max-width: 480px) {
 	font-size: 8px;
-	line-height: 8px;
-	margin: -8px -24px 0 auto;
+	line-height: 9px;
+	letter-spacing: 0.01em;
+	margin: 0 -37px 0 auto;
 }
 }
 
 .age {
 	background: url('/header/age.svg') no-repeat center;
-	width: 2.6rem;
-	height: 2.6rem;
+	width: 2rem;
+	height: 2rem;
 	background-size: contain;
 
 	@media screen and (max-width: 768px) {
-		width: 26px;
-		height: 26px;
-	}
-
-	@media screen and (max-width: 480px) {
 		width: 20px;
 		height: 20px;
 	}
@@ -160,13 +124,13 @@ color: #fff;
 .linkWrapper {
 display: flex;
 position: fixed;
-gap: 1rem;
-top: 3.4rem;
-right: 13.5rem;
+gap: 2rem;
+	top: 5.4rem;
+right: 3rem;
 z-index: 200;
 
 @media screen and (max-width: 1024px) {
-	right: 3rem;
+	top: 4.4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -177,7 +141,7 @@ z-index: 200;
 	top: 0;
 	min-height: 100%;
 	min-width: 100%;
-	background: linear-gradient(208.66deg, #84B8F6 13.97%, #6D9FF3 78.62%);
+	background: #000;
 z-index: 300;
 align-items: flex-start;
         justify-content: end;
@@ -185,20 +149,15 @@ align-items: flex-start;
 }
 
 .link {
-padding: 1.2rem 2.2rem;
+padding: 1.2rem 2rem;
 font-size: 1.6rem;
 font-weight: 400;
-line-height: 2.1rem;
-border: 0.1rem solid #D0D0D0;
-border-radius: 0.86rem;
+line-height: 1.8rem;
+border: none;
 text-transform: uppercase;
 text-align: center;
-color: #000;
-background: #FFFFFF94;
-
-@media screen and (max-width: 1024px) {
-	padding: 1.2rem 2.2rem;
-}
+color: #fff;
+background: transparent;
 
 @media screen and (max-width: 768px) {
 	padding: 0;
@@ -216,7 +175,6 @@ text-align: left;
 
 .activeLink {
 color: #fff;
-border: 0.1rem solid #D0D0D0;
 background: #000000;
 
 @media screen and (max-width: 768px) {

@@ -15,8 +15,8 @@ const Authors = () => {
   return (
     <p className={styles.authors}>
       Отдел специальных и нативных проектов
-      <br /> Менеджер по спецпроектам: <b>Наталия Ставрогина</b>, <br />{" "}
-      руководитель отдела продаж рекламы: <b>Юлия Чижикова</b>, <br /> дизайн:
+      <br /> Менеджер по спецпроектам: <b>Анна Андреева</b>, <br /> руководитель
+      отдела продаж рекламы: <b>Юлия Чижикова</b>, <br /> дизайн:
       <b> Иван Крылов</b>
     </p>
   );
@@ -61,7 +61,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <ContentWrapper className={styles.footerWrapper}>
+      <div className={styles.footerWrapper}>
         <div className={styles.socialWrapper}>
           <div className={styles.socialIcons}>
             <div
@@ -98,7 +98,7 @@ const Footer = () => {
             Реклама / ООО «Т1 Инновации» / 16+ / Erid: xxxxxxx
           </span>
         )}
-      </ContentWrapper>
+      </div>
     </footer>
   );
 };

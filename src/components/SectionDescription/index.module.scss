@@ -1,0 +1,13 @@
+.text {
+margin: 0;
+font-size: 1.8rem;
+line-height: 2.6rem;
+font-weight: 400;
+text-align: left;
+color: #000000CC;
+
+@media screen and (max-width: 768px) {
+	font-size: 18px;
+line-height: 26px;
+}
+}

@@ -1,0 +1,85 @@
+.authorWrapper {
+	width: 100%;
+
+	@media screen and (max-width: 1024px) {
+		display: flex;
+		gap: 1.8rem;
+		align-items: center;
+	}
+
+	@media screen and (max-width: 768px) {
+		gap: 18px;
+	}
+}
+
+.imageWrapper {
+	position: relative;
+	padding: 0.9rem;
+
+
+	@media screen and (max-width: 768px) {
+		padding: 10px;
+	}
+}
+
+.image {
+height: 17.4rem;
+width: 17.4rem;
+object-fit: contain;
+
+@media screen and (max-width: 768px) {
+	height: 174px;
+	width: 174px;
+}
+}
+
+.author {
+display: block;
+margin: 3rem 0 1.8rem;
+line-height: 2.9rem;
+font-size: 2.1rem;
+font-weight: 700;
+text-align: left;
+
+@media screen and (max-width: 1024px) {
+	margin: 0 0 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+	margin: 0 0  18px;
+line-height: 29px;
+font-size: 21px;
+}
+}
+
+.authorDesc {
+	display: block;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 400;
+	text-align: left;
+
+	@media screen and (max-width: 768px) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+
+.desc {
+	font-size: 2.6rem;
+	line-height: 3.8rem;
+	margin: 0;
+	font-weight: 500;
+	text-align: left;
+
+	@media screen and (max-width: 768px) {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
