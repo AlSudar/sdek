@@ -1,0 +1,42 @@
+.quoteWrapper {
+	display: grid;
+	grid-template-columns: 22.4rem 72rem;
+	justify-content: space-between;
+	padding: 0 1.3rem 0 4rem;
+
+	@media screen and (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		padding: 0;
+		gap: 30px;
+	}
+
+	@media screen and (max-width: 480px) {
+		gap: 20px;
+	}
+}
+
+.wrapper {
+	padding-top: 6rem;
+	padding-bottom: 12rem;
+display: flex;
+flex-direction: column;
+gap: 6rem;
+
+@media screen and (max-width: 1024px) {
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+	gap: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	gap: 80px;
+}
+
+@media screen and (max-width: 480px) {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	gap: 50px;
+}
+}

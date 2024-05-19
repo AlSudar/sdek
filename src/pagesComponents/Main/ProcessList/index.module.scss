@@ -1,0 +1,111 @@
+.image {
+	width: 50.4rem;
+	height: 32.4rem;
+
+	@media screen and (max-width: 1024px) {
+		margin: 0 0 5rem;
+		width: 56.9rem;
+		height: 36.6rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+		height: auto;
+		max-width: 570px;
+	}
+}
+
+.content {
+	margin-bottom: 6rem;
+	width: calc(100% + 4rem);
+	background: #22313B;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+padding: 3.2rem 5.6rem 4rem 4rem;
+
+@media screen and (max-width: 1024px) {
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	gap: 20px;
+	padding: 32px 30px 36px 40px;
+margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+	padding: 30px;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+}
+
+.item {
+display: grid;
+grid-template-columns: 5.6rem 1fr;
+gap: 3.2rem;
+
+@media screen and (max-width: 768px) {
+	grid-template-columns: 56rpx 1fr;
+gap: 32px;
+
+}
+
+@media screen and (max-width: 480px) {
+	grid-template-columns: 1fr;
+	gap: 16px;
+}
+}
+
+.itemImage {
+	object-fit: cover;
+}
+
+.itemContent {
+padding-bottom: 2rem;
+border-bottom: 0.1rem solid #6A8596;
+color: #fff;
+
+@media screen and (max-width: 768px) {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #6A8596;
+}
+
+}
+
+.itemLastContent {
+padding-bottom: 0;
+border: none;
+}
+
+.itemTitle {
+	font-size: 1.8rem;
+	line-height: 3rem;
+	margin: 0 0 0.6rem;
+	font-weight: 400;
+	text-align: left;
+text-transform: uppercase;
+
+
+@media screen and (max-width: 768px) {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0 0 6px;
+}
+}
+
+.itemList {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	margin: 0 0 0 2rem;
+	font-weight: 400;
+	text-align: left;
+padding: 0;
+
+@media screen and (max-width: 768px) {
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0 0 0 20px;
+}
+}

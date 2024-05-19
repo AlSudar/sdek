@@ -124,14 +124,10 @@ color: #fff;
 .linkWrapper {
 display: flex;
 position: fixed;
-gap: 2rem;
 	top: 5.4rem;
 right: 3rem;
 z-index: 200;
-
-@media screen and (max-width: 1024px) {
-	top: 4.4rem;
-}
+background: #0000004D;
 
 @media screen and (max-width: 768px) {
 	flex-direction: column;

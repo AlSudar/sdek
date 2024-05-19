@@ -1,0 +1,50 @@
+.wrapper {
+	max-width: 40rem;
+
+	@media screen and (max-width: 768px) {
+		max-width: 400px
+	}
+}
+
+.title {
+	display: block;
+margin: 0 0 0.8rem;
+line-height: 9.8rem;
+	font-size: 7rem;
+	font-weight: 900;
+	text-align: left;
+	color: #E30613;
+
+
+	@media screen and (max-width: 768px) {
+		margin: 0 0 8px;
+line-height: 98px;
+	font-size: 70px;
+	}
+
+	@media screen and (max-width: 480px) {
+		margin: 0;
+line-height: 70px;
+	font-size: 50px;
+	}
+}
+
+.desc {
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	font-weight: 400;
+	text-align: left;
+	color: #000000;
+
+	@media screen and (max-width: 768px) {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	@media screen and (max-width: 480px) {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}

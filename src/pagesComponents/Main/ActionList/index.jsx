@@ -15,7 +15,7 @@ const ActionList = () => {
       <ul className={styles.list}>
         {DATA_MOCK.map((item, id) => {
           return (
-            <li className={styles.listItem}>
+            <li className={styles.listItem} key={id}>
               <span className={styles.listItemTitle}>{(id += 1)}</span>
               <p className={styles.listItemDesc}>{item.text}</p>
             </li>

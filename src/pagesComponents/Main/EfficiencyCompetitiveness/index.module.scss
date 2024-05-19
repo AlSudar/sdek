@@ -1,0 +1,250 @@
+.cards {
+	display: grid;
+	grid-template-columns: 1fr;
+gap: 5rem;
+max-width: 45.6rem;
+margin-left: 3rem;
+
+@media screen and (max-width: 1024px) {
+	gap: 3rem;
+max-width: 100%;
+margin-left: 0;
+grid-template-columns: 1fr 1fr;
+margin: 2.8rem 0 0;
+}
+
+@media screen and (max-width: 768px) {
+	gap: 30px;
+margin: 50px 0 0;
+}
+
+@media screen and (max-width: 710px) {
+	gap: 20px;
+}
+
+@media screen and (max-width: 680px) {
+	grid-template-columns: 1fr;
+	max-width: 380px;
+	margin: 50px auto 0;
+}
+}
+
+
+.card {
+padding: 3.4rem 1rem 4.2rem 3.4rem;
+background: #EFEFEF;
+position: relative;
+
+@media screen and (max-width: 1024px) {
+	padding: 3rem 2.8rem 3.6rem;
+}
+
+@media screen and (max-width: 768px) {
+	padding: 30px 28px 36px;
+}
+
+@media screen and (max-width: 700px) {
+	padding: 30px 18px 30px;
+}
+
+@media screen and (max-width: 680px) {
+	min-height: 395px;
+}
+// &::before {
+// 	content: '';
+// 	position: absolute;
+// 	left: -0.4rem;
+// 	top: -0.4rem;
+// 	height: calc(100% + 0.8rem);
+// 	width: calc(100% + 0.8rem);
+// 	background: url('/main/efficiency-competitiveness/group.svg') no-repeat center;
+// 	background-size: contain;
+// }
+}
+
+.cardFirstTitle {
+	font-size: 6.5rem;
+	line-height: 7.9rem;
+	font-weight: 900;
+	text-align: left;
+	color: #E30613;
+display: block;
+margin: 0 0 2rem;
+
+@media screen and (max-width: 768px) {
+	font-size: 50px;
+	line-height: 70px;
+	margin: 0 0 8px
+}
+
+sup {
+	font-size: 3.5rem;
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+	}
+}
+}
+
+.cardFirstDesc {
+margin: 0 0 2.8rem;
+font-size: 1.8rem;
+font-weight: 400;
+line-height: 2.5rem;
+text-align: left;
+color: #000000;
+text-transform: uppercase;
+
+@media screen and (max-width: 768px) {
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 20px;
+}
+}
+
+.cardFirstSubDesc {
+	margin: 0;
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+	font-weight: 400;
+	text-align: left;
+	color: #000000B2;
+	max-width: 30rem;
+
+@media screen and (max-width: 1024px) {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	font-size: 14px;
+	line-height: 20px
+}
+}
+
+.cardSecondTitle {
+	font-size: 3rem;
+	line-height: 5rem;
+	font-weight: 400;
+	text-align: left;
+	color: #000000;
+text-transform: uppercase;
+margin: 0;
+display: block;
+
+@media screen and (max-width: 768px) {
+	font-size: 24px;
+line-height: 30px;
+}
+}
+
+.cardSecondDescItemTitle {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 400;
+	text-align: left;
+	margin: 0 0 1.8rem;
+	display: block;
+
+	@media screen and (max-width: 1024px) {
+		margin: 0;
+		order: 2;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 14px;
+	line-height: 20px;
+	}
+}
+
+.cardSecondDescWrapper {
+margin:  1.8rem 0 3.2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0.8rem;
+
+
+@media screen and (max-width: 1024px) {
+	grid-template-columns: 1fr;
+}
+
+
+@media screen and (max-width: 768px) {
+	margin:  10px 0 20px;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+}
+}
+
+.cardSecondDescItem {
+	@media screen and (max-width: 1024px) {
+		display: flex;
+		flex-direction: row;
+gap: 1.8rem;
+align-items: flex-end;
+justify-content: flex-start;
+margin: 0 auto 0 0;
+width: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		gap: 4px;
+	}
+}
+
+
+.cardSecondDescItemContent {
+	@media screen and (max-width: 1024px) {
+		max-width: 13.4rem;
+		width: 100%;
+	}
+}
+
+.cardSecondDescItemContent strong {
+	font-size: 5rem;
+	line-height: 5rem;
+	font-weight: 900;
+	text-align: left;
+	display: block;
+	color: #E30613;
+}
+
+
+.cardSecondDescItemContent span {
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	font-weight: 500;
+	text-align: left;
+	display: block;
+}
+
+.cardSecondDesc {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 400;
+	text-align: left;
+	color: #000000B2;
+margin: 0;
+max-width: 38rem;
+
+@media screen and (max-width: 1024px) {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	font-size: 14px;
+	line-height: 20px;
+}
+}
+
+.image {
+	margin: 6rem 0 0;
+	width: 73.6rem;
+height: 40.6rem;
+
+@media screen and (max-width: 1024px) {
+	width: 100%;
+	height: auto;
+}
+
+}

@@ -7,7 +7,11 @@ const myFont = Montserrat({ subsets: ["latin"] });
 const SectionImage = ({ text, imageSrc, className }) => {
   return (
     <div
-      style={{ background: `url(${imageSrc})` }}
+      style={{
+        background: `url(${imageSrc})`,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+      }}
       className={cn(styles.imageWrapper, myFont.className, className)}
     >
       {text ? (

@@ -1,0 +1,116 @@
+.desc {
+	margin: 0 0 6rem;
+
+	@media screen and (max-width: 768px) {
+		margin: 0 0 50px
+	}
+}
+
+.subtitle {
+	margin-top: 10rem;
+
+	@media screen and (max-width: 768px) {
+		margin-top: 100px;
+	}
+
+	@media screen and (max-width: 480px) {
+		margin-top: 50px;
+	}
+}
+
+.images {
+margin: 6rem 0 4rem;
+display: grid;
+grid-template-columns: 27rem 1fr;
+
+@media screen and (max-width: 1024px) {
+	margin: 4rem 0;
+}
+
+
+@media screen and (max-width: 768px) {
+	margin: 50px 0 30px;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 600px) {
+	grid-template-columns: 1fr;
+	gap: 42px;
+}
+
+@media screen and (max-width: 480px) {
+	margin: 50px 0 40px;
+}
+}
+
+.imageHeaderWrapper {
+margin: 0 0 3.2rem;
+
+@media screen and (max-width: 768px) {
+	margin: 0 0 32px;
+}
+}
+
+.imageHeaderTitle {
+	font-size: 3rem;
+	line-height: 3rem;
+	font-weight: 400;
+	display: block;
+	text-align: center;
+
+	@media screen and (max-width: 768px) {
+		font-size: 30px;
+		line-height: 30px;
+	}
+}
+
+.imageHeaderText {
+	color: #000000B2;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 400;
+	text-align: center;
+	display: block;
+
+@media screen and (max-width: 768px) {
+	font-size: 14px;
+	line-height: 20px;
+}
+}
+
+.imageFirst {
+width: 27rem;
+height: 23.7rem;
+
+@media screen and (max-width: 768px) {
+	max-width: 270px;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 600px) {
+	display: block;
+	margin: 0 auto;
+}
+}
+
+.imageSecond {
+width: 46.8rem;
+height: 27.2rem;
+
+@media screen and (max-width: 1024px) {
+	width: 50rem;
+height: 27.2rem;
+}
+
+@media screen and (max-width: 768px) {
+	max-width: 440px;
+	width: 100%;
+height: auto;
+}
+
+@media screen and (max-width: 600px) {
+	display: block;
+	margin: 0 auto;
+}
+}

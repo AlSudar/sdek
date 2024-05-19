@@ -1,0 +1,66 @@
+.comment {
+margin-top: 25rem;
+margin-left: 4rem;
+
+@media screen and (max-width: 1024px) {
+	margin-top: 0;
+	margin-bottom: 10rem;
+	margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+	margin-bottom: 30px;
+}
+}
+
+.subtitle {
+margin-top: 10rem;
+
+@media screen and (max-width: 768px) {
+	margin-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+	margin-top: 50px;
+}
+}
+
+.desc {
+margin: 0 0 2rem;
+
+@media screen and (max-width: 1024px) {
+	margin: 0 0 9rem;
+}
+
+@media screen and (max-width: 768px) {
+	margin: 0 0 50px;
+}
+
+@media screen and (max-width: 480px) {
+	margin: 0 0 30px;
+}
+}
+
+.image {
+	display: block;
+	margin-top: 6rem;
+	width: 73.6rem;
+	height: 40.4rem;
+
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+		height: auto;
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-top: 100px;
+			}
+
+			@media screen and (max-width: 480px) {
+				margin-top: 30px;
+					}
+				}

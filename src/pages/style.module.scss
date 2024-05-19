@@ -21,6 +21,59 @@ padding-bottom: 6rem;
 }
 }
 
+.twelveBlock {
+	padding-left: 4rem;
+	max-width: 124rem;
+	align-items: flex-end;
+	padding-top: 6rem;
+	padding-bottom: 10rem;
+
+	@media screen and (max-width: 1024px) {
+		max-width: 78.4rem;
+		gap: 10rem !important;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-left: 30px;
+		gap: 50px !important;
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding-left: 30px;
+		gap: 30px !important;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+.eightBlock, .tenBlock, .thirteenthBlock, .fifteenthBlock {
+	padding-top: 10rem;
+padding-bottom: 6rem;
+
+@media screen and (max-width: 768px) {
+	padding-top: 100px;
+	padding-bottom: 42px;
+}
+
+@media screen and (max-width: 480px) {
+	padding-top: 50px;
+}
+}
+
+.fifteenthBlock {
+	@media screen and (max-width: 768px) {
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+}
+
 .secondBlock {
 	padding-top: 12rem;
 padding-bottom: 12rem;
@@ -56,12 +109,17 @@ height: 100%;
 
 .wrapper, .sixBlock {
 display: grid;
-grid-template-columns: 1fr 74.2rem;
+grid-template-columns: 1fr 69.6rem;
+padding-right: 4rem;
 gap: 4rem;
 
 @media screen and (max-width: 1024px) {
 	grid-template-columns: 1fr;
 	gap: 0;
+}
+
+@media screen and (max-width: 768px) {
+	padding-right: 30px;
 }
 }
 
@@ -114,5 +172,34 @@ padding: 14rem 0 6rem;
 @media screen and (max-width: 480px) {
 	padding-bottom: 42px;
 	padding-top: 50px;
+}
+}
+
+.nineBlock  {
+	@media screen and (max-width: 1024px) {
+		grid-template-columns: 36.2rem 1fr;
+gap: 0;
+	}
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 1fr;
+gap: 40px;
+	}
+
+	@media screen and (max-width: 480px) {
+gap: 30px;
+	}
+}
+
+.seventeenBlock {
+padding-top: 10rem;
+padding-bottom: 10rem;
+}
+
+.eighteenBlock {
+padding-bottom: 11rem;
+
+@media screen and (max-width: 768px) {
+	padding-bottom: 100px;
 }
 }
