@@ -42,10 +42,12 @@ const AnimationScklad = () => {
       onMouseLeave={() => width && width > 768 && onHanlderMouseLeave()}
     >
       <button
+        onTouchStart={() => {
+          width && width < 768 && onHanlderMouseEnter();
+        }}
         style={{ left: `${imageWidth}%` }}
         className={styles.button}
-        onMouseDownCapture={() => width && width < 768 && onHanlderMouseEnter()}
-        onMouseUpCapture={() => width && width < 768 && onHanlderMouseLeave()}
+        onTouchEnd={() => width && width < 768 && onHanlderMouseLeave()}
       ></button>
       <div className={styles.firstImage} />
       <div style={{ width: `${imageWidth}%` }} className={styles.secondImage} />

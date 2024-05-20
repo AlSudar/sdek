@@ -85,6 +85,7 @@ const ProcessList = () => {
         src="/main/processList/figure.jpg"
         width={504}
         height={324}
+        loading="lazy"
       />
       <div>
         <div className={styles.content}>

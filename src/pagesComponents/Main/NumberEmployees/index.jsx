@@ -25,6 +25,7 @@ const NumberEmployees = () => {
           className={styles.image}
           width={736}
           height={404}
+          loading="lazy"
         />
       </div>
     </>

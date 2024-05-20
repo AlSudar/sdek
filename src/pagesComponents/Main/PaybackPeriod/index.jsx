@@ -45,6 +45,7 @@ const PaybackPeriod = () => {
 		  Максимальную эффективность роботы показывают на&nbsp;складах со&nbsp;средней и&nbsp;даже низкой оборачиваемостью."
         />
         <Image
+          loading="lazy"
           alt=""
           src="/main/paybackPeriod/image.jpg"
           className={styles.image}

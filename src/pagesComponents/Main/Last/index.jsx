@@ -81,6 +81,7 @@ const Last = () => {
               src="/main/last/first-figure.png"
               className={styles.imageFirst}
               alt=""
+              loading="lazy"
             />
           </div>
           <div className={styles.imageWrapper}>

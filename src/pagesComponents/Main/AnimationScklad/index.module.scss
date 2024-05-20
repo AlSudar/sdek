@@ -112,7 +112,7 @@ max-width: 26.6rem;
 .button {
 	position: absolute;
 	top: 50%;
-	transform: translate(-50%, -30px);
+	transform: translate(-18px, -50%);
 	display: none;
 	width: 36px;
 	height: 36px;
@@ -128,5 +128,6 @@ max-width: 26.6rem;
 	@media screen and (max-width: 480px) {
 		width: 32px;
 		height: 32px;
+		transform: translate(-16px, -50%);
 	}
 }

@@ -75,6 +75,7 @@ const EfficiencyCompetitiveness = () => {
         />
         {width && width < 1024 && <Cards />}
         <Image
+          loading="lazy"
           className={styles.image}
           src="/main/efficiency-competitiveness/image.jpg"
           alt=""

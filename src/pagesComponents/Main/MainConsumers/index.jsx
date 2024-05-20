@@ -16,6 +16,7 @@ const MainConsumers = () => {
           src="/main/mainConsumers/image.jpg"
           alt=""
           className={styles.image}
+          loading="lazy"
         />
       </div>
     </>
