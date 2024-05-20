@@ -26,6 +26,7 @@ import { ProcessList } from '../pagesComponents/Main/ProcessList';
 import { PaybackPeriod } from '../pagesComponents/Main/PaybackPeriod';
 import { ImportSubstitution } from '../pagesComponents/Main/ImportSubstitution';
 import { Last } from '../pagesComponents/Main/Last';
+import { AnimationScklad } from '../pagesComponents/Main/AnimationScklad';
 
 const myFont = Roboto({ subsets: ["latin"], weight: ['300', '400', '500', '900'] });
 
@@ -88,10 +89,11 @@ export default function Home() {
 					<ContentWrapper className={cn(styles.firstBlock, styles.wrapper)}>
 						<ModernEconomy />
 					</ContentWrapper>
+					<AnimationScklad />
 					<ContentWrapper className={cn(styles.secondBlock, styles.wrapper)}>
 						<WarehouseSpace />
 					</ContentWrapper>
-					<ContentWrapper className={cn(styles.thirdBlock, styles.wrapper)}>
+					<ContentWrapper className={cn(styles.firtThirdBlock, styles.wrapper)}>
 						<CausesDeficiency />
 					</ContentWrapper>
 					<ContentWrapper className={cn(styles.thirdBlock, styles.wrapper)}>

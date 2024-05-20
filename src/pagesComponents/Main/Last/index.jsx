@@ -3,8 +3,51 @@ import { SectionSubtitle } from "../../../components/SectionSubtitle";
 import { Quote } from "../../../components/Quote/index";
 import styles from "./index.module.scss";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const MAX_FIRST_VALUE = 7000;
+const MAX_SECOND_VALUE = 25000;
 
 const Last = () => {
+  const [firstValue, setFirstValue] = useState(1);
+  const [secondValue, setSecondValue] = useState(1);
+
+  function onEntry(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        const intervalFirstId = setInterval(() => {
+          setFirstValue((prevValue) => {
+            if (prevValue >= MAX_FIRST_VALUE) {
+              clearInterval(intervalFirstId);
+              return MAX_FIRST_VALUE;
+            }
+            return (prevValue += 1);
+          });
+        }, 10);
+
+        const intervalSecondId = setInterval(() => {
+          setSecondValue((prevValue) => {
+            if (prevValue >= MAX_SECOND_VALUE) {
+              clearInterval(intervalSecondId);
+              return MAX_SECOND_VALUE;
+            }
+            return (prevValue += 1);
+          });
+        }, 10);
+      }
+    });
+  }
+
+  useEffect(() => {
+    let options = { threshold: [0.1] };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll("#animation-numbers");
+
+    for (let elm of elements) {
+      observer.observe(elm);
+    }
+  }, []);
+
   return (
     <>
       <div />
@@ -28,7 +71,7 @@ const Last = () => {
           <div className={styles.imageWrapper}>
             <div className={styles.imageHeaderWrapper}>
               <span className={styles.imageHeaderTitle}>
-                S = <span id="animation-numbers">7000</span> КВ. М.
+                S = <span id="animation-numbers">{firstValue}</span> КВ. М.
               </span>
               <span className={styles.imageHeaderText}>50 000 паллетомест</span>
             </div>
@@ -43,7 +86,7 @@ const Last = () => {
           <div className={styles.imageWrapper}>
             <div className={styles.imageHeaderWrapper}>
               <span className={styles.imageHeaderTitle}>
-                S = <span id="animation-numbers">25000</span> КВ. М.
+                S = <span id="animation-numbers">{secondValue}</span> КВ. М.
               </span>
               <span className={styles.imageHeaderText}>50 000 паллетомест</span>
             </div>

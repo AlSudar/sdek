@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SectionDescription } from "../../../components/SectionDescription/index";
 import styles from "./index.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 const DATA_MOCK = [
   { text: "Рациональное использование площадей" },
@@ -15,10 +16,12 @@ const ActionList = () => {
       <ul className={styles.list}>
         {DATA_MOCK.map((item, id) => {
           return (
-            <li className={styles.listItem} key={id}>
-              <span className={styles.listItemTitle}>{(id += 1)}</span>
-              <p className={styles.listItemDesc}>{item.text}</p>
-            </li>
+            <Fade reverse={false} key={id}>
+              <li className={styles.listItem}>
+                <span className={styles.listItemTitle}>{(id += 1)}</span>
+                <p className={styles.listItemDesc}>{item.text}</p>
+              </li>
+            </Fade>
           );
         })}
       </ul>

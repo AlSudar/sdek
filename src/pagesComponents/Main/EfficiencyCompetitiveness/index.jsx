@@ -3,49 +3,58 @@ import { SectionSubtitle } from "../../../components/SectionSubtitle";
 import Image from "next/image";
 import styles from "./index.module.scss";
 import useWindowDimensions from "../../../utils";
+import { Fade } from "react-awesome-reveal";
 
 const Cards = () => {
   return (
     <div className={styles.cards}>
       <div className={styles.card}>
-        <span className={styles.cardFirstTitle}>
-          7,5&nbsp;млн&nbsp;м<sup>2</sup>
-        </span>
-        <p className={styles.cardFirstDesc}>
-          общий объем заключенных сделок в&nbsp;качественных складских объектах
-          на&nbsp;территории России составил&nbsp;По итогам четырех кварталов
-          2023&nbsp;года.
-        </p>
-        <p className={styles.cardFirstSubDesc}>
-          Это в&nbsp;2,8 раза превышает аналогичный показатель предшествующего
-          года и&nbsp;в&nbsp;1,6 раза&nbsp;&mdash; рекордного 2021.
-        </p>
+        <div className={styles.cardTop} />
+        <div className={styles.cardBottom} />
+        <Fade reverse={false}>
+          <span className={styles.cardFirstTitle}>
+            7,5&nbsp;млн&nbsp;м<sup>2</sup>
+          </span>
+          <p className={styles.cardFirstDesc}>
+            общий объем заключенных сделок в&nbsp;качественных складских
+            объектах на&nbsp;территории России составил&nbsp;По итогам четырех
+            кварталов 2023&nbsp;года.
+          </p>
+          <p className={styles.cardFirstSubDesc}>
+            Это в&nbsp;2,8 раза превышает аналогичный показатель предшествующего
+            года и&nbsp;в&nbsp;1,6 раза&nbsp;&mdash; рекордного 2021.
+          </p>
+        </Fade>
       </div>
       <div className={styles.card}>
-        <span className={styles.cardSecondTitle}>общий объем сделок</span>
-        <div className={styles.cardSecondDescWrapper}>
-          <div className={styles.cardSecondDescItem}>
-            <span className={styles.cardSecondDescItemTitle}>
-              Москва <br /> и&nbsp;Московская область
-            </span>
-            <div className={styles.cardSecondDescItemContent}>
-              <strong>43%</strong> <span>(3,3 млн кв. м)</span>
+        <div className={styles.cardTop} />
+        <div className={styles.cardBottom} />
+        <Fade reverse={false}>
+          <span className={styles.cardSecondTitle}>общий объем сделок</span>
+          <div className={styles.cardSecondDescWrapper}>
+            <div className={styles.cardSecondDescItem}>
+              <span className={styles.cardSecondDescItemTitle}>
+                Москва <br /> и&nbsp;Московская область
+              </span>
+              <div className={styles.cardSecondDescItemContent}>
+                <strong>43%</strong> <span>(3,3 млн кв. м)</span>
+              </div>
+            </div>
+            <div className={styles.cardSecondDescItem}>
+              <span className={styles.cardSecondDescItemTitle}>
+                Санкт-Петербург <br /> и&nbsp;Ленинградскую область
+              </span>
+              <div className={styles.cardSecondDescItemContent}>
+                <strong>13%</strong> <span>(970 тыс. кв. м)</span>
+              </div>
             </div>
           </div>
-          <div className={styles.cardSecondDescItem}>
-            <span className={styles.cardSecondDescItemTitle}>
-              Санкт-Петербург <br /> и&nbsp;Ленинградскую область
-            </span>
-            <div className={styles.cardSecondDescItemContent}>
-              <strong>13%</strong> <span>(970 тыс. кв. м)</span>
-            </div>
-          </div>
-        </div>
-        <p className={styles.cardSecondDesc}>
-          Показатель доли вакантных площадей продолжил снижение,
-          и&nbsp;по&nbsp;итогам 2023 года достиг рекордно низкого
-          значения&nbsp;&mdash; на&nbsp;уровне ниже 0,1%.
-        </p>
+          <p className={styles.cardSecondDesc}>
+            Показатель доли вакантных площадей продолжил снижение,
+            и&nbsp;по&nbsp;итогам 2023 года достиг рекордно низкого
+            значения&nbsp;&mdash; на&nbsp;уровне ниже 0,1%.
+          </p>
+        </Fade>
       </div>
     </div>
   );
