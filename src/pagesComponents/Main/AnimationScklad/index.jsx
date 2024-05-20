@@ -11,11 +11,21 @@ const AnimationScklad = () => {
   const [imageWidth, setImageWidth] = useState(4);
   const { width } = useWindowDimensions();
 
-  const onHadnlerMouseMove = useCallback((event) => {
-    const procentX = Math.round(100 / (window.innerWidth / event.clientX));
-    setImageWidth(procentX);
-    // console.log(procentX);
-  }, []);
+  const onHadnlerMouseMove = useCallback(
+    (event) => {
+      if (width && width < 768) {
+        const procentX = Math.round(
+          100 / (window.innerWidth / event.touches[0].clientX)
+        );
+        setImageWidth(procentX);
+      } else {
+        const procentX = Math.round(100 / (window.innerWidth / event.clientX));
+        setImageWidth(procentX);
+      }
+      // console.log(procentX);
+    },
+    [width]
+  );
 
   useEffect(() => {
     if (window) {
@@ -35,6 +45,18 @@ const AnimationScklad = () => {
     }
   };
 
+  const onHanlderTouchEnter = () => {
+    if (ref.current) {
+      ref.current.addEventListener("touchmove", onHadnlerMouseMove);
+    }
+  };
+
+  const onHanlderTouchLeave = () => {
+    if (ref.current) {
+      ref.current.removeEventListener("touchmove", onHadnlerMouseMove);
+    }
+  };
+
   return (
     <section
       className={cn(styles.wrapper, myFont.className)}
@@ -43,11 +65,11 @@ const AnimationScklad = () => {
     >
       <button
         onTouchStart={() => {
-          width && width < 768 && onHanlderMouseEnter();
+          width && width < 768 && onHanlderTouchEnter();
         }}
         style={{ left: `${imageWidth}%` }}
         className={styles.button}
-        onTouchEnd={() => width && width < 768 && onHanlderMouseLeave()}
+        onTouchEnd={() => width && width < 768 && onHanlderTouchLeave()}
       ></button>
       <div className={styles.firstImage} />
       <div style={{ width: `${imageWidth}%` }} className={styles.secondImage} />
