@@ -4,6 +4,9 @@ import styles from "./index.module.scss";
 import cn from "classnames";
 import useWindowDimensions from "../../utils/index";
 import { useEffect, useRef, useState } from "react";
+import { Montserrat } from "next/font/google";
+
+const myFont = Montserrat({ subsets: ["latin"] });
 
 const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
   return (
@@ -15,7 +18,8 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
         />
       )}
       {[
-        { link: "/", text: "Статья_1" },
+        { link: "/", text: "Главная" },
+        { link: "/statya", text: "Статья_1" },
         { link: "/case_1", text: "Кейс_1" },
         { link: "/case_2", text: "Кейс_2" },
         { link: "/case_3", text: "Кейс_3" },
@@ -60,7 +64,7 @@ const Header = ({ activeLink = "/" }) => {
 
   return (
     <>
-      <header className={styles.header}>
+      <header className={cn(styles.header, myFont.className)}>
         <div className={styles.logoWrapper}>
           <div className={styles.logo}>
             <a href="#" target="_blank" className={styles.comitas}>
@@ -93,7 +97,7 @@ const Header = ({ activeLink = "/" }) => {
       ) : (
         <>
           <button
-            style={{ display: width > 480 ? "block" : "block" }}
+            style={{ display: width > 480 ? "block" : "none" }}
             ref={burgerButtonRef}
             className={styles.burger}
             onClick={() => seVisibleMenu(!visibleMenu)}

@@ -1,0 +1,92 @@
+.first {
+padding: 12rem 0;
+padding-right: 10.2rem;
+grid-template-columns: 1fr 63.4rem;
+
+@media screen and (max-width: 1024px) {
+	padding: 0 3rem;
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+}
+
+@media screen and (max-width: 768px) {
+	padding: 0 30px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 480px) {
+	padding: 0 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+}
+
+.third, .six {
+	padding-left: 4rem;
+	padding-top: 6rem;
+	padding-bottom: 1rem;
+	grid-template-columns: 34rem 69.4rem;
+	max-width: 124rem;
+	gap: 20rem;
+
+	@media screen and (max-width: 1024px) {
+		max-width: 80.4rem;
+		padding: 0 3rem;
+		grid-template-columns: 1fr;
+		padding-top: 12rem;
+		padding-bottom: 12rem;
+		gap: 3rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 0 30px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		gap: 30px;
+		max-width: 100%;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		gap: 20px;
+	}
+}
+
+.six {
+padding-bottom: 11rem;
+
+@media screen and (max-width: 1024px) {
+	padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+	padding-bottom: 100px;
+}
+}
+
+.five {
+	overflow: hidden;
+	padding-top: 12rem;
+	padding-bottom: 6rem;
+	align-items: flex-end;
+
+	@media screen and (max-width: 1024px) {
+		padding-bottom: 12rem;
+		gap: 3rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 100px;
+		padding-top: 100px;
+		gap: 50px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding-bottom: 50px;
+		padding-top: 50px;
+		gap: 30px;
+	}
+}

@@ -8,8 +8,8 @@
 
 .title {
 	display: block;
-margin: 0 0 0.8rem;
-line-height: 9.8rem;
+margin: 0 0 2.8rem;
+line-height: 6.4rem;
 	font-size: 7rem;
 	font-weight: 900;
 	text-align: left;
@@ -17,14 +17,14 @@ line-height: 9.8rem;
 
 
 	@media screen and (max-width: 768px) {
-		margin: 0 0 8px;
-line-height: 98px;
+		margin: 0 0 28px;
+line-height: 70px;
 	font-size: 70px;
 	}
 
 	@media screen and (max-width: 480px) {
-		margin: 0;
-line-height: 70px;
+		margin: 0 0 20px;
+line-height: 46px;
 	font-size: 50px;
 	}
 }

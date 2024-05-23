@@ -22,7 +22,6 @@ const AnimationScklad = () => {
         const procentX = Math.round(100 / (window.innerWidth / event.clientX));
         setImageWidth(procentX);
       }
-      // console.log(procentX);
     },
     [width]
   );

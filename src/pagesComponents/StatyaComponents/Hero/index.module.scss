@@ -1,5 +1,5 @@
 .wrapper {
-	background: #000;
+	background: #22313B;
 	position: relative;
 	overflow: hidden;
 
@@ -123,14 +123,14 @@ display: none;
 	width: 74.4rem;
 	right: 0;
 	top: 0;
-	background: url('/main/hero/background.jpg') no-repeat center;
+	background: url('/statya/hero/image.png') no-repeat center;
 	background-size: contain;
 
 
 		@media screen and (max-width: 1024px) {
 			width: 42rem;
 			right: -1.1rem;
-			background: url('/main/hero/background-lg.jpg') no-repeat center;
+			background: url('/statya/hero/imag-lg.jpg') no-repeat center;
 			background-size: contain;
 }
 
@@ -139,7 +139,7 @@ display: none;
 	right: 0;
 	top: auto;
 	bottom: 0;
-	background: url('/main/hero/background-md.jpg') no-repeat center;
+	background: url('/statya/hero/image-md.jpg') no-repeat center;
 	background-size: cover;
 	height: 520px;
 }
