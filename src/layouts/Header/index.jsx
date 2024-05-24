@@ -20,10 +20,10 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
       {[
         { link: "/", text: "Главная" },
         { link: "/statya", text: "Статья_1" },
-        { link: "/case_1", text: "Кейс_1" },
-        { link: "/case_2", text: "Кейс_2" },
-        { link: "/case_3", text: "Кейс_3" },
-        { link: "/case_4", text: "Кейс_4" },
+        // { link: "/case_1", text: "Кейс_1" },
+        // { link: "/case_2", text: "Кейс_2" },
+        // { link: "/case_3", text: "Кейс_3" },
+        // { link: "/case_4", text: "Кейс_4" },
       ].map((item, id) => {
         return (
           <Link
@@ -77,14 +77,14 @@ const Header = ({ activeLink = "/" }) => {
             </a>
             <div className={styles.closeIcon} />
             <div className={styles.vedomostyWrapper}>
-              <a href="#" target="_blank" className={styles.vedomosty}>
+              <div className={styles.vedomosty}>
                 <img
                   width={93}
                   height={18}
                   src="/header/vedomosti-logo.svg"
                   alt="Logo vedomosti"
                 />
-              </a>
+              </div>
               <span className={styles.ageWrapper}>
                 Специальный проект <span className={styles.age} />
               </span>

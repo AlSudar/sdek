@@ -6,12 +6,11 @@
 	grid-template-columns: 1fr 1fr;
 gap: 4rem;
 width: 101rem;
-
-margin-left: -24.8rem;
+margin-left: -27.8rem;
 
 @media screen and (max-width: 1024px) {
 	gap: 3rem;
-	width: calc(100% + 6rem);
+	width: calc(100% + 7rem);
 	margin-left: -3rem;
 }
 

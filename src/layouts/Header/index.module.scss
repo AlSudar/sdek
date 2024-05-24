@@ -41,7 +41,6 @@
 
 .vedomosty {
 	display: block;
-	cursor: pointer;
 	width: 9.4rem;
 	height: 1.8rem;
 
@@ -187,6 +186,8 @@ text-transform: uppercase;
 text-align: center;
 color: #fff;
 background: transparent;
+transition: .3s ease-in-out color, .3s ease-in-out background;
+
 
 @media screen and (max-width: 768px) {
 	padding: 0;
@@ -199,6 +200,11 @@ text-align: right;
 	color: #fff;
 	border-radius: 0;
 	background: transparent;
+}
+
+&:hover {
+	color: #fff;
+background: #000000;
 }
 }
 

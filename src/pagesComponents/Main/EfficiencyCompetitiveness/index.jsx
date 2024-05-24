@@ -11,7 +11,7 @@ const Cards = () => {
       <div className={styles.card}>
         <div className={styles.cardTop} />
         <div className={styles.cardBottom} />
-        <Fade reverse={false}>
+        <Fade triggerOnce={true}>
           <span className={styles.cardFirstTitle}>
             7,5&nbsp;млн&nbsp;м<sup>2</sup>
           </span>
@@ -29,7 +29,7 @@ const Cards = () => {
       <div className={styles.card}>
         <div className={styles.cardTop} />
         <div className={styles.cardBottom} />
-        <Fade reverse={false}>
+        <Fade triggerOnce={true}>
           <span className={styles.cardSecondTitle}>общий объем сделок</span>
           <div className={styles.cardSecondDescWrapper}>
             <div className={styles.cardSecondDescItem}>

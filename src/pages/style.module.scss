@@ -53,8 +53,11 @@ padding-bottom: 100px;
 	padding-bottom: 10rem;
 
 	@media screen and (max-width: 1024px) {
-		max-width: 78.4rem;
+		max-width: 79.4rem;
 		gap: 10rem !important;
+		display: flex !important;
+		flex-direction: column-reverse !important;
+		align-items: flex-start !important;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -84,6 +87,19 @@ padding-bottom: 6rem;
 @media screen and (max-width: 480px) {
 	padding-top: 50px;
 }
+}
+
+.tenBlock {
+
+	@media screen and (max-width: 768px) {
+		padding-top: 20px;
+padding-bottom: 50px;
+
+@media screen and (max-width: 480px) {
+	padding-top: 10px;
+padding-bottom: 30px;
+}
+	}
 }
 
 .fifteenthBlock {
@@ -161,11 +177,19 @@ gap: 4rem;
 
 .sixBlock {
 	display: block !important;
+	max-width: 132rem;
+	padding-right: 0;
 
-	@media screen and (min-width: 1024px) {
+	@media screen and (max-width: 1024px) {
+        max-width: 81.4rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 
-		max-width: 130.4rem;
-		padding-right: 0;
+	@media screen and (max-width: 768px) {
+        max-width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
 
@@ -179,8 +203,8 @@ gap: 4rem;
 }
 
 @media screen and (max-width: 768px) {
-	padding-top: 50px;
-	padding-bottom: 100px;
+	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -208,6 +232,16 @@ gap: 30px;
 .seventeenBlock {
 padding-top: 10rem;
 padding-bottom: 10rem;
+
+@media screen and (max-width: 768px) {
+	padding-top: 100px;
+padding-bottom: 50px;
+}
+
+@media screen and (max-width: 480px) {
+	padding-top: 50px;
+padding-bottom: 20px;
+}
 }
 
 .eighteenBlock {

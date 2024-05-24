@@ -39,13 +39,12 @@ height: 40.4rem;
   }
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: 156px 156px;
+    grid-template-columns: 1fr 1fr;
     row-gap: 30px;
     column-gap: 60px;
   }
 
   @media screen and (max-width: 480px) {
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }

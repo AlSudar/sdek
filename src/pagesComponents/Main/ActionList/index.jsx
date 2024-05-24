@@ -16,9 +16,9 @@ const ActionList = () => {
       <ul className={styles.list}>
         {DATA_MOCK.map((item, id) => {
           return (
-            <Fade reverse={false} key={id}>
+            <Fade triggerOnce={true} key={id}>
               <li className={styles.listItem}>
-                <span className={styles.listItemTitle}>{(id += 1)}</span>
+                <span className={styles.listItemTitle}>0{(id += 1)}</span>
                 <p className={styles.listItemDesc}>{item.text}</p>
               </li>
             </Fade>
