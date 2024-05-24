@@ -28,6 +28,9 @@ height: 40.4rem;
 
 @media screen and (max-width: 768px) {
 	margin-top: 40px;
+	position: relative;
+	left: -30px;
+	width: calc(100% + 60px);
 		}
 
 		@media screen and (max-width: 480px) {
