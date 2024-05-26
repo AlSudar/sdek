@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import useWindowDimensions from "../../../utils";
 
 const myFont = Montserrat({ subsets: ["latin"] });
-const MIN_PROCENT = 2;
+const MIN_PROCENT = 6;
 const MAX_PROCENT = 100;
 
 const AnimationScklad = () => {
