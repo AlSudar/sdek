@@ -38,7 +38,7 @@ const CostReduction = () => {
           className={styles.image}
           alt=""
         />
-        {width && width < 1024 && <LeftContent />}
+        {width && width <= 1024 && <LeftContent />}
         <SectionDescription
           className={styles.desc}
           text="Робот&nbsp;&mdash; универсальный исполнитель, который может трудиться круглосуточно и&nbsp;заменять 4&ndash;8&nbsp;человек, работающих посменно. Благодаря этому роботизация помогает решать проблему кадрового голода. При этом автономная система не&nbsp;будет против возить коробки по&nbsp;складу глубокой заморозки <a href='https://www.youtube.com/watch?v=Tbx6Bf-PvcI' target='_blank'>при температуре &minus;24 &#176;C</a>, не&nbsp;попросит отпуск или больничный. <br /><br />

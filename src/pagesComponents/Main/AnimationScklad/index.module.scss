@@ -113,17 +113,13 @@ max-width: 26.6rem;
 	position: absolute;
 	top: 50%;
 	transform: translate(-18px, -50%);
-	display: none;
+	display: block;
 	width: 36px;
 	height: 36px;
 	background: url('/main/animationScklad/button.svg') no-repeat center;
 	background-size: contain;
 	z-index: 1;
 	border: none;
-
-	@media screen and (max-width: 768px) {
-		display: block;
-	}
 
 	@media screen and (max-width: 480px) {
 		width: 32px;

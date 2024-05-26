@@ -11,7 +11,7 @@ const myFont = Montserrat({ subsets: ["latin"] });
 const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
   return (
     <div className={styles.linkWrapper}>
-      {width < 768 && (
+      {width <= 768 && (
         <button
           className={styles.closeButton}
           onClick={() => seVisibleMenu(false)}

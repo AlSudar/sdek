@@ -5,71 +5,79 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import useWindowDimensions from "../../../utils";
 
 const myFont = Montserrat({ subsets: ["latin"] });
+const MIN_PROCENT = 2;
+const MAX_PROCENT = 100;
 
 const AnimationScklad = () => {
   const ref = useRef();
-  const [imageWidth, setImageWidth] = useState(4);
+  const [imageWidth, setImageWidth] = useState(MIN_PROCENT);
   const { width } = useWindowDimensions();
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   const onHadnlerMouseMove = useCallback(
     (event) => {
-      if (width && width < 768) {
+      if (isTouchDevice) {
         const procentX = Math.round(
           100 / (window.innerWidth / event.touches[0].clientX)
         );
-        setImageWidth(procentX);
+        setImageWidth(() => {
+          if (Number(procentX) < MIN_PROCENT) {
+            return MIN_PROCENT;
+          } else if (Number(procentX) > MAX_PROCENT) {
+            return MAX_PROCENT;
+          } else {
+            return procentX;
+          }
+        });
       } else {
         const procentX = Math.round(100 / (window.innerWidth / event.clientX));
-        setImageWidth(procentX);
+        setImageWidth(() => {
+          if (Number(procentX) < MIN_PROCENT) {
+            return MIN_PROCENT;
+          } else if (Number(procentX) > MAX_PROCENT) {
+            return MAX_PROCENT;
+          } else {
+            return procentX;
+          }
+        });
       }
     },
-    [width]
+    [width, isTouchDevice]
   );
 
   useEffect(() => {
     if (window) {
+      setIsTouchDevice("ontouchstart" in window);
       ref.current = window;
     }
   }, []);
 
-  const onHanlderMouseEnter = () => {
+  const onHanlderEnter = (event) => {
     if (ref.current) {
-      ref.current.addEventListener("mousemove", onHadnlerMouseMove);
+      ref.current.addEventListener(event, onHadnlerMouseMove);
     }
   };
 
-  const onHanlderMouseLeave = () => {
+  const onHanlderLeave = (event) => {
     if (ref.current) {
-      ref.current.removeEventListener("mousemove", onHadnlerMouseMove);
-    }
-  };
-
-  const onHanlderTouchEnter = () => {
-    if (ref.current) {
-      ref.current.addEventListener("touchmove", onHadnlerMouseMove);
-    }
-  };
-
-  const onHanlderTouchLeave = () => {
-    if (ref.current) {
-      ref.current.removeEventListener("touchmove", onHadnlerMouseMove);
+      ref.current.removeEventListener(event, onHadnlerMouseMove);
     }
   };
 
   return (
     <section
       className={cn(styles.wrapper, myFont.className)}
-      onMouseEnter={() => width && width > 768 && onHanlderMouseEnter()}
-      onMouseLeave={() => width && width > 768 && onHanlderMouseLeave()}
+      onMouseEnter={() => !isTouchDevice && onHanlderEnter("mousemove")}
+      onMouseLeave={() => !isTouchDevice && onHanlderLeave("mousemove")}
     >
-      <button
-        onTouchStart={() => {
-          width && width < 768 && onHanlderTouchEnter();
-        }}
-        style={{ left: `${imageWidth}%` }}
-        className={styles.button}
-        onTouchEnd={() => width && width < 768 && onHanlderTouchLeave()}
-      ></button>
+      {isTouchDevice && (
+        <button
+          onTouchStart={() => onHanlderEnter("touchmove")}
+          onTouchEnd={() => onHanlderLeave("touchmove")}
+          style={{ left: `${imageWidth}%` }}
+          className={styles.button}
+        ></button>
+      )}
       <div className={styles.firstImage} />
       <div style={{ width: `${imageWidth}%` }} className={styles.secondImage} />
       <h2 className={styles.subtitle}>Самонесущий склад</h2>
