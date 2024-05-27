@@ -63,14 +63,21 @@ export default function Statya() {
         <div className={allstyles.content}>
           <ContentWrapper className={cn(allstyles.wrapper, styles.first)}>
             <div />
-            <SectionDescription text="Роботы сегодня стали доступнее и&nbsp;функциональнее. К&nbsp;тому&nbsp;же в&nbsp;нынешних условиях они все ощутимее влияют на&nbsp;эффективность бизнеса: уменьшают операционные расходы, увеличивают производительность, решают проблемы кадрового голода и&nbsp;человеческих ошибок. Рассказываем, за&nbsp;счет чего достигается бизнес-эффект роботизации складов." />
+            <p className={styles.firstDesc}>
+              Роботы сегодня стали доступнее и&nbsp;функциональнее.
+              К&nbsp;тому&nbsp;же в&nbsp;нынешних условиях они все ощутимее
+              влияют на&nbsp;эффективность бизнеса: уменьшают операционные
+              расходы, увеличивают производительность, решают проблемы кадрового
+              голода и&nbsp;человеческих ошибок. Рассказываем, за&nbsp;счет чего
+              достигается бизнес-эффект роботизации складов.
+            </p>
           </ContentWrapper>
           <ContentWrapper className={cn(allstyles.wrapper, styles.second)}>
             <ProductivityGrowth />
           </ContentWrapper>
           <ContentWrapper className={cn(allstyles.wrapper, styles.third)}>
             <Quote
-              authorImageSrc="/main/quotes/evgeniy.png"
+              authorImageSrc="/statya/third/dmitriy.png"
               author="Дмитрий Геллер"
               authorDesc="Директор по продажам автоматизированных систем хранения Comitas"
               text="&laquo;Максимально эффективно роботизация показывает себя в&nbsp;работе складов со&nbsp;средней и&nbsp;низкой оборачиваемостью и&nbsp;на&nbsp;складах с&nbsp;круглосуточным режимом работы. При этом такие решения помогают точечно решать проблемы в&nbsp;тех зонах, которые больше всего нуждаются в&nbsp;оптимизации. А&nbsp;количество оборудования может расти вслед за&nbsp;бизнесом заказчика. Например, дополнительных роботов можно поставить на&nbsp;участке с&nbsp;высоким грузопотоком и&nbsp;за&nbsp;короткий срок увеличить производительность&raquo;."

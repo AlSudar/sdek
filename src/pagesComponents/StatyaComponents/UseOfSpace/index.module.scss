@@ -24,4 +24,8 @@ box-sizing: content-box;
 
 .descriptionComment {
 	margin-left: 4rem;
+
+	@media screen and (max-width: 1024px) {
+		margin: 0;
+	}
 }

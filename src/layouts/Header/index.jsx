@@ -19,7 +19,7 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
       )}
       {[
         { link: "/", text: "Главная" },
-        { link: "/statya", text: "Статья_1" },
+        { link: "/statya", text: "Эффект технологии" },
         // { link: "/case_1", text: "Кейс_1" },
         // { link: "/case_2", text: "Кейс_2" },
         // { link: "/case_3", text: "Кейс_3" },
