@@ -22,7 +22,7 @@ export default function Statya() {
   return (
     <>
       <Head>
-        <title>заголовок</title>
+        <title>Двигатель роста</title>
         <meta key="description" name="description" content="описание" />
         <meta
           key="og:description"
