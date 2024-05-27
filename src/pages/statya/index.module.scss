@@ -55,9 +55,22 @@ grid-template-columns: 1fr 66.4rem;
 	}
 }
 
-// .second {
+.second {
+	padding-right: 5.6rem;
+    max-width: 132.6rem;
+	grid-template-columns: 1fr 70.6rem;
 
-// }
+	@media screen and (max-width: 1024px) {
+		max-width: 80.4rem;
+		grid-template-columns: 1fr;
+		padding: 0 3rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+		padding: 0 30px;
+	}
+}
 
 .six {
 	padding-left: 4rem;
