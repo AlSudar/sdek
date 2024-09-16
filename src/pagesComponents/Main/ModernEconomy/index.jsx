@@ -7,10 +7,10 @@ const ModernEconomy = () => {
   return (
     <>
       <Image
-        src="/main/modernEconomy/figure.png"
+        src="/main/modernEconomy/figure.jpg"
         alt=""
-        width={504}
-        height={324}
+        width={444}
+        height={666}
         className={styles.image}
       />
       <div>

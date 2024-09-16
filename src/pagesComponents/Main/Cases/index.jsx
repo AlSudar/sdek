@@ -2,58 +2,91 @@ import Link from "next/link";
 import styles from "./index.module.scss";
 import cn from "classnames";
 import { useState } from "react";
+import useWindowDimensions from "../../../utils/index";
 
 const DATA_MOCK = [
   {
-    image: "/main/cases/first.jpg",
-    text: "Эффект технологии: как роботизация помогает бизнесу повышать производительность складов и&nbsp;сокращать расходы",
-    title: "Статья",
-    link: "#",
-  },
-  {
     image: "/main/cases/second.jpg",
+    imageMobile: "/main/cases/second-mobile.jpg",
     text: "Как новая система хранения помогла &laquo;Детскому миру&raquo; размещать в&nbsp;1,5 раза больше товаров на&nbsp;той&nbsp;же площади",
-    title: "Кейс",
+    title: "Ворсино Айс",
     link: "#",
   },
-
   {
-    image: "/main/cases/third.jpg",
-    text: "Как автоматизация сортировочного центра помогает Ozon собирать заказы в&nbsp;несколько раз быстрее",
-    title: "Кейс",
+    image: "/main/cases/first.jpg",
+    imageMobile: "/main/cases/first-mobile.jpg",
+    text: "Эффект технологии: как роботизация помогает бизнесу повышать производительность складов и&nbsp;сокращать расходы",
+    title: "Невис",
+    timePublication: "Читать 24.09",
     link: "#",
   },
   {
     image: "/main/cases/four.jpg",
+    imageMobile: "/main/cases/four-mobile.jpg",
     text: "Как работает склад мороженого без людей при &minus;27 &deg;C",
-    title: "Кейс",
+    timePublication: "Читать 25.09",
+    title: "UZUM",
+    link: "#",
+  },
+  {
+    image: "/main/cases/second.jpg",
+    imageMobile: "/main/cases/second-mobile.jpg",
+    text: "Как автоматизация сортировочного центра помогает Ozon собирать заказы в&nbsp;несколько раз быстрее",
+    timePublication: "Читать 26.09",
+    title: "КМКК (РЕННА)",
     link: "#",
   },
 ];
 
 const Cases = () => {
   const [visibleCardId, setVisibleCardId] = useState(undefined);
+  const { width } = useWindowDimensions();
 
   return (
-    <ul className={styles.list}>
+    <ul id="cases" className={styles.list}>
       {DATA_MOCK.map((item, id) => {
         const state = id === visibleCardId;
 
         return (
           <li key={id} className={styles.item}>
             <div
-              className={styles.background}
-              style={{ backgroundImage: `url(${item.image})` }}
-              onMouseEnter={() => setVisibleCardId(id)}
+              className={styles.eventItem}
+              onMouseEnter={() => !item.timePublication && setVisibleCardId(id)}
               onMouseLeave={() => setVisibleCardId(undefined)}
+            />
+            <div
+              className={cn(
+                styles.background,
+                item.timePublication && styles.backgroundDisabled
+              )}
+              style={{
+                backgroundImage:
+                  width && width > 768
+                    ? `url(${item.image})`
+                    : `url(${item.imageMobile})`,
+              }}
             ></div>
+            <div
+              className={cn(
+                styles.linkDescWrapper,
+                !item.timePublication && styles.linkDescWrapperHide
+              )}
+            >
+              <span className={styles.title}>{item.title}</span>
+              {item.timePublication && (
+                <span className={styles.linkTime}>{item.timePublication}</span>
+              )}
+            </div>
             <Link
               href={item.link}
-              className={cn(styles.link, state ? styles.linkActive : "")}
+              className={cn(
+                styles.link,
+                item.timePublication && styles.linkHide,
+                state ? styles.linkActive : ""
+              )}
               onMouseEnter={() => state && setVisibleCardId(id)}
               onMouseLeave={() => state && setVisibleCardId(undefined)}
             >
-              <span className={styles.title}>{item.title}</span>
               <p
                 dangerouslySetInnerHTML={{ __html: item.text }}
                 className={styles.desc}

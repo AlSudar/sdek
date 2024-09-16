@@ -17,7 +17,6 @@
 
 .wrapper {
 	padding-top: 6rem;
-	padding-bottom: 12rem;
 display: flex;
 flex-direction: column;
 gap: 6rem;
@@ -25,20 +24,17 @@ max-width: 129.6rem;
 
 @media screen and (max-width: 1024px) {
 	padding-top: 12rem;
-	padding-bottom: 12rem;
 	gap: 10rem;
 	max-width: 81.4rem;
 }
 
 @media screen and (max-width: 768px) {
 	padding-top: 100px;
-	padding-bottom: 100px;
 	gap: 80px;
 }
 
 @media screen and (max-width: 480px) {
 	padding-top: 50px;
-	padding-bottom: 50px;
 	gap: 50px;
 }
 }

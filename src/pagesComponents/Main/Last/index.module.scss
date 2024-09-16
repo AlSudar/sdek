@@ -114,3 +114,52 @@ height: auto;
 	margin: 0 auto;
 }
 }
+
+
+.articles {
+	margin-top: 10rem;
+
+	@media screen and (max-width: 768px) {
+		margin-top: 100px;
+	}
+
+	@media screen and (max-width: 480px) {
+		margin-top: 50px;
+	}
+}
+
+
+.articlesTitle {
+text-transform: uppercase;
+margin: 0 0 3rem;
+font-weight: 400;
+text-align: left;
+font-size: 5rem;
+line-height: 5.8rem;
+
+@media screen and (max-width: 768px) {
+	font-size: 50px;
+	line-height: 58px;
+	margin: 0 0 30px;
+}
+
+@media screen and (max-width: 480px) {
+	font-size: 25px;
+	line-height: 29px;
+}
+}
+
+.articleList {
+	display: grid;
+	grid-template-columns: 32rem 32rem;
+	gap: 3rem;
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+
+	@media screen and (max-width: 600px) {
+		grid-template-columns: 1fr;
+	}
+}

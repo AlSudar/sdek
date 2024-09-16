@@ -15,9 +15,7 @@ import { Cases } from '../pagesComponents/Main/Cases';
 import { AutomatesRussia } from '../pagesComponents/Main/AutomatesRussia';
 import { SectionImage } from '../components/SectionImage/index'
 import { Quotes } from '../pagesComponents/Main/Quotes';
-import { AutomationMarket } from '../pagesComponents/Main/AutomationMarket';
 import { MainConsumers } from '../pagesComponents/Main/MainConsumers';
-import { AutomationMarketList } from '../pagesComponents/Main/AutomationMarketList';
 import { ShortagePickers } from '../pagesComponents/Main/ShortagePickers';
 import { EfficiencyCompetitiveness } from '../pagesComponents/Main/EfficiencyCompetitiveness';
 import { WarehouseOperations } from '../pagesComponents/Main/WarehouseOperations';
@@ -110,12 +108,6 @@ export default function Home() {
 						<AutomatesRussia />
 					</ContentWrapper>
 					<SectionImage imageSrc='/main/automatesRussia/image.jpg' />
-					<ContentWrapper className={cn(styles.eightBlock, styles.wrapper)}>
-						<AutomationMarket />
-					</ContentWrapper>
-					<ContentWrapper className={cn(styles.nineBlock, styles.wrapper)}>
-						<AutomationMarketList />
-					</ContentWrapper>
 					<ContentWrapper className={cn(styles.tenBlock, styles.wrapper)}>
 						<MainConsumers />
 					</ContentWrapper>

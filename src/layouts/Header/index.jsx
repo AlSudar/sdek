@@ -5,6 +5,7 @@ import cn from "classnames";
 import useWindowDimensions from "../../utils/index";
 import { useEffect, useRef, useState } from "react";
 import { Montserrat } from "next/font/google";
+import { CASES_ROUTES } from "../../routes";
 
 const myFont = Montserrat({ subsets: ["latin"] });
 
@@ -19,11 +20,7 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
       )}
       {[
         { link: "/", text: "Главная" },
-        { link: "/statya", text: "Эффект технологии" },
-        // { link: "/case_1", text: "Кейс_1" },
-        // { link: "/case_2", text: "Кейс_2" },
-        // { link: "/case_3", text: "Кейс_3" },
-        // { link: "/case_4", text: "Кейс_4" },
+        { link: "/statya", text: "Статья" },
       ].map((item, id) => {
         return (
           <Link
@@ -38,6 +35,21 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
           </Link>
         );
       })}
+      <p className={cn(styles.link, styles.dropdownButton)}>Кейсы</p>
+      <ul className={styles.casesList}>
+        {[
+          { title: "Ворсино айс", href: CASES_ROUTES.vorsino },
+          { title: "Невис", href: CASES_ROUTES.nevis },
+          { title: "UZUM айс", href: CASES_ROUTES.uzum },
+          { title: "КМКК (РЕННА)", href: CASES_ROUTES.kkmk },
+        ].map((item, id) => (
+          <li key={id} className={styles.casesListItem}>
+            <Link className={styles.casesListItemLink} href={item.href}>
+              {item.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

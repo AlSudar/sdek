@@ -1,19 +1,19 @@
 .image {
-	width: 50.4rem;
-	height: 32.4rem;
+	width: 44.4rem;
+	height: 66.4rem;
+	margin-left: 3rem;
 
 	@media screen and (max-width: 1024px) {
 		grid-row: 2;
-		width: 63.2rem;
-		height: 40.6rem;
+		width: 49rem;
+		height: 73.4rem;
 		display: block;
-		margin: 0 0 -3rem 0;
+		margin: 0;
 	}
 
 	@media screen and (max-width: 768px) {
-		max-width: 632px;
+		max-width: 400px;
 		height: auto;
-		margin: 0;
 		width: 100%;
 	}
 
@@ -21,5 +21,6 @@
 		position: relative;
 		left: -30px;
 		width: calc(100% + 60px);
+		max-width: calc(100% + 60px);
 	}
 }

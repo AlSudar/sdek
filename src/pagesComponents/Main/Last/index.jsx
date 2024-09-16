@@ -4,6 +4,16 @@ import { Quote } from "../../../components/Quote/index";
 import styles from "./index.module.scss";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { ArticleCard } from "../../../components/ArticleCard/index";
+
+const ARTICLE_CARD = [
+  { text: "Главная", imageSrc: "/articles/main/main.jpg", href: "/" },
+  {
+    text: "Кейсы",
+    imageSrc: "/articles/cases/all-cases-image.jpg",
+    href: "/#cases",
+  },
+];
 
 const MAX_FIRST_VALUE = 7000;
 const MAX_SECOND_VALUE = 25000;
@@ -101,6 +111,19 @@ const Last = () => {
           </div>
         </div>
         <SectionDescription text="За&nbsp;счет этого достигается значительная экономия капитальных затрат на&nbsp;строительство &laquo;коробки&raquo;, а&nbsp;разница стоимости может быть инвестирована в&nbsp;автоматизацию. Таким образом общие капитальные затраты на&nbsp;строительство и&nbsp;оборудование склада будут примерно одинаковы, при этом операционные расходы на&nbsp;автоматизированный склад в&nbsp;разы ниже, что в&nbsp;долгосрочной перспективе делает такие вложения значительно привлекательней. Также строительство самонесущего автоматизированного склада на&nbsp;20-30% быстрее, чем строительство и&nbsp;оснащение классического склада." />
+        <div className={styles.articles}>
+          <p className={styles.articlesTitle}>Читать другие разделы</p>
+          <div className={styles.articleList}>
+            {ARTICLE_CARD.map((item, id) => (
+              <ArticleCard
+                key={id}
+                text={item.text}
+                imageSrc={item.imageSrc}
+                href={item.href}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
