@@ -159,7 +159,7 @@ left: 0;
 		position: absolute;
 		background: url('/header/header-line-right.svg') no-repeat center;
         background-size: contain;
-        bottom: -86px;
+        top: 680px;
         height: 86px;
         width: 228px;
         right: 0;
@@ -219,11 +219,18 @@ text-align: right;
 	color: #fff;
 	border-radius: 0;
 	background: transparent;
+	position: relative;
+	z-index: 1;
 }
 
 &:hover {
 	color: #383C40;
 	background: #F2F2F2;
+
+	@media screen and (max-width: 768px) {
+	color: #fff;
+background: transparent;
+	}
 }
 }
 
@@ -276,6 +283,7 @@ right: 30px;
 
 	&:hover {
 		display: block;
+
 		@media screen and (max-width: 768px) {
 			display: flex;
 		}
@@ -298,6 +306,10 @@ right: 30px;
 
 	&:hover ~ .casesList {
 		display: block !important;
+
+		@media screen and (max-width: 768px) {
+			display: flex !important;
+		}
 	}
 
 	@media screen and (max-width: 768px) {
@@ -342,6 +354,8 @@ right: 30px;
 		border: none;
 		text-align: right;
 		color: #FFF;
+		position: relative;
+		z-index: 1;
 	}
 
 	@media screen and (max-width: 480px) {

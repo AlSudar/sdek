@@ -33,26 +33,27 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Двигатель роста</title>
+				<title>Кто автоматизирует Россию
+				</title>
 				<meta
 					key='description'
 					name='description'
-					content='описание'
+					content='Автоматизация складской логистики для развития бизнеса'
 				/>
 				<meta
 					key='og:description'
 					property='og:description'
-					content='описание'
+					content='Автоматизация складской логистики для развития бизнеса'
 				/>
 				<meta
 					key='title'
 					name='title'
-					content='заголовок'
+					content='Кто автоматизирует Россию'
 				/>
 				<meta
 					key='og:title'
 					property='og:title'
-					content='заголовок'
+					content='Кто автоматизирует Россию'
 				/>
 				<meta property='og:site_name' content='comitas.vedomosti.ru' />
 				<meta property='twitter:image:width' content='1012' />
@@ -60,9 +61,9 @@ export default function Home() {
 				<meta name='twitter:card' content='summary_large_image' />
 				<meta property='vk:image:width' content='510' />
 				<meta property='vk:image:height' content='228' />
-				<meta property='vk:image' content='/og-image.jpg' />
-				<meta name='twitter:image' content='/og-image.jpg' />
-				<meta property='og:image' content='/og-image.jpg' />
+				<meta property='vk:image' content='/main-og-image.jpg' />
+				<meta name='twitter:image' content='/main-og-image.jpg' />
+				<meta property='og:image' content='/main-og-image.jpg' />
 				<meta property='og:image:width' content='800' />
 				<meta property='og:image:type' content='image/jpeg' />
 				<meta property='og:image:height' content='800' />

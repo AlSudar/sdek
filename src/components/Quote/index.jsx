@@ -1,6 +1,19 @@
 import Image from "next/image";
-import cn from "classnames";
 import styles from "./index.module.scss";
+import { Articles } from "../Articles";
+
+const ARTICLE_CARD = [
+  {
+    text: "Главная",
+    imageSrc: "/articles/main/main.jpg",
+    href: "/",
+  },
+  //   {
+  //     text: "Кейсы",
+  //     imageSrc: "/articles/cases/all-cases-image.jpg",
+  //     href: "/#cases",
+  //   },
+];
 
 const Quote = ({ authorImageSrc, author, authorDesc, text }) => {
   return (

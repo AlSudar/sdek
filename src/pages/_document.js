@@ -24,27 +24,27 @@ export default function Document() {
 	return (
 		<Html lang='ru'>
 			<Head>
-				<script
+				{/* <script
 					type='text/javascript'
 					dangerouslySetInnerHTML={{ __html: gtm }}
-				/>
+				/> */}
 			</Head>
 			<body>
 				<Main />
 				<NextScript />
-				<noscript>
+				{/* <noscript>
 					<iframe
 						src='https://www.googletagmanager.com/ns.html?id=GTM-NZKZC88B'
 						height='0'
 						width='0'
 						style={{ display: 'none', visibility: 'hidden' }}
 					></iframe>
-				</noscript>
-				<script
+				</noscript> */}
+				{/* <script
 					type='text/javascript'
 					dangerouslySetInnerHTML={{ __html: ym }}
-				/>
-				<noscript>
+				/> */}
+				{/* <noscript>
 					<div>
 						<img
 							src='https://mc.yandex.ru/watch/95993937'
@@ -52,7 +52,7 @@ export default function Document() {
 							alt=''
 						/>
 					</div>
-				</noscript>
+				</noscript> */}
 			</body>
 		</Html>
 	);

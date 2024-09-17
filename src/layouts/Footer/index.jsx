@@ -26,7 +26,7 @@ const Footer = () => {
   const { width } = useWindowDimensions();
   let href = "";
   if (typeof window !== "undefined") {
-    href = "https://nota.vedomosti.ru";
+    href = "https://comitas.vedomosti.ru";
   }
 
   const shareVK = () => {

@@ -20,7 +20,7 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
       )}
       {[
         { link: "/", text: "Главная" },
-        { link: "/statya", text: "Статья" },
+        { link: "/technology-effect", text: "Статья" },
       ].map((item, id) => {
         return (
           <Link
@@ -35,7 +35,7 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
           </Link>
         );
       })}
-      <p className={cn(styles.link, styles.dropdownButton)}>Кейсы</p>
+      {/* <p className={cn(styles.link, styles.dropdownButton)}>Кейсы</p>
       <ul className={styles.casesList}>
         {[
           { title: "Ворсино айс", href: CASES_ROUTES.vorsino },
@@ -49,7 +49,7 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

@@ -9,37 +9,54 @@ import allstyles from "../style.module.scss";
 import styles from "./index.module.scss";
 import { ProductivityGrowth } from "../../pagesComponents/StatyaComponents/ProductivityGrowth";
 import { UseOfSpace } from "../../pagesComponents/StatyaComponents/UseOfSpace";
-import { SectionDescription } from "../../components/SectionDescription/index";
 import { Quote } from "../../components/Quote/index";
 import { CostReduction } from "../../pagesComponents/StatyaComponents/CostReduction";
+import { Articles } from "../../components/Articles";
 
 const myFont = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "900"],
 });
 
+const ARTICLE_CARD = [
+  {
+    text: "Главная",
+    imageSrc: "/articles/main/main.jpg",
+    href: "/",
+  },
+  //   {
+  //     text: "Кейсы",
+  //     imageSrc: "/articles/cases/all-cases-image.jpg",
+  //     href: "/#cases",
+  //   },
+];
+
 export default function Statya() {
   return (
     <>
       <Head>
-        <title>Двигатель роста</title>
-        <meta key="description" name="description" content="описание" />
+        <title>Роботы на складах</title>
+        <meta
+          key="description"
+          name="description"
+          content="За счет чего достигается бизнес-эффект роботизации складов"
+        />
         <meta
           key="og:description"
           property="og:description"
-          content="описание"
+          content="За счет чего достигается бизнес-эффект роботизации складов"
         />
-        <meta key="title" name="title" content="заголовок" />
-        <meta key="og:title" property="og:title" content="заголовок" />
+        <meta key="title" name="title" content="Роботы на складах" />
+        <meta key="og:title" property="og:title" content="Роботы на складах" />
         <meta property="og:site_name" content="comitas.vedomosti.ru" />
         <meta property="twitter:image:width" content="1012" />
         <meta property="twitter:image:height" content="506" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="vk:image:width" content="510" />
         <meta property="vk:image:height" content="228" />
-        <meta property="vk:image" content="/og-image.jpg" />
-        <meta name="twitter:image" content="/og-image.jpg" />
-        <meta property="og:image" content="/og-image.jpg" />
+        <meta property="vk:image" content="/statya-og-image.jpg" />
+        <meta name="twitter:image" content="/statya-og-image.jpg" />
+        <meta property="og:image" content="/statya-og-image.jpg" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:height" content="800" />
@@ -58,7 +75,7 @@ export default function Statya() {
         />
       </Head>
       <div className={cn(myFont.className)}>
-        <Header activeLink="/statya" />
+        <Header activeLink="/technology-effect" />
         <Hero />
         <div className={allstyles.content}>
           <ContentWrapper className={cn(allstyles.wrapper, styles.first)}>
@@ -96,6 +113,12 @@ export default function Statya() {
               authorDesc="Основатель и&nbsp;управляющий директор системного интегратора полного цикла в&nbsp;области складской и&nbsp;производственной логистики Comitas"
               text="&laquo;Технологии со&nbsp;временем дешевеют, поэтому роботизированные решения становятся доступнее. Раньше для перемещения по&nbsp;складу надо было покупать дорогостоящие минилоуды. Сейчас их&nbsp;можно заменить CTU-роботами, которые ходят между стеллажами, забирают с&nbsp;полок коробки с&nbsp;нужным товаром и&nbsp;отдают их&nbsp;людям. Оборудовать ими склад стоит в&nbsp;10&nbsp;раз дешевле, чем приобретать минилоуды 3&ndash;4 года назад&raquo;."
             />
+          </ContentWrapper>
+          <ContentWrapper className={cn(allstyles.wrapper)}>
+            <div />
+            <div className={styles.articleWrapper}>
+              <Articles articleCards={ARTICLE_CARD} />
+            </div>
           </ContentWrapper>
         </div>
         <Footer />

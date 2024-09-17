@@ -1,11 +1,12 @@
 import { CASES_ROUTES } from "./routes";
 
-const CASES = [
+export const CASES_PAGES_MOCK = [
 	{
 		url: CASES_ROUTES.vorsino,
 		seo: {
 			title: "",
 			desc: "",
+			ogImageSrc: '',
 		},
 		hero: {
 			title: "Ворсино айс",
