@@ -108,7 +108,7 @@ export default function Statya() {
           </ContentWrapper>
           <ContentWrapper className={cn(allstyles.wrapper, styles.six)}>
             <Quote
-              authorImageSrc="/main/quotes/evgeniy.png"
+              authorImageSrc="/statya/quote/david.png"
               author="Давит Манукян"
               authorDesc="Основатель и&nbsp;управляющий директор системного интегратора полного цикла в&nbsp;области складской и&nbsp;производственной логистики Comitas"
               text="&laquo;Технологии со&nbsp;временем дешевеют, поэтому роботизированные решения становятся доступнее. Раньше для перемещения по&nbsp;складу надо было покупать дорогостоящие минилоуды. Сейчас их&nbsp;можно заменить CTU-роботами, которые ходят между стеллажами, забирают с&nbsp;полок коробки с&nbsp;нужным товаром и&nbsp;отдают их&nbsp;людям. Оборудовать ими склад стоит в&nbsp;10&nbsp;раз дешевле, чем приобретать минилоуды 3&ndash;4 года назад&raquo;."
