@@ -5,13 +5,23 @@ import { Footer } from "../../layouts/Footer";
 import cn from "classnames";
 import Head from "next/head.js";
 import styles from "./index.module.scss";
+import { useRouter } from "next/router.js";
 
 const myFont = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "900"],
 });
 
-const Case = ({ data }) => {
+const Case = () => {
+  const router = useRouter();
+  const data = CASES_PAGES_MOCK.find(
+    (item) => item.url === `/${router.pathname}`
+  );
+
+  if (!data) {
+    return <></>;
+  }
+
   return (
     <>
       <Head>
@@ -63,23 +73,5 @@ const Case = ({ data }) => {
     </>
   );
 };
-
-export async function getServerSideProps(query) {
-  const data = CASES_PAGES_MOCK.find(
-    (item) => item.url === `/${query.query.case}`
-  );
-
-  if (!data) {
-    return {
-      redirect: {
-        permanent: false,
-        destination: "/",
-      },
-    };
-  }
-
-  // Pass data to the page via props
-  return { props: { data } };
-}
 
 export default Case;
