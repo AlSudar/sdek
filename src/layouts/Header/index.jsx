@@ -79,7 +79,11 @@ const Header = ({ activeLink = "/" }) => {
       <header className={cn(styles.header, myFont.className)}>
         <div className={styles.logoWrapper}>
           <div className={styles.logo}>
-            <a href="#" target="_blank" className={styles.comitas}>
+            <a
+              href="https://www.comitas.ru/"
+              target="_blank"
+              className={styles.comitas}
+            >
               <img
                 width={144}
                 height={27}
