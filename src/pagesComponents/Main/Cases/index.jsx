@@ -5,31 +5,31 @@ import { useState } from "react";
 
 const DATA_MOCK = [
   {
-    image: "/main/cases/vorsino.jpg",
-    text: "Как новая система хранения помогла &laquo;Детскому миру&raquo; размещать в&nbsp;1,5 раза больше товаров на&nbsp;той&nbsp;же площади",
-    title: "Ворсино Айс",
-    timePublication: "Читать 23.09",
-    link: "#",
-  },
-  {
-    image: "/main/cases/nevis.jpg",
-    text: "Эффект технологии: как роботизация помогает бизнесу повышать производительность складов и&nbsp;сокращать расходы",
-    title: "Невис",
+    image: "/main/cases/kkmk.jpg",
+    text: "Как работает склад мороженого без людей при -27&nbsp;°C.",
     timePublication: "Читать 24.09",
+    title: "КМКК (РЕННА)",
     link: "#",
   },
   {
     image: "/main/cases/uzum.jpg",
-    text: "Как работает склад мороженого без людей при &minus;27 &deg;C",
-    timePublication: "Читать 25.09",
+    text: "Как&nbsp;ведущий российский интеграционный бизнес поддерживает развитие онлайн-торговли в&nbsp;Узбекистане?",
+    timePublication: "Читать 01.10",
     title: "UZUM",
     link: "#",
   },
   {
-    image: "/main/cases/kkmk.jpg",
-    text: "Как автоматизация сортировочного центра помогает Ozon собирать заказы в&nbsp;несколько раз быстрее",
-    timePublication: "Читать 26.09",
-    title: "КМКК (РЕННА)",
+    image: "/main/cases/vorsino.jpg",
+    text: "Как с&nbsp;надежным партнером построить производственный склад.",
+    title: "Ворсино Айс",
+    timePublication: "Читать 08.10",
+    link: "#",
+  },
+  {
+    image: "/main/cases/nevis.jpg",
+    text: "Каковы главные качества всех&nbsp;процессов, связанных с&nbsp;медициной и&nbsp;здоровьем человека?",
+    title: "Невис",
+    timePublication: "Читать 15.10",
     link: "#",
   },
 ];

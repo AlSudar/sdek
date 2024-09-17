@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
           {width && width > 768 && (
             <span className={styles.advertising}>
-              Реклама / ООО "КОМИТАС" / 16+ / Erid: xxxxxxx
+              Реклама / ООО "КОМИТАС" / 16+ / Erid: 2VfnxyNqFNx
             </span>
           )}
           <span className={styles.cooperation}>
@@ -95,7 +95,7 @@ const Footer = () => {
         </div>{" "}
         {width && width <= 768 && (
           <span className={styles.advertising}>
-            Реклама / ООО "КОМИТАС" / 16+ / Erid: xxxxxxx
+            Реклама / ООО "КОМИТАС" / 16+ / Erid: 2VfnxyNqFNx
           </span>
         )}
       </div>
