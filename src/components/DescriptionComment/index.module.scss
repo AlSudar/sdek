@@ -38,6 +38,11 @@ line-height: 46px;
 	text-align: left;
 	color: #000000;
 
+	a {
+	color: #32a2ba;
+    text-decoration: underline;
+	}
+
 	@media screen and (max-width: 768px) {
 		font-size: 18px;
 		line-height: 26px;

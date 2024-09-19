@@ -8,7 +8,7 @@ const ShortagePickers = () => {
       <DescriptionComment
         className={styles.comment}
         title=">65%"
-        text="российских компаний испытывают нехватку в&nbsp;комплектовщиках
+        text="российских компаний <a href='https://logirus.ru/news/warehouses/poiski_operatsionnogo_personala_na_sklad_zatyagivayutsya_minimum_na_2_mesyatsa.html#:~:text=%D0%9E%20%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%BE%D0%BC%20%D0%B4%D0%B5%D1%84%D0%B8%D1%86%D0%B8%D1%82%D0%B5%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%' target='_blank'>испытывают</a> нехватку в&nbsp;комплектовщиках
 и&nbsp;кладовщиках"
       />
       <SectionDescription
