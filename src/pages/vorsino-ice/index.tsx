@@ -152,6 +152,25 @@ const Case = () => {
               </ul>
             </section>
           </ContentWrapper>
+          <ContentWrapper className={styles.comments}>
+            <div />
+            <section className={styles.commentsWrapper}>
+              <h2 className={styles.commentsTitle}>
+                Комментарий компании-заказчика
+              </h2>
+              <p
+                className={styles.commentsDesc}
+                dangerouslySetInnerHTML={{ __html: data.comments.desc }}
+              />
+              <Image
+                alt=""
+                className={styles.commentsImage}
+                width={735}
+                height={404}
+                src={data.image.src}
+              />
+            </section>
+          </ContentWrapper>
         </div>
         <Footer />
       </div>
