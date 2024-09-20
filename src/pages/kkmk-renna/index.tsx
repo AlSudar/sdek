@@ -95,6 +95,8 @@ const Case = () => {
         <div className={allstyles.content}>
           <ContentWrapper className={styles.about}>
             <div className={cn(styles.aboutItem, styles.aboutItemWhite)}>
+              <div className={styles.cardTop} />
+              <div className={styles.cardBottom} />
               <p className={cn(styles.aboutTitle, styles.aboutTitleWhite)}>
                 О клиенте
               </p>
@@ -104,6 +106,8 @@ const Case = () => {
               />
             </div>
             <div className={cn(styles.aboutItem, styles.aboutItemDark)}>
+              <div className={styles.cardTop} />
+              <div className={styles.cardBottom} />
               <p className={cn(styles.aboutTitle, styles.aboutTitleDark)}>
                 Задача{" "}
               </p>
