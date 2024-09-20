@@ -154,7 +154,7 @@ const Case = () => {
             <div />
             <section className={styles.commentsWrapper}>
               <h2 className={styles.commentsTitle}>
-                Комментарий компании-заказчика
+                Комментарий компании&#8209;заказчика
               </h2>
               <p
                 className={styles.commentsDesc}
