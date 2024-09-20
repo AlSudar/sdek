@@ -1,14 +1,14 @@
 import { CASES_PAGES_MOCK } from "../../data.js";
 import { Montserrat, Roboto } from "next/font/google";
 import { Header } from "../../layouts/Header/index";
-import { Footer } from "../../layouts/Footer";
-import { ContentWrapper } from "../../layouts/ContentWrapper";
+import { Footer } from "../../layouts/Footer/index.jsx";
+import { ContentWrapper } from "../../layouts/ContentWrapper/index.jsx";
 import cn from "classnames";
 import Head from "next/head.js";
 import styles from "../cases.module.scss";
 import Image from "next/image.js";
 import allstyles from "../style.module.scss";
-import { Articles } from "../../components/Articles";
+import { Articles } from "../../components/Articles/index.jsx";
 
 const myFont = Roboto({
   subsets: ["latin"],
@@ -34,7 +34,7 @@ const ARTICLE_CARD = [
 ];
 
 const Case = () => {
-  const data = CASES_PAGES_MOCK[0];
+  const data = CASES_PAGES_MOCK[1];
 
   return (
     <>
