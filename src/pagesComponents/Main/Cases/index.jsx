@@ -7,14 +7,14 @@ const DATA_MOCK = [
   {
     image: "/main/cases/kkmk.jpg",
     text: "Как работает склад мороженого без людей при -27&nbsp;°C.",
-    timePublication: "Читать 24.09",
+    timePublication: "Читать 30.09",
     title: "КМКК (РЕННА)",
     link: "#",
   },
   {
     image: "/main/cases/uzum.jpg",
     text: "Как&nbsp;ведущий российский интеграционный бизнес поддерживает развитие онлайн-торговли в&nbsp;Узбекистане?",
-    timePublication: "Читать 01.10",
+    timePublication: "Читать 07.10",
     title: "UZUM",
     link: "#",
   },
@@ -22,14 +22,14 @@ const DATA_MOCK = [
     image: "/main/cases/vorsino.jpg",
     text: "Как с&nbsp;надежным партнером построить производственный склад.",
     title: "Ворсино Айс",
-    timePublication: "Читать 08.10",
+    timePublication: "Читать 14.10",
     link: "#",
   },
   {
     image: "/main/cases/nevis.jpg",
     text: "Каковы главные качества всех&nbsp;процессов, связанных с&nbsp;медициной и&nbsp;здоровьем человека?",
     title: "Невис",
-    timePublication: "Читать 15.10",
+    timePublication: "Читать 21.10",
     link: "#",
   },
 ];
