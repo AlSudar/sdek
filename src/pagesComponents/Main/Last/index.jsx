@@ -9,7 +9,7 @@ import { Articles } from "../../../components/Articles";
 const ARTICLE_CARD = [
   {
     text: "Статья",
-    imageSrc: "/articles/main/main.jpg",
+    imageSrc: "/cases/statya.jpg",
     href: "/technology-effect",
   },
   //   {

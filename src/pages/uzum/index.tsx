@@ -1,0 +1,179 @@
+import { CASES_PAGES_MOCK } from "../../data.js";
+import { Montserrat, Roboto } from "next/font/google";
+import { Header } from "../../layouts/Header/index";
+import { Footer } from "../../layouts/Footer/index.jsx";
+import { ContentWrapper } from "../../layouts/ContentWrapper/index.jsx";
+import cn from "classnames";
+import Head from "next/head.js";
+import styles from "../cases.module.scss";
+import Image from "next/image.js";
+import allstyles from "../style.module.scss";
+import { Articles } from "../../components/Articles/index.jsx";
+
+const myFont = Roboto({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "900"],
+});
+
+const myFontMontserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const ARTICLE_CARD = [
+  {
+    text: "Главная",
+    imageSrc: "/articles/main/main.jpg",
+    href: "/",
+  },
+  {
+    text: "Статья",
+    imageSrc: "/cases/statya.jpg",
+    href: "/technology-effect",
+  },
+];
+
+const Case = () => {
+  const data = CASES_PAGES_MOCK[2];
+
+  return (
+    <>
+      <Head>
+        <title>{data.seo.title}</title>
+        <meta key="description" name="description" content={data.seo.desc} />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={data.seo.desc}
+        />
+        <meta key="title" name="title" content={data.seo.title} />
+        <meta key="og:title" property="og:title" content={data.seo.title} />
+        <meta property="og:site_name" content="comitas.vedomosti.ru" />
+        <meta property="twitter:image:width" content="1012" />
+        <meta property="twitter:image:height" content="506" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="vk:image:width" content="510" />
+        <meta property="vk:image:height" content="228" />
+        <meta property="vk:image" content={data.seo.ogImageSrc} />
+        <meta name="twitter:image" content={data.seo.ogImageSrc} />
+        <meta property="og:image" content={data.seo.ogImageSrc} />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:height" content="800" />
+        <link rel="icon" href="/favicon16.png" sizes="16x16" type="image/png" />
+        <link
+          rel="icon"
+          href="/favicon32.svg"
+          sizes="16x16 32x32"
+          type="image/vnd.microsoft.icon"
+        />
+        <link
+          rel="icon"
+          href="/favicon64.svg"
+          sizes="any"
+          type="image/svg+xml"
+        />
+      </Head>
+      <div className={cn(myFont.className)}>
+        <Header activeLink="" />
+        <section className={cn(styles.heroWrapper, myFontMontserrat.className)}>
+          <div className={styles.hero}>
+            <h1 className={styles.heroTitle}>{data.hero.title}</h1>
+            <p
+              className={styles.heroDesc}
+              dangerouslySetInnerHTML={{ __html: data.hero.description }}
+            ></p>
+          </div>
+          <Image
+            className={styles.heroImage}
+            src={data.hero.image.desktop.src}
+            alt=""
+            width={624}
+            height={700}
+          />
+        </section>
+        <div className={allstyles.content}>
+          <ContentWrapper className={styles.about}>
+            <div className={cn(styles.aboutItem, styles.aboutItemWhite)}>
+              <div className={styles.cardTop} />
+              <div className={styles.cardBottom} />
+              <p className={cn(styles.aboutTitle, styles.aboutTitleWhite)}>
+                О клиенте
+              </p>
+              <p
+                className={cn(styles.aboutDesc, styles.aboutDescWhite)}
+                dangerouslySetInnerHTML={{ __html: data.about.client.text }}
+              />
+            </div>
+            <div className={cn(styles.aboutItem, styles.aboutItemDark)}>
+              <div className={styles.cardTop} />
+              <div className={styles.cardBottom} />
+              <p className={cn(styles.aboutTitle, styles.aboutTitleDark)}>
+                Задача{" "}
+              </p>
+              <p
+                className={cn(styles.aboutDesc, styles.aboutDescDark)}
+                dangerouslySetInnerHTML={{ __html: data.about.task.text }}
+              />
+            </div>
+          </ContentWrapper>
+          <ContentWrapper className={styles.solution}>
+            <Image
+              src={data.solution.image.src}
+              alt=""
+              width={504}
+              height={314}
+              className={styles.solutionImage}
+            />
+            <div className={styles.solutionContent}>
+              <h2 className={styles.solutionContentTitle}>Решение COMITAS</h2>
+              <div
+                className={styles.solutionContentDesc}
+                dangerouslySetInnerHTML={{ __html: data.solution.text }}
+              />
+            </div>
+          </ContentWrapper>
+          <ContentWrapper className={styles.result}>
+            <div />
+            <section className={styles.resultWrapper}>
+              <h2 className={styles.resultTitle}>Результат</h2>
+              <p
+                className={styles.resultDesc}
+                dangerouslySetInnerHTML={{ __html: data.result.desc }}
+              />
+            </section>
+          </ContentWrapper>
+          <ContentWrapper className={styles.comments}>
+            <div />
+            <section className={styles.commentsWrapper}>
+              <h2 className={styles.commentsTitle}>
+                Комментарий компании&#8209;заказчика
+              </h2>
+              <p
+                className={styles.commentsDesc}
+                dangerouslySetInnerHTML={{ __html: data.comments.desc }}
+              />
+            </section>
+          </ContentWrapper>
+          <ContentWrapper className={styles.imageWrapper}>
+            <div />
+            <Image
+              alt=""
+              className={styles.image}
+              width={735}
+              height={404}
+              src={data.image.src}
+            />
+          </ContentWrapper>
+          <ContentWrapper className={styles.articleWrapper}>
+            <div />
+            <Articles articleCards={ARTICLE_CARD} />
+          </ContentWrapper>
+        </div>
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default Case;
