@@ -25,6 +25,7 @@ import { PaybackPeriod } from '../pagesComponents/Main/PaybackPeriod';
 import { ImportSubstitution } from '../pagesComponents/Main/ImportSubstitution';
 import { Last } from '../pagesComponents/Main/Last';
 import { AnimationScklad } from '../pagesComponents/Main/AnimationScklad';
+import { AutomatesMarket } from '../pagesComponents/Main/AutomatesMarket';
 
 const myFont = Roboto({ subsets: ["latin"], weight: ['300', '400', '500', '900'] });
 
@@ -107,6 +108,9 @@ export default function Home() {
 					</ContentWrapper>
 					<ContentWrapper className={cn(styles.sevenBlock, styles.wrapper)}>
 						<AutomatesRussia />
+					</ContentWrapper>
+					<ContentWrapper className={cn(styles.eightBlock, styles.wrapper)}>
+						<AutomatesMarket />
 					</ContentWrapper>
 					<SectionImage imageSrc='/main/automatesRussia/image.jpg' />
 					<ContentWrapper className={cn(styles.tenBlock, styles.wrapper)}>

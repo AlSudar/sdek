@@ -74,7 +74,19 @@ padding-bottom: 100px;
 	}
 }
 
-.eightBlock, .tenBlock, .thirteenthBlock, .fifteenthBlock {
+.eightBlock {
+	padding-bottom: 12rem;
+
+	@media screen and (max-width: 1024px) {
+		padding-bottom: 6rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 50px;
+	}
+}
+
+.tenBlock, .thirteenthBlock, .fifteenthBlock {
 	padding-top: 10rem;
 padding-bottom: 6rem;
 
@@ -195,11 +207,12 @@ gap: 4rem;
 
 .sevenBlock {
 	padding-top: 14rem;
-	padding-bottom: 14rem;
+	padding-bottom: 6rem;
 
 @media screen and (max-width: 1024px) {
 	padding-top: 12rem;
-	padding-bottom: 6rem;
+	padding-bottom: 10rem;
+	gap: 2.4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -208,7 +221,6 @@ gap: 4rem;
 }
 
 @media screen and (max-width: 480px) {
-	padding-bottom: 42px;
 	padding-top: 50px;
 }
 }
