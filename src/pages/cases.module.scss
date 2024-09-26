@@ -835,6 +835,14 @@ width: 100%;
 			}
 		}
 
+		.swiperWrapperKkmk {
+			display: flex;
+
+			@media screen and (max-width: 768px) {
+				width: calc(100% * 4);
+			}
+		}
+
 
 		.buttonSwiper {
 			position: absolute;
@@ -865,7 +873,7 @@ width: 100%;
 		}
 
 		.buttonNextSwiper {
-			right: 3rem;
+			right: 11rem;
 			background: url('/cases/buttonNext.svg') no-repeat center;
 			background-size: contain;
 
