@@ -265,6 +265,11 @@ max-width: 124.4rem;
 	@media screen and (max-width: 1024px) {
 		order: 2;
 	}
+
+	a {
+		color: #32a2ba;
+		text-decoration: underline;
+	 }
 }
 
 .solutionContentTitle {

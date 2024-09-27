@@ -15,8 +15,8 @@ html {
 }
 
 a {
-	color: #32a2ba;
-	text-decoration: underline;
+	color: inherit;
+	text-decoration: none;
  }
 
 @media screen and (max-width: 1024px) {
