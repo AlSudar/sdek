@@ -7,9 +7,8 @@ const DATA_MOCK = [
   {
     image: "/main/cases/kkmk.jpg",
     text: "Как работает склад мороженого без людей при -27&nbsp;°C.",
-    timePublication: "Читать 30.09",
     title: "КМКК (РЕННА)",
-    link: "#",
+    link: "/kkmk-renna",
   },
   {
     image: "/main/cases/uzum.jpg",

@@ -35,21 +35,35 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
           </Link>
         );
       })}
-      {/* <p className={cn(styles.link, styles.dropdownButton)}>Кейсы</p>
+      <p
+        className={cn(
+          styles.link,
+          styles.dropdownButton,
+          activeLink === CASES_ROUTES.kkmk && styles.activeLink
+        )}
+      >
+        Кейсы
+      </p>
       <ul className={styles.casesList}>
         {[
-          { title: "Ворсино айс", href: CASES_ROUTES.vorsino },
-          { title: "Невис", href: CASES_ROUTES.nevis },
-          { title: "UZUM айс", href: CASES_ROUTES.uzum },
-          { title: "КМКК (РЕННА)", href: CASES_ROUTES.kkmk },
+          //   { title: "Ворсино айс", href: CASES_ROUTES.vorsino },
+          //   { title: "Невис", href: CASES_ROUTES.nevis },
+          //   { title: "UZUM айс", href: CASES_ROUTES.uzum },
+          { title: "КМКК (РЕННА)", link: CASES_ROUTES.kkmk },
         ].map((item, id) => (
           <li key={id} className={styles.casesListItem}>
-            <Link className={styles.casesListItemLink} href={item.href}>
+            <Link
+              className={cn(
+                styles.casesListItemLink,
+                activeLink === item.link ? styles.casesListItemLinkActive : ""
+              )}
+              href={item.link}
+            >
               {item.title}
             </Link>
           </li>
         ))}
-      </ul> */}
+      </ul>
     </div>
   );
 };

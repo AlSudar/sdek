@@ -301,6 +301,7 @@ right: 30px;
 }
 
 .dropdownButton {
+	cursor: auto;
 	padding: 1.2rem 2.6rem;
 	border: none;
 
@@ -317,7 +318,8 @@ right: 30px;
 		margin-top: 65px;
 		font-size: 16px;
 		line-height: 18px;
-		color: #F2F2F2;
+		color: #F2F2F2 !important;
+		opacity: 0.6;
 		margin-bottom: -10px;
 	}
 
@@ -329,11 +331,15 @@ right: 30px;
 .casesListItemLink {
 	display: block;
 	width: 100%;
+	padding: 0.8rem 2rem;
+
+	@media screen and (max-width: 768px) {
+		padding: 0;
+	}
 }
 
 .casesListItem {
 	box-sizing: border-box;
-	padding: 0.8rem 2rem;
 	line-height: 1.6rem;
 	font-size: 1.4rem;
 	width: 16.6rem;
@@ -375,4 +381,15 @@ right: 30px;
 			background: transparent;
 		}
 	}
+}
+
+.casesListItemLinkActive {
+	background: #D12F24;
+	color: #F2F2F2;
+
+	@media screen and (max-width: 768px) {
+		background: transparent;
+		color: inherit;
+	}
+
 }

@@ -12,11 +12,11 @@ const ARTICLE_CARD = [
     imageSrc: "/cases/statya.jpg",
     href: "/technology-effect",
   },
-  //   {
-  //     text: "Кейсы",
-  //     imageSrc: "/articles/cases/all-cases-image.jpg",
-  //     href: "/#cases",
-  //   },
+  {
+    text: "Кейсы",
+    imageSrc: "/articles/cases/all-cases-image.jpg",
+    href: "/#cases",
+  },
 ];
 
 const MAX_FIRST_VALUE = 7000;

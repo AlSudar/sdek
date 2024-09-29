@@ -24,11 +24,11 @@ const ARTICLE_CARD = [
     imageSrc: "/articles/main/main.jpg",
     href: "/",
   },
-  //   {
-  //     text: "Кейсы",
-  //     imageSrc: "/articles/cases/all-cases-image.jpg",
-  //     href: "/#cases",
-  //   },
+  {
+    text: "Кейсы",
+    imageSrc: "/articles/cases/all-cases-image.jpg",
+    href: "/#cases",
+  },
 ];
 
 export default function Statya() {
