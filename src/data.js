@@ -70,7 +70,7 @@ export const CASES_PAGES_MOCK = [
 		url: CASES_ROUTES.kkmk,
 		seo: {
 			title: "Кейс КМКК (РЕННА)",
-			desc: "Как инженеры COMITAS автоматизировали низкотемпературный высотный склад",
+			desc: "Автоматизация низкотемпературного высотного склада",
 			ogImageSrc: '/cases/kkmk-renna/og.jpg',
 		},
 		hero: {
