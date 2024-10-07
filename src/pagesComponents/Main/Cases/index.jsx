@@ -13,9 +13,8 @@ const DATA_MOCK = [
   {
     image: "/main/cases/uzum.jpg",
     text: "Как&nbsp;ведущий российский интеграционный бизнес поддерживает развитие онлайн-торговли в&nbsp;Узбекистане?",
-    timePublication: "Читать 07.10",
     title: "UZUM",
-    link: "#",
+    link: "/uzum",
   },
   {
     image: "/main/cases/vorsino.jpg",

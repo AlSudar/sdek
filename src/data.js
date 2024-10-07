@@ -164,9 +164,9 @@ export const CASES_PAGES_MOCK = [
 	{
 		url: CASES_ROUTES.uzum,
 		seo: {
-			title: "",
-			desc: "",
-			ogImageSrc: '',
+			title: "Кейс UZUM",
+			desc: "Обеспечение логистического центра маркетплейса полочным мезонином и системой хранения",
+			ogImageSrc: '/cases/uzum/og.jpg',
 		},
 		hero: {
 			title: "UZUM",
