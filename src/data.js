@@ -4,8 +4,8 @@ export const CASES_PAGES_MOCK = [
 	{
 		url: CASES_ROUTES.vorsino,
 		seo: {
-			title: "",
-			desc: "",
+			title: "Кейс ВОРСИНО АЙС",
+			desc: "Проектирование высотного автоматизированного склада-морозильника на этапе строительства",
 			ogImageSrc: '',
 		},
 		hero: {

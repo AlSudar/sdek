@@ -75,7 +75,7 @@ const Case = () => {
         />
       </Head>
       <div className={cn(myFont.className)}>
-        <Header activeLink="" />
+        <Header activeLink="/vorsino-ice" />
         <section className={cn(styles.heroWrapper, myFontMontserrat.className)}>
           <div className={styles.hero}>
             <h1 className={styles.heroTitle}>{data.hero.title}</h1>

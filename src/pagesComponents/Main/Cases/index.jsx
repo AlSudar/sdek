@@ -20,8 +20,7 @@ const DATA_MOCK = [
     image: "/main/cases/vorsino.jpg",
     text: "Как с&nbsp;надежным партнером построить производственный склад.",
     title: "Ворсино Айс",
-    timePublication: "Читать 14.10",
-    link: "#",
+    link: "/vorsino-ice",
   },
   {
     image: "/main/cases/nevis.jpg",

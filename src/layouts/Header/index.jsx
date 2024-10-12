@@ -40,7 +40,8 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
           styles.link,
           styles.dropdownButton,
           (activeLink === CASES_ROUTES.kkmk ||
-            activeLink === CASES_ROUTES.uzum) &&
+            activeLink === CASES_ROUTES.uzum ||
+            activeLink === CASES_ROUTES.vorsino) &&
             styles.activeLink
         )}
       >
@@ -48,10 +49,10 @@ const LinksBlock = ({ activeLink, width, seVisibleMenu }) => {
       </p>
       <ul className={styles.casesList}>
         {[
-          //   { title: "Ворсино айс", href: CASES_ROUTES.vorsino },
           //   { title: "Невис", href: CASES_ROUTES.nevis },
           { title: "КМКК (РЕННА)", link: CASES_ROUTES.kkmk },
           { title: "UZUM", link: CASES_ROUTES.uzum },
+          { title: "Ворсино айс", link: CASES_ROUTES.vorsino },
         ].map((item, id) => (
           <li key={id} className={styles.casesListItem}>
             <Link
