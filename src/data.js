@@ -6,7 +6,7 @@ export const CASES_PAGES_MOCK = [
 		seo: {
 			title: "Кейс ВОРСИНО АЙС",
 			desc: "Проектирование высотного автоматизированного склада-морозильника на этапе строительства",
-			ogImageSrc: '',
+			ogImageSrc: '/cases/vorsino-ice',
 		},
 		hero: {
 			title: "Ворсино айс",
@@ -62,9 +62,13 @@ export const CASES_PAGES_MOCK = [
 		comments: {
 			desc: "&laquo;Хотелось&nbsp;бы выразить благодарность компании COMITAS. Несмотря на&nbsp;резкое охлаждение отношений с&nbsp;ЕС в&nbsp;феврале 2022 года руководству компании COMITAS удалось сохранить теплые отношения с&nbsp;европейским поставщиком оборудования, что позволило реализовать проект без каких-либо отклонений по&nbsp;качеству и&nbsp;срокам&raquo;.",
 		},
-		image: {
-			src: '/cases/vorsino-ice/image.jpg'
-		},
+		images: [{
+			src: '/cases/vorsino-ice/imageFirst.jpg'
+		}, {
+			src: '/cases/vorsino-ice/imageSecond.jpg'
+		}, {
+			src: '/cases/vorsino-ice/imageThird.jpg'
+		}],
 	},
 	{
 		url: CASES_ROUTES.kkmk,

@@ -239,8 +239,8 @@ display: grid;
 grid-template-columns: 51.4rem 68rem;
 justify-content: space-between;
 gap: 4rem;
-padding: 0 5.6rem 12rem 0;
 max-width: 124.4rem;
+padding: 0 5.6rem 12rem 0;
 
 @media screen and (max-width: 1024px) {
 	max-width: 80.4rem;
@@ -259,6 +259,30 @@ max-width: 124.4rem;
 	padding: 0 30px 50px;
 	gap: 20px;
 }
+}
+
+.solutionVorsino {
+	padding: 0 5.6rem 0 0;
+
+	@media screen and (max-width: 1024px) {
+		padding: 0 3rem 12rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 0 30px 100px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding: 0 30px 50px;
+	}
+}
+
+.resultVorsino {
+	margin-top: -7rem;
+
+	@media screen and (max-width: 1024px) {
+		margin-top: 0;
+	}
 }
 
 .solutionContent {
@@ -845,6 +869,14 @@ width: 100%;
 
 			@media screen and (max-width: 768px) {
 				width: calc(100% * 4);
+			}
+		}
+
+		.swiperWrapperVorsino {
+			display: flex;
+
+			@media screen and (max-width: 768px) {
+				width: calc(100% * 3);
 			}
 		}
 
