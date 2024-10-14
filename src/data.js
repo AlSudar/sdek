@@ -6,7 +6,7 @@ export const CASES_PAGES_MOCK = [
 		seo: {
 			title: "Кейс ВОРСИНО АЙС",
 			desc: "Проектирование высотного автоматизированного склада-морозильника на этапе строительства",
-			ogImageSrc: '/cases/vorsino-ice',
+			ogImageSrc: '/cases/vorsino-ice/og.jpg',
 		},
 		hero: {
 			title: "Ворсино айс",
