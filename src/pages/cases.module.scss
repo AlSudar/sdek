@@ -261,30 +261,6 @@ padding: 0 5.6rem 12rem 0;
 }
 }
 
-.solutionVorsino {
-	padding: 0 5.6rem 0 0;
-
-	@media screen and (max-width: 1024px) {
-		padding: 0 3rem 12rem;
-	}
-
-	@media screen and (max-width: 768px) {
-		padding: 0 30px 100px;
-	}
-
-	@media screen and (max-width: 480px) {
-		padding: 0 30px 50px;
-	}
-}
-
-.resultVorsino {
-	margin-top: -7rem;
-
-	@media screen and (max-width: 1024px) {
-		margin-top: 0;
-	}
-}
-
 .solutionContent {
 	@media screen and (max-width: 1024px) {
 		order: 2;
@@ -294,6 +270,11 @@ padding: 0 5.6rem 12rem 0;
 		color: #32a2ba;
 		text-decoration: underline;
 	 }
+}
+
+.solutionVorsinoImage {
+	width: 100%;
+	height: auto;
 }
 
 .solutionContentTitle {
@@ -929,5 +910,112 @@ width: 100%;
 
 			&:last-of-type {
 				margin: 0;
+			}
+		}
+
+		.contentWrapper {
+			padding: 0 5.6rem 0 4rem;
+			max-width: 120.8rem;
+			grid-template-columns: 42.4rem 68rem;
+
+			@media screen and (max-width: 1024px) {
+				padding: 0 3rem 12rem;
+				display: flex;
+				max-width: 80.4rem;
+				flex-direction: column;
+gap: 6rem;
+			}
+
+			@media screen and (max-width: 768px) {
+				padding: 0 30px 100px;
+				display: flex;
+				flex-direction: column;
+gap: 50px;
+			}
+
+			@media screen and (max-width: 480px) {
+				padding: 0 30px 50px;
+				display: flex;
+				flex-direction: column;
+gap: 20px;
+			}
+		}
+
+		.vorsinoImage {
+			width: 42.4rem;
+			height: 51.1rem;
+
+			@media screen and (max-width: 1024px) {
+				width: 80rem;
+				height: 96.5rem;
+			}
+
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+
+		.solutionResultWrapper {
+			position: relative;
+			top: -7rem;
+
+			@media screen and (max-width: 1024px) {
+				top: 0;
+				order: 2;
+			}
+		}
+
+
+		.vorsinoResultImage {
+			position: relative;
+top: 2rem;
+
+@media screen and (max-width: 1024px) {
+	top: 0;
+	margin-top: 2.2rem;
+	order: 3;
+}
+
+@media screen and (max-width: 768px) {
+	margin-top: 22px;
+}
+		}
+
+		.vorsinoCommentImage {
+			position: relative;
+			top: 0;
+
+			@media screen and (max-width: 1024px) {
+				order: 3;
+			}
+		}
+
+		.commentsVorsinoWrapper {
+			position: relative;
+			top: 7rem;
+
+			@media screen and (max-width: 1024px) {
+				top: 0;
+			}
+		}
+
+		.articleWrapperSolution {
+			padding-top: 3rem;
+
+			@media screen and (max-width: 1024px) {
+				padding-top: 0;
+			}
+		}
+
+
+		.contentCommentsWrapper {
+			@media screen and (max-width: 1024px) {
+				padding-bottom: 2rem;
+			}
+
+			@media screen and (max-width: 768px) {
+				padding-bottom: 0;
 			}
 		}

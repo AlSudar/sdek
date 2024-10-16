@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/pages/nevis/index.jsx", "src/pages/kkmk-renna/index.jsx", "src/pages/vorsino-ice/index.jsx",  ],
+, "src/pages/nevis/index.jsx", "src/pages/kkmk-renna/index.jsx", "src/pages/vorsino-ice/index.jsx", "src/pages/uzum/index.jsx",  ],
   "exclude": [
     "node_modules"
   ]

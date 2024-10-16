@@ -9,9 +9,6 @@ import styles from "../cases.module.scss";
 import Image from "next/image.js";
 import allstyles from "../style.module.scss";
 import { Articles } from "../../components/Articles/index.jsx";
-import { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 
 const myFont = Roboto({
   subsets: ["latin"],
@@ -38,8 +35,6 @@ const ARTICLE_CARD = [
 
 const Case = () => {
   const data = CASES_PAGES_MOCK[0];
-  const swiperButtonNextRef = useRef();
-  const swiperButtonPrevRef = useRef();
 
   return (
     <>
@@ -123,14 +118,14 @@ const Case = () => {
             </div>
           </ContentWrapper>
           <ContentWrapper
-            className={cn(styles.solution, styles.solutionVorsino)}
+            className={cn(styles.solution, styles.contentWrapper)}
           >
             <Image
               src={data.solution.image.src}
               alt=""
-              width={504}
-              height={314}
-              className={styles.solutionImage}
+              width={424}
+              height={511}
+              className={cn(styles.solutionImage, styles.vorsinoImage)}
             />
             <div className={styles.solutionContent}>
               <h2 className={styles.solutionContentTitle}>Решение COMITAS</h2>
@@ -140,9 +135,21 @@ const Case = () => {
               />
             </div>
           </ContentWrapper>
-          <ContentWrapper className={cn(styles.result, styles.resultVorsino)}>
-            <div />
-            <section className={styles.resultWrapper}>
+          <ContentWrapper
+            className={cn(
+              styles.result,
+              styles.resultVorsino,
+              styles.contentWrapper
+            )}
+          >
+            <Image
+              src={data.result.image.src}
+              alt=""
+              width={424}
+              height={511}
+              className={cn(styles.vorsinoImage, styles.vorsinoResultImage)}
+            />
+            <section className={styles.solutionResultWrapper}>
               <h2 className={styles.resultTitle}>Результат</h2>
               <ul className={styles.resultList}>
                 {data.result.list.map((item, id) => {
@@ -161,9 +168,21 @@ const Case = () => {
               </ul>
             </section>
           </ContentWrapper>
-          <ContentWrapper className={styles.comments}>
-            <div />
-            <section className={styles.commentsWrapper}>
+          <ContentWrapper
+            className={cn(
+              styles.comments,
+              styles.contentWrapper,
+              styles.contentCommentsWrapper
+            )}
+          >
+            <Image
+              src={data.comments.image.src}
+              alt=""
+              width={424}
+              height={511}
+              className={cn(styles.vorsinoImage, styles.vorsinoCommentImage)}
+            />
+            <section className={styles.commentsVorsinoWrapper}>
               <h2 className={styles.commentsTitle}>
                 Комментарий компании&#8209;заказчика
               </h2>
@@ -173,72 +192,9 @@ const Case = () => {
               />
             </section>
           </ContentWrapper>
-          <ContentWrapper className={styles.imageWrapper}>
-            <div />
-            <div className={styles.swiperVisible}>
-              <Swiper
-                onProgress={(swiper) => {
-                  {
-                    if (
-                      swiperButtonPrevRef.current &&
-                      swiperButtonNextRef.current
-                    ) {
-                      if (swiper.progress === 0) {
-                        swiperButtonPrevRef.current.style.display = "none";
-                      } else {
-                        swiperButtonPrevRef.current.style.display = "block";
-                      }
-
-                      if (swiper.progress === 1) {
-                        swiperButtonNextRef.current.style.display = "none";
-                      } else {
-                        swiperButtonNextRef.current.style.display = "block";
-                      }
-                    }
-                  }
-                }}
-                modules={[Navigation]}
-                navigation={{
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                }}
-                slidesPerView={"auto"}
-                wrapperClass={styles.swiperWrapperVorsino}
-                className={styles.swiper}
-              >
-                <div
-                  ref={swiperButtonPrevRef}
-                  style={{ display: "none" }}
-                  className={cn(
-                    styles.buttonSwiper,
-                    styles.buttonPrevSwiper,
-                    "swiper-button-prev"
-                  )}
-                />
-                <div
-                  ref={swiperButtonNextRef}
-                  className={cn(
-                    styles.buttonSwiper,
-                    styles.buttonNextSwiper,
-                    "swiper-button-next"
-                  )}
-                />
-                {data.images.map((image, id) => (
-                  <SwiperSlide key={id} className={styles.slide}>
-                    <Image
-                      className={styles.swiperImage}
-                      alt=""
-                      src={image.src}
-                      key={id}
-                      width={736}
-                      height={404}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </ContentWrapper>
-          <ContentWrapper className={styles.articleWrapper}>
+          <ContentWrapper
+            className={cn(styles.articleWrapper, styles.articleWrapperSolution)}
+          >
             <div />
             <Articles articleCards={ARTICLE_CARD} />
           </ContentWrapper>

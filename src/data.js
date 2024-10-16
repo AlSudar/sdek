@@ -58,17 +58,16 @@ export const CASES_PAGES_MOCK = [
 					},
 				},
 			],
+			image: {
+				src: "/cases/vorsino-ice/result-image.jpg",
+			},
 		},
 		comments: {
 			desc: "&laquo;Хотелось&nbsp;бы выразить благодарность компании COMITAS. Несмотря на&nbsp;резкое охлаждение отношений с&nbsp;ЕС в&nbsp;феврале 2022 года руководству компании COMITAS удалось сохранить теплые отношения с&nbsp;европейским поставщиком оборудования, что позволило реализовать проект без каких-либо отклонений по&nbsp;качеству и&nbsp;срокам&raquo;.",
+			image: {
+				src: "/cases/vorsino-ice/comment-image.jpg",
+			},
 		},
-		images: [{
-			src: '/cases/vorsino-ice/imageFirst.jpg'
-		}, {
-			src: '/cases/vorsino-ice/imageSecond.jpg'
-		}, {
-			src: '/cases/vorsino-ice/imageThird.jpg'
-		}],
 	},
 	{
 		url: CASES_ROUTES.kkmk,
