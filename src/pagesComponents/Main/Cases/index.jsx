@@ -26,8 +26,7 @@ const DATA_MOCK = [
     image: "/main/cases/nevis.jpg",
     text: "Каковы главные качества всех&nbsp;процессов, связанных с&nbsp;медициной и&nbsp;здоровьем человека?",
     title: "Невис",
-    timePublication: "Читать 21.10",
-    link: "#",
+    link: "/nevis",
   },
 ];
 
