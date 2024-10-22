@@ -211,9 +211,9 @@ export const CASES_PAGES_MOCK = [
 	{
 		url: CASES_ROUTES.nevis,
 		seo: {
-			title: "",
-			desc: "",
-			ogImageSrc: '',
+			title: "Кейс НЕВИС",
+			desc: "Оптимизация процесса сборки комплексных заказов и повышение эффективности трудового ресурса",
+			ogImageSrc: '/cases/nevis/og.jpg',
 		},
 		hero: {
 			title: "НЕВИС",
