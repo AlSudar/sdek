@@ -288,6 +288,8 @@ export const CASES_PAGES_MOCK = [
 			src: '/cases/nevis/imageFirst.jpg'
 		}, {
 			src: '/cases/nevis/imageSecond.jpg'
+		}, {
+			src: '/cases/nevis/imageThird.jpg'
 		}],
 	},
 ];

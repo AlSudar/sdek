@@ -201,7 +201,7 @@ const Case = () => {
                   prevEl: ".swiper-button-prev",
                 }}
                 slidesPerView={"auto"}
-                wrapperClass={styles.swiperWrapper}
+                wrapperClass={styles.swiperWrapperVorsino}
                 className={styles.swiper}
               >
                 <div
