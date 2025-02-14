@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  font-size: 0.6945vw;
+  font-size: 0.6285vw;
 }
 
 a {
@@ -19,19 +19,14 @@ a {
 	text-decoration: none;
  }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
 	html {
 		font-size: 0.977vw;
 	}
-  }
+  } */
 
 @media screen and (max-width: 768px) {
   html {
     font-size: 14px;
   }
 }
-
-
-/* .swiper-slide-prev {
-	opacity: 0;
-} */
