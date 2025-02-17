@@ -35,12 +35,12 @@
 	&_title {
 		font-size: 8rem;
 		color: #ffffff;
-		line-height: 10rem;
+		line-height: 8rem;
 	}
 
 	&_text {
 		font-size: 1.8rem;
-		line-height: 3rem;
+		line-height: 2.52rem;
 		color: #ffffff;
 	}
 }
@@ -52,16 +52,27 @@
 	height: 5rem;
 	margin-top: 2rem;
 
-	&_first_image {
-		width: 15.8rem;
+	&_first {
+		&_image {
+			width: 15.8rem;
+			height: 2.4rem;
+		}
 	}
 
-	&_second_image {
-		width: 12.5rem;
+	&_second {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		gap: 0.5rem;
+
+		&_image {
+			width: 12.5rem;
+			height: 2.4rem;
+		}
 	}
 
 	&_text {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		color: #ffffff;
 	}
 }
@@ -94,6 +105,7 @@
 		&_title {
 			font-size: 5.5rem;
 			line-height: 5.5rem;
+			color: #19323e;
 		}
 	}
 
@@ -110,8 +122,9 @@
 
 		&_title {
 			font-size: 3rem;
-			line-height: 3rem;
+			line-height: 3.3rem;
 			margin-top: 4rem;
+			color: #19323e;
 		}
 	}
 
@@ -129,6 +142,7 @@
 		&_title {
 			font-size: 3rem;
 			line-height: 3rem;
+			color: #19323e;
 		}
 	}
 
@@ -146,7 +160,8 @@
 
 		&_title {
 			font-size: 3rem;
-			line-height: 3rem;
+			line-height: 3.3rem;
+			color: #19323e;
 		}
 	}
 
@@ -156,8 +171,9 @@
 	}
 
 	&_text {
-		font-size: 1.4rem;
-		line-height: 1.6rem;
+		font-size: 1.6rem;
+		line-height: 2.24rem;
+		color: #19323e;
 	}
 
 	&_quote {
@@ -169,7 +185,8 @@
 		&_text {
 			font-size: 2.2rem;
 			font-weight: bold;
-			line-height: 2.6rem;
+			line-height: 2.64rem;
+			color: #19323e;
 		}
 
 		&_author {
@@ -178,14 +195,28 @@
 			gap: 1rem;
 
 			&_image {
+				min-width: 5rem;
 				width: 5rem;
 				height: 5rem;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: 0 -2px;
+
+				&_position {
+					min-width: 5rem;
+					width: 5rem;
+					height: 5rem;
+					border-radius: 50%;
+					object-fit: cover;
+				}
 			}
 
 			&_info {
 				display: flex;
 				flex-direction: column;
-				font-size: 1.4rem;
+				font-size: 1.6rem;
+				line-height: 2.24rem;
+				color: #19323e;
 			}
 
 			&_name {
@@ -213,12 +244,13 @@
 
 			&_title {
 				font-size: 3rem;
+				line-height: 3.3rem;
 				color: #ffffff;
 			}
 
 			&_text {
-				font-size: 1.4rem;
-				line-height: 2rem;
+				font-size: 1.6rem;
+				line-height: 2.24rem;
 				color: #ffffff;
 			}
 		}
@@ -263,7 +295,7 @@
 
 		&_text {
 			font-size: 16px;
-			line-height: 140%;
+			line-height: 25.2px;
 		}
 	}
 
@@ -271,16 +303,23 @@
 		height: 50px;
 		margin-top: 20px;
 
-		&_first_image {
-			width: 158px;
+		&_first {
+			&_image {
+				width: 158px;
+				height: 24px;
+			}
 		}
 
-		&_second_image {
-			width: 125px;
+		&_second {
+			gap: 5px;
+			&_image {
+				width: 125px;
+				height: 24px;
+			}
 		}
 
 		&_text {
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 
@@ -314,7 +353,7 @@
 
 			&_title {
 				font-size: 24px;
-				line-height: 24px;
+				line-height: 26.4px;
 				margin-top: 40px;
 			}
 		}
@@ -338,7 +377,7 @@
 
 			&_title {
 				font-size: 24px;
-				line-height: 24px;
+				line-height: 26.4px;
 			}
 		}
 
@@ -348,7 +387,7 @@
 
 		&_text {
 			font-size: 16px;
-			line-height: 140%;
+			line-height: 22.4px;
 		}
 
 		&_quote {
@@ -357,19 +396,27 @@
 
 			&_text {
 				font-size: 20px;
-				line-height: 120%;
+				line-height: 26.4px;
 			}
 
 			&_author {
 				gap: 10px;
 
 				&_image {
+					min-width: 50px;
 					width: 50px;
 					height: 50px;
+
+					&_position {
+						min-width: 50px;
+						width: 50px;
+						height: 50px;
+					}
 				}
 
 				&_info {
-					font-size: 14px;
+					font-size: 16px;
+					line-height: 22.4px;
 				}
 			}
 		}
@@ -389,12 +436,12 @@
 
 				&_title {
 					font-size: 24px;
-					line-height: 110%;
+					line-height: 26.4px;
 				}
 
 				&_text {
-					font-size: 14px;
-					line-height: 140%;
+					font-size: 16px;
+					line-height: 22.4px;
 				}
 			}
 		}

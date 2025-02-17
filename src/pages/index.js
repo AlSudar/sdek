@@ -34,19 +34,23 @@ const Header = () => (
 		<div className={styles.header_wrapper}>
 			<nav className={styles.logo}>
 				<div className={styles.logo_first}>
-					<img
+					<Image
 						className={styles.logo_first_image}
 						src='/sdek-logo.svg'
-						alt='Сдэк'
+						width={158}
+						height={24}
+						alt='Логотип Сдэк'
 					/>
-					<p className={styles.logo_text}>Специальный проект 16+</p>
 				</div>
 				<div className={styles.logo_second}>
-					<img
+					<Image
 						className={styles.logo_second_image}
 						src='/vedomosti-logo.svg'
-						alt='Ведомости'
+						width={125}
+						height={24}
+						alt='Логотип Ведомости'
 					/>
+					<p className={styles.logo_text}>Специальный проект 16+</p>
 				</div>
 			</nav>
 			<div className={styles.header_content}>
@@ -101,10 +105,12 @@ const Main = () => (
 							креативного логистического хаоса со множеством возможностей».
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
+							<Image
 								className={styles.content_quote_author_image}
 								src='/author.png'
-								alt='Автор'
+								width={50}
+								height={50}
+								alt='Фотография Александра Воронова'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -155,10 +161,12 @@ const Main = () => (
 							“Экспресс-курьер”», сокращенно — «СДЭК»
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
+							<Image
 								className={styles.content_quote_author_image}
 								src='/author2.png'
-								alt='Автор'
+								width={50}
+								height={50}
+								alt='Фотография Максима Толстоброва'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -183,20 +191,26 @@ const Main = () => (
 					</p>
 					<blockquote className={styles.content_quote}>
 						<p className={styles.content_quote_text}>
-							«Кризис 2008 года подтолкнул нас искать возможности для роста»
+							«Все изменил финансовый кризис 2008 года. С одной стороны,
+							компании сокращали затраты, с другой — искали новые возможности
+							для роста. Те, кто был готов к риску, сделали ставку на развитие
+							сотрудничества с интернет-магазинами. Тогда это выглядело как
+							безумие».
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
+							<Image
 								className={styles.content_quote_author_image}
 								src='/author3.png'
-								alt='Автор'
+								width={50}
+								height={50}
+								alt='Фотография Вячеслава Пиксаева'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
-									Артем Островский
+									Вячеслав Пиксаев
 								</p>
 								<p className={styles.content_quote_author_text}>
-									Исполнительный директор СДЭК 
+									Генеральный директор СДЭК 
 								</p>
 							</div>
 						</div>
@@ -233,7 +247,7 @@ const Main = () => (
 						собственные филиалы. Другие искали способы масштабироваться без
 						капитальных инвестиций и в сжатые сроки.
 					</p>
-					<img className={styles.content_image} src='/2010_1.png' alt='сдэк' />
+					<img className={styles.content_image} src='/2010_1.png' alt='' />
 					<blockquote className={styles.content_quote}>
 						<p className={styles.content_quote_text}>
 							«Например, СДЭК внедрил инновационную для отрасли модель
@@ -243,10 +257,12 @@ const Main = () => (
 							лидеры»
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
+							<Image
 								className={styles.content_quote_author_image}
 								src='/author.png'
-								alt='Автор'
+								width={50}
+								height={50}
+								alt='Фотография Александра Воронова'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -262,7 +278,7 @@ const Main = () => (
 						<img
 							className={styles.content_statistics_icon}
 							src='/Vector1.svg'
-							alt='сдэк'
+							alt=''
 						/>
 						<div className={styles.content_statistics_info}>
 							<h3 className={styles.content_statistics_info_title}>
@@ -285,7 +301,7 @@ const Main = () => (
 						реагировать одновременно и на потребности и магазинов, и их
 						клиентов.
 					</p>
-					<img className={styles.content_image} src='/2010_2.png' alt='сдэк' />
+					<img className={styles.content_image} src='/2010_2.png' alt='' />
 					<p className={styles.content_text}>
 						Со стороны продавцов появился запрос на хранение товаров, обработку
 						и доставку «под ключ» — операторы предложили фулфилмент и интеграцию
@@ -301,10 +317,12 @@ const Main = () => (
 							вперед»
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
+							<Image
 								className={styles.content_quote_author_image}
-								src='/author3.png'
-								alt='Автор'
+								src='/author4.png'
+								width={50}
+								height={50}
+								alt='Фотография Артема Островского'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -337,10 +355,12 @@ const Main = () => (
 							операторы стали еще и технологическими компаниями»
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
-								className={styles.content_quote_author_image}
-								src='/author4.png'
-								alt='Автор'
+							<Image
+								className={styles.content_quote_author_image_position}
+								src='/author5.png'
+								width={50}
+								height={50}
+								alt='Фотография Николая Пахомова'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -374,7 +394,7 @@ const Main = () => (
 						<img
 							className={styles.content_statistics_icon}
 							src='/Vector2.svg'
-							alt='сдэк'
+							alt=''
 						/>
 						<div className={styles.content_statistics_info}>
 							<h3 className={styles.content_statistics_info_title}>
@@ -415,10 +435,12 @@ const Main = () => (
 							отвозит в распределительный центр маркетплейса»
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
-								className={styles.content_quote_author_image}
-								src='/author4.png'
-								alt='Автор'
+							<Image
+								className={styles.content_quote_author_image_position}
+								src='/author5.png'
+								width={50}
+								height={50}
+								alt='Фотография Николая Пахомова'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -452,10 +474,12 @@ const Main = () => (
 							другие параметры»
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
+							<Image
 								className={styles.content_quote_author_image}
-								src='/author3.png'
-								alt='Автор'
+								src='/author4.png'
+								width={50}
+								height={50}
+								alt='Фотография Артема Островского'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -469,17 +493,30 @@ const Main = () => (
 					</blockquote>
 				</div>
 				<div className={styles.content_fourth}>
-					<h2 className={styles.content_fourth_title}>Экосистемный подход</h2>
+					<h2 className={styles.content_fourth_title}>
+						Сервисы для развития бизнеса
+					</h2>
 					<p className={styles.content_text}>
 						Крупные игроки стремятся развивать не только доставку, но и
 						взаимодополняющие проекты. По отдельности эти инициативы были бы
-						слишком затратными , то благодаря синергии это становится выгодным и
-						операторам, и их клиентам.
+						слишком затратными, то благодаря синергии это становится выгодным и
+						операторам, и их клиентам. Получается открытая предпринимательская
+						платформа, где партнеры операторов могут развивать бизнес с
+						поддержкой разнонаправленных сервисов.
+					</p>
+					<p className={styles.content_text}>
+						Один из таких проектов — рекламный инструмент для предпринимателей
+						СДЭК.Медиа. Благодаря ему компании могут использовать площадки
+						оператора для продвижения своих товаров и услуг: в офисах, в
+						приложении и на сайте. А платежный сервис CDEK PAY позволяет
+						компаниям выгодно принимать все виды онлайн-платежей от физлиц и
+						бизнеса, использовать офлайн-терминалы — и упрощает расчеты для всех
+						участников.
 					</p>
 					<blockquote className={styles.content_quote}>
 						<p className={styles.content_quote_text}>
-							«Поясню на нашем примере. Продавцы продвигают свои товары через
-							сервис размещения рекламы СДЭК Медиа. Мы эти товары доставляем
+							«Поясню на примере. Продавцы продвигают свои товары через сервис
+							размещения рекламы СДЭК Медиа. Мы эти товары доставляем
 							покупателям, а все расчеты проходят через платежный агрегатор CDEK
 							PAY. Еще пример — маркетплейс зарубежных товаров СДЭК Shopping,
 							который мы перезапустили после ухода из России ряда иностранных
@@ -487,10 +524,12 @@ const Main = () => (
 							присутствие и тоже использует сервисы CDEK PAY и СДЭК Медиа»
 						</p>
 						<div className={styles.content_quote_author}>
-							<img
+							<Image
 								className={styles.content_quote_author_image}
-								src='/author5.png'
-								alt='Автор'
+								src='/author2.png'
+								width={50}
+								height={50}
+								alt='Фотография Максима Толстоброва'
 							/>
 							<div className={styles.content_quote_author_info}>
 								<p className={styles.content_quote_author_name}>
@@ -521,6 +560,19 @@ const Main = () => (
 					</p>
 				</div>
 				<div className={styles.content_second}>
+					<h2 className={styles.content_second_title}>
+						Развитие нелогистических услуг для бизнеса.
+					</h2>
+					<p className={styles.content_text}>
+						По мере роста маркетплейсов работа с ними становится для продавцов
+						менее выгодной из-за высокой конкуренции и сопутствующих расходов.
+						Селлеры открывают собственные интернет-магазины, их количество снова
+						увеличивается. А вместе с тем — и спрос на открытые
+						предпринимательские платформы. Логистические операторы окончательно
+						перестанут восприниматься как исключительно сервисы обработки и
+						доставки грузов: выиграют те, кто будет оказывать комплексные услуги
+						— от сервисов приема платежей до возможностей продвижения.
+					</p>
 					<h2 className={styles.content_second_title}>
 						Еще большая гибкость параметров доставки
 					</h2>
