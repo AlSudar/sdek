@@ -1,0 +1,26 @@
+.background_component {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90rem;
+  display: flex;
+  align-items: center;
+
+  &_title {
+    margin: 0 auto;
+    font-size: 14rem;
+    line-height: 14rem;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .background_component {
+    height: 500px;
+    &_title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+}

@@ -12,7 +12,7 @@
 	"dependencies": {
 		"@next/font": "14.0.3",
 		"classname": "0.0.0",
-		"classnames": "2.3.2",
+		"classnames": "^2.3.2",
 		"next": "13.4.10",
 		"react": "18.2.0",
 		"react-awesome-reveal": "4.2.11",
