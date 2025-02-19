@@ -48,6 +48,7 @@
 
   .listItemTitle,
   .listItemDesc {
+    text-align: right !important;
     opacity: 0.3;
   }
 }
@@ -86,6 +87,7 @@
 }
 
 .listItemTitle {
+  display: block;
   margin: 0 0 0.4rem;
   font-weight: 600;
   font-size: 1.8rem;
@@ -94,6 +96,7 @@
 }
 
 .listItemDesc {
+  text-align: left;
   margin: 0;
   font-weight: 300;
   font-size: 1.2rem;

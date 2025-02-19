@@ -1,5 +1,4 @@
 import styles from './index.module.scss';
-import cn from 'classnames';
 
 const MOCK = [
   { title: '1990-e:', desc: 'время возможностей' },
@@ -15,33 +14,16 @@ const MOCK = [
   },
 ];
 
-const TimeLineDesktop = ({ activeId }) => {
+const TimeLineMobile = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.header}>
       <ul className={styles.list}>
         {MOCK.map((item, id) => {
-          return (
-            <li
-              key={id}
-              className={cn(
-                styles.listItem,
-                Number(id) !== Number(activeId) && styles.disable
-              )}
-            >
-              <span
-                className={styles.listItemTitle}
-                dangerouslySetInnerHTML={{ __html: item.title }}
-              />
-              <p
-                className={styles.listItemDesc}
-                dangerouslySetInnerHTML={{ __html: item.desc }}
-              />
-            </li>
-          );
+          return <li key={id}></li>;
         })}
       </ul>
     </div>
   );
 };
 
-export { TimeLineDesktop };
+export { TimeLineMobile };
