@@ -6,6 +6,8 @@
   height: 90rem;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
 
   &::after {
     content: '';

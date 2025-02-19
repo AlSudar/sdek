@@ -3,11 +3,13 @@ import Image from 'next/image';
 import { BackgroundComponent } from '../../components/BackgroundComponent';
 import { Fade } from 'react-awesome-reveal';
 import cn from 'classnames';
+import { TimeLineDesktop } from '../TimeLineDesktop';
 
 const Main = () => (
   <main className={styles.main}>
     <div className={styles.main_wrapper}>
       <div className={styles.main_content}>
+        <TimeLineDesktop activeId={0} />
         <Fade triggerOnce direction='up'>
           <div className={styles.content_first}>
             <h2 className={styles.content_first_title}>
@@ -69,6 +71,7 @@ const Main = () => (
     <BackgroundComponent backgroundImage='/2000.png' title='2000-e' />
     <div className={styles.main_wrapper}>
       <div className={styles.main_content}>
+        <TimeLineDesktop activeId={1} />
         <Fade triggerOnce direction='up'>
           <div className={styles.content_first}>
             <h2 className={styles.content_first_title}>
@@ -175,6 +178,7 @@ const Main = () => (
     <BackgroundComponent backgroundImage='/2010.png' title='2010-e' />
     <div className={styles.main_wrapper}>
       <div className={styles.main_content}>
+        <TimeLineDesktop activeId={2} />
         <Fade triggerOnce direction='up'>
           <div className={styles.content_first}>
             <h2 className={styles.content_first_title}>
@@ -358,6 +362,7 @@ const Main = () => (
     <BackgroundComponent backgroundImage='/2020.png' title='2020-e' />
     <div className={styles.main_wrapper}>
       <div className={styles.main_content}>
+        <TimeLineDesktop activeId={3} />
         <Fade triggerOnce direction='up'>
           <div className={styles.content_first}>
             <h2 className={styles.content_first_title}>
@@ -548,6 +553,7 @@ const Main = () => (
     />
     <div className={styles.main_wrapper}>
       <div className={styles.main_content}>
+        <TimeLineDesktop activeId={4} />
         <div className={styles.content_first}>
           <Fade triggerOnce direction='up'>
             <h2 className={styles.content_first_title}>
