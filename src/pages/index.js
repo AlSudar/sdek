@@ -10,13 +10,18 @@ import { Main } from '../components/Main';
 const myFont = localFont({
   src: [
     {
-      path: './fonts/TTFirsBold.woff2',
-      weight: '500',
+      path: './fonts/OnestLight.ttf',
+      weight: '300',
       style: 'normal',
     },
     {
-      path: './fonts/TTFirsMedium.woff2',
-      weight: '400',
+      path: './fonts/OnestSemiBold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './fonts/OnestBold.ttf',
+      weight: '700',
       style: 'normal',
     },
   ],
@@ -29,7 +34,7 @@ export default function Home() {
       <Head>
         <title>Маршрут российской логистики</title>
       </Head>
-      <div>
+      <div className={myFont.className}>
         <Header />
         <Main />
         <Footer width={width} />
