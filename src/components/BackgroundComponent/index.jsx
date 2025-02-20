@@ -1,7 +1,8 @@
 import styles from './index.module.scss';
 
-const BackgroundComponent = ({ backgroundImage, title }) => (
+const BackgroundComponent = ({ backgroundImage, title, id }) => (
   <div
+    id={id}
     className={styles.background_component}
     style={{ backgroundImage: `url(${backgroundImage})` }}
   >

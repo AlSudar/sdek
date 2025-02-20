@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <main className={styles.main}>
       <div className={styles.main_wrapper}>
-        <div className={styles.main_content}>
+        <div id='main-content-1990' className={styles.main_content}>
           {width && width > 680 && <TimeLineDesktop activeId={0} />}
           <Fade triggerOnce direction='up'>
             <div className={styles.content_first}>
@@ -73,9 +73,13 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <BackgroundComponent backgroundImage='/2000.png' title='2000-e' />
+      <BackgroundComponent
+        id='2000'
+        backgroundImage='/2000.png'
+        title='2000-e'
+      />
       <div className={styles.main_wrapper}>
-        <div className={styles.main_content}>
+        <div id='main-content-2000' className={styles.main_content}>
           {width && width > 680 && <TimeLineDesktop activeId={1} />}
           <Fade triggerOnce direction='up'>
             <div className={styles.content_first}>
@@ -184,9 +188,13 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <BackgroundComponent backgroundImage='/2010.png' title='2010-e' />
+      <BackgroundComponent
+        id='2010'
+        backgroundImage='/2010.png'
+        title='2010-e'
+      />
       <div className={styles.main_wrapper}>
-        <div className={styles.main_content}>
+        <div id='main-content-2010' className={styles.main_content}>
           {width && width > 680 && <TimeLineDesktop activeId={2} />}
           <Fade triggerOnce direction='up'>
             <div className={styles.content_first}>
@@ -375,9 +383,13 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <BackgroundComponent backgroundImage='/2020.png' title='2020-e' />
+      <BackgroundComponent
+        id='2020'
+        backgroundImage='/2020.png'
+        title='2020-e'
+      />
       <div className={styles.main_wrapper}>
-        <div className={styles.main_content}>
+        <div id='main-content-2020' className={styles.main_content}>
           {width && width > 680 && <TimeLineDesktop activeId={3} />}
           <Fade triggerOnce direction='up'>
             <div className={styles.content_first}>
@@ -576,11 +588,12 @@ const Main = () => {
         </div>
       </div>
       <BackgroundComponent
+        id={'future'}
         backgroundImage='/future.png'
         title='Взгляд в будущее'
       />
       <div className={styles.main_wrapper}>
-        <div className={styles.main_content}>
+        <div id='main-content-future' className={styles.main_content}>
           {width && width > 680 && <TimeLineDesktop activeId={4} />}
           <div className={styles.content_first}>
             <Fade triggerOnce direction='up'>

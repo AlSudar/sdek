@@ -5,21 +5,37 @@ const MOCK = [
   { title: '2000-e:', desc: 'торговля выходит<br /> в&nbsp;онлайн' },
   {
     title: '2010-e:',
-    desc: 'перестройка<br />логистической<br />инфраструктуры',
+    desc: 'перестройка логистической<br />инфраструктуры',
   },
-  { title: '2020-е:', desc: 'маркетплейсы<br />и открытые<br />платформы' },
+  { title: '2020-е:', desc: 'маркетплейсы и&nbsp;открытые платформы' },
   {
-    title: 'Взгляд<br />в будущее:',
+    title: 'Взгляд в будущее:',
     desc: 'что изменится<br />в логистике завтра',
   },
 ];
 
-const TimeLineMobile = () => {
+const TimeLineMobile = ({ timeLineMobileRef }) => {
   return (
-    <div className={styles.header}>
-      <ul className={styles.list}>
+    <div className={styles.header} ref={timeLineMobileRef}>
+      <ul className={styles.list} id='time-line-mobile'>
         {MOCK.map((item, id) => {
-          return <li key={id}></li>;
+          return (
+            <li key={id} className={styles.listItem}>
+              <p
+                dangerouslySetInnerHTML={{ __html: item.title }}
+                className={styles.listItemTitle}
+              />
+              <span
+                className={styles.listItemLine}
+                id='time-line-mobile-item'
+              />
+              <span className={styles.listItemLineDisable} />
+              <p
+                dangerouslySetInnerHTML={{ __html: item.desc }}
+                className={styles.listItemText}
+              />
+            </li>
+          );
         })}
       </ul>
     </div>
