@@ -320,7 +320,7 @@ export default function Home() {
           content='Логистика в России: история развития и тренды'
         />
         <meta property='og:site_name' content='www.cdek25.vedomosti.ru' />
-        {/* <meta property='twitter:image:width' content='1012' />
+        <meta property='twitter:image:width' content='1012' />
         <meta property='twitter:image:height' content='506' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='vk:image:width' content='510' />
@@ -330,7 +330,7 @@ export default function Home() {
         <meta property='og:image' content='/main-og-image.jpg' />
         <meta property='og:image:width' content='800' />
         <meta property='og:image:type' content='image/jpeg' />
-        <meta property='og:image:height' content='800' /> */}
+        <meta property='og:image:height' content='800' />
         <link rel='icon' href='/favicon16.png' sizes='16x16' type='image/png' />
         <link
           rel='icon'
