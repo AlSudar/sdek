@@ -25,7 +25,11 @@ const TimeLineDesktop = ({ activeId }) => {
               key={id}
               className={cn(
                 styles.listItem,
-                Number(id) !== Number(activeId) && styles.disable
+                Number(id) === Number(activeId)
+                  ? styles.animated
+                  : Number(id) < Number(activeId)
+                  ? styles.active
+                  : styles.disable
               )}
             >
               <span

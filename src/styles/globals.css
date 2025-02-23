@@ -36,7 +36,7 @@ a {
 }
 
 .list-item-animated::before {
-  opacity: 1 !important;
+  background: #19323e !important;
 }
 
 .list-item-active p {
@@ -44,9 +44,9 @@ a {
 }
 
 .list-item-active span {
-  opacity: 1 !important;
+  background: #19323e !important;
 }
 
 .list-item-active::before {
-  opacity: 1 !important;
+  background: #19323e !important;
 }

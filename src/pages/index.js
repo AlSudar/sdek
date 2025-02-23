@@ -189,14 +189,14 @@ export default function Home() {
           fourElement.offsetTop - timeLineMobileRef.current.clientHeight &&
         menuTabActiveRef.current !== 4
       ) {
-        currentScrollRef.current = -(
-          FIRST_ELEMENT_MENU_WIDTH +
-          SECOND_ELEMENT_MENU_WIDTH +
-          THIRD_ELEMENT_MENU_WIDTH +
-          FOUR_ELEMENT_MENU_WIDTH
-        );
+        // currentScrollRef.current = -(
+        //   FIRST_ELEMENT_MENU_WIDTH +
+        //   SECOND_ELEMENT_MENU_WIDTH +
+        //   THIRD_ELEMENT_MENU_WIDTH +
+        //   FOUR_ELEMENT_MENU_WIDTH
+        // );
         menuTabActiveRef.current = 4;
-        timeLineMobileElement.style.transform = `translateX(${currentScrollRef.current}px)`;
+        // timeLineMobileElement.style.transform = `translateX(${currentScrollRef.current}px)`;
       }
 
       timeLineMobileElement.querySelectorAll('li').forEach((item, id) => {
@@ -319,7 +319,7 @@ export default function Home() {
           property='og:title'
           content='Логистика в России: история развития и тренды'
         />
-        <meta property='og:site_name' content='www.cdek25.vedomosti.ru' />
+        <meta property='og:site_name' content='cdek25.vedomosti.ru' />
         <meta property='twitter:image:width' content='1012' />
         <meta property='twitter:image:height' content='506' />
         <meta name='twitter:card' content='summary_large_image' />
