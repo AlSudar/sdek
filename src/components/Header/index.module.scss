@@ -4,6 +4,7 @@
   top: -0.4rem;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 
   @media screen and (max-width: 680px) {
     top: -2px;
@@ -17,11 +18,7 @@
 }
 
 .header {
-  background-image: url('/header-background.png');
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 90rem;
 
   &_wrapper {
@@ -96,7 +93,6 @@
 
 @media screen and (max-width: 680px) {
   .header {
-    background-image: url('/header_background_mob.png');
     height: 700px;
 
     &_wrapper {
