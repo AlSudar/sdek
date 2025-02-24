@@ -255,7 +255,6 @@ export default function Home() {
       }
 
       if (menuTabActiveRef.current === 3) {
-        console.log('вот тут');
         currentWindowScrollY += -(
           headerRef.current.clientHeight -
           100 +
@@ -325,9 +324,9 @@ export default function Home() {
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='vk:image:width' content='510' />
         <meta property='vk:image:height' content='228' />
-        <meta property='vk:image' content='/main-og-image.jpg' />
-        <meta name='twitter:image' content='/main-og-image.jpg' />
-        <meta property='og:image' content='/main-og-image.jpg' />
+        <meta property='vk:image' content='/main-og-image.png' />
+        <meta name='twitter:image' content='/main-og-image.png' />
+        <meta property='og:image' content='/main-og-image.png' />
         <meta property='og:image:width' content='800' />
         <meta property='og:image:type' content='image/jpeg' />
         <meta property='og:image:height' content='800' />
