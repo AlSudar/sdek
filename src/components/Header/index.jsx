@@ -1,24 +1,16 @@
 import Image from 'next/image';
 import styles from './index.module.scss';
 import useWindowDimensions from '@/utils';
-import { useEffect, useState } from 'react';
 
 const Header = ({ headerRef }) => {
   const { width } = useWindowDimensions();
-  const [currentEffectiveType, setCurrentEffectiveType] = useState();
-
-  useEffect(() => {
-    if (window && navigator) {
-      setCurrentEffectiveType(window.navigator.connection.effectiveType);
-    }
-  }, []);
 
   return (
     <header className={styles.header} ref={headerRef}>
-      {currentEffectiveType && (
+      {width && (
         <video
           poster={
-            width && width < 680
+            width < 680
               ? '/header_background_mob.png'
               : '/header-background.png'
           }
