@@ -32,7 +32,8 @@
 }
 
 .listItem.disable {
-  justify-self: flex-start;
+  margin-right: auto;
+  margin-left: 0;
 
   &::before {
     background: #e8eaec;
@@ -62,7 +63,8 @@
 .listItem {
   margin-bottom: 2.4rem;
   width: 11.5rem;
-  justify-self: flex-end;
+  margin-right: 0;
+  margin-left: auto;
   position: relative;
 
   &:last-of-type {

@@ -277,7 +277,7 @@ const Main = () => {
                 />
                 <div className={styles.content_statistics_info}>
                   <h3 className={styles.content_statistics_info_title}>
-                    5000 клиентских офисов
+                    5500 клиентских офисов
                   </h3>
                   <p className={styles.content_statistics_info_text}>
                     насчитывает сеть СДЭК к&nbsp;2025 году 99% из&nbsp;них
