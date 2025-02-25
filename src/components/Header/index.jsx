@@ -9,6 +9,7 @@ const Header = ({ headerRef }) => {
     <header className={styles.header} ref={headerRef}>
       {width && (
         <video
+          // preload='metadata'
           poster={
             width < 680
               ? '/header_background_mob.jpg'
