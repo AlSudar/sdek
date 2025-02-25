@@ -74,7 +74,7 @@ const Footer = ({ width }) => {
           </div>
           <div className={styles.footer_content_advertisement}>
             Реклама / ООО «СДЭК-ГЛОБАЛ» <br />
-            Erid:2VfnxvbiVPn
+            Erid:2VfnxwHVjHS
           </div>
         </div>
       </div>
