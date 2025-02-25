@@ -11,8 +11,8 @@ const Header = ({ headerRef }) => {
         <video
           poster={
             width < 680
-              ? '/header_background_mob.png'
-              : '/header-background.png'
+              ? '/header_background_mob.jpg'
+              : '/header-background.jpg'
           }
           className={styles.video}
           playsInline

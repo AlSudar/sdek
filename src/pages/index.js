@@ -331,6 +331,7 @@ export default function Home() {
         <meta property='og:image:type' content='image/jpeg' />
         <meta property='og:image:height' content='800' />
         <link rel='icon' href='/favicon16.png' sizes='16x16' type='image/png' />
+        <link rel='icon' href='/favicon32.ico' />
         <link
           rel='icon'
           href='/favicon32.svg'
