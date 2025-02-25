@@ -54,6 +54,7 @@ const Footer = ({ width }) => {
             <div className={styles.footer_content_links_social}>
               <div onClick={shareVK}>
                 <Image
+                  loading='lazy'
                   className={styles.footer_content_links_social_logo}
                   src='/vk.svg'
                   width={40}
@@ -63,6 +64,7 @@ const Footer = ({ width }) => {
               </div>
               <div onClick={shareTG}>
                 <Image
+                  loading='lazy'
                   className={styles.footer_content_links_social_logo}
                   src='/telegram.svg'
                   width={40}

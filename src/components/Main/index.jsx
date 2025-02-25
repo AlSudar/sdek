@@ -55,6 +55,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image}
                     src='/author.png'
                     width={50}
@@ -77,7 +78,7 @@ const Main = () => {
       </div>
       <BackgroundComponent
         id='2000'
-        backgroundImage='/2000.png'
+        backgroundImage={width > 680 ? '/2000.png' : '/2000_mob.png'}
         title='2000-e'
       />
       <div className={styles.main_wrapper}>
@@ -126,6 +127,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image}
                     src='/author2.png'
                     width={50}
@@ -169,6 +171,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image}
                     src='/author3.png'
                     width={50}
@@ -191,7 +194,7 @@ const Main = () => {
       </div>
       <BackgroundComponent
         id='2010'
-        backgroundImage='/2010.png'
+        backgroundImage={width > 680 ? '/2010.png' : '/2010_mob.png'}
         title='2010-e'
       />
       <div className={styles.main_wrapper}>
@@ -229,6 +232,7 @@ const Main = () => {
                 капитальных инвестиций и&nbsp;в&nbsp;сжатые сроки.
               </p>
               <Image
+                loading='lazy'
                 width={100}
                 height={100}
                 className={styles.content_image}
@@ -246,6 +250,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image}
                     src='/author.png'
                     width={50}
@@ -269,6 +274,7 @@ const Main = () => {
                 )}
               >
                 <Image
+                  loading='lazy'
                   width={50}
                   height={50}
                   className={styles.content_statistics_icon}
@@ -317,6 +323,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image}
                     src='/author4.png'
                     width={50}
@@ -361,6 +368,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image_position}
                     src='/author5.png'
                     width={50}
@@ -385,7 +393,7 @@ const Main = () => {
       </div>
       <BackgroundComponent
         id='2020'
-        backgroundImage='/2020.png'
+        backgroundImage={width > 680 ? '/2020.png' : '/2020_mob.png'}
         title='2020-e'
       />
       <div className={styles.main_wrapper}>
@@ -411,6 +419,7 @@ const Main = () => {
               </p>
               <div className={styles.content_statistics}>
                 <Image
+                  loading='lazy'
                   width={100}
                   height={100}
                   className={styles.content_statistics_icon}
@@ -463,6 +472,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image_position}
                     src='/author5.png'
                     width={50}
@@ -509,6 +519,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image}
                     src='/author4.png'
                     width={50}
@@ -566,6 +577,7 @@ const Main = () => {
                 </p>
                 <div className={styles.content_quote_author}>
                   <Image
+                    loading='lazy'
                     className={styles.content_quote_author_image}
                     src='/author2.png'
                     width={50}
@@ -588,7 +600,7 @@ const Main = () => {
       </div>
       <BackgroundComponent
         id={'future'}
-        backgroundImage='/future.png'
+        backgroundImage={width > 680 ? '/future.png' : '/future_mob.png'}
         title='Взгляд в будущее'
       />
       <div className={styles.main_wrapper}>

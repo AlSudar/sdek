@@ -31,6 +31,7 @@ const Header = ({ headerRef }) => {
             className={styles.logo_first}
           >
             <Image
+              loading='lazy'
               className={styles.logo_first_image}
               src='/sdek-logo.svg'
               width={158}
@@ -40,6 +41,7 @@ const Header = ({ headerRef }) => {
           </a>
           <div className={styles.logo_second}>
             <Image
+              loading='lazy'
               className={styles.logo_second_image}
               src='/vedomosti-logo.svg'
               width={125}
